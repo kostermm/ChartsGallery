@@ -1,0 +1,400 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Highcharts Example Column</title>
+
+    <style type="text/css">
+        textarea {
+            width: 80%;
+            height: 300px;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="js/highcharts/highcharts.js"></script>
+    <script src="js/highcharts/modules/exporting.js"></script>
+    <script src="js/highcharts/modules/export-data.js"></script>
+    <!-- <script src="js/highcharts/modules/xAxis-zero-crossing.js"></script> -->
+    <script src="js/themes/sdv_highchartstheme.js"></script>
+</head>
+
+<body>
+    <h1>Higcharts demo</h1>
+
+    <!-- <div id="htmlwidget-edb98beb9e16424d420e"></div>
+    <script type="application/json" data-for="htmlwidget-edb98beb9e16424d420e">
+        {"x":
+            {
+                "hc_opts":{
+                    "title":{"text":"Veelvoorkomende arbeidsmiddelen","style":{"fontWeight":"bold"}},
+                    "yAxis":{"title":{"text":"Aandeel slachtoffers in procenten"},"allowDecimals":false},
+                    "credits":{"enabled":true,"text":"Bron: Storybuilder gegevens 1998-2014","style":{"fontSize":"10px"}},
+                    "exporting":{"enabled":true},
+                    "plotOptions":{"series":{"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"},"bubble":{"minSize":5,"maxSize":25}},
+                    "annotationsOptions":{"enabledButtons":false},
+                    "tooltip":{"delayForDisplay":10},
+                    "xAxis":{"categories":["ESAW 02.03.01.00 Verplaatsbare ladder, trapje","ESAW 02.01.02.00 Dak, terras, glasdak, dakconstructie","ESAW 01.02.01.00 Oppervlakken algemeen","ESAW 05.02.04.00 Elektrische transmissie","ESAW 02.03.03.00 Rolsteiger"]},
+                    "series":[{"data":[29.2,12.3,9.1,8.2,6.5],"name":"boxnameNL","showInLegend":false,"type":"bar"}],
+                    "subtitle":{"text":"Sector: SBI 4322 Loodgieters- en fitterswerk; installatie sanitair/verwarming/luchtbeh."}
+                },
+                "theme":{"colors":["#FF2700","#008FD5","#77AB43","#636464","#C4C4C4"],"chart":{"backgroundColor":"#F0F0F0","plotBorderColor":"#606063","style":{"fontFamily":"Roboto","color":"#3C3C3C"}},"title":{"align":"left","style":{"fontWeight":"bold"}},"subtitle":{"align":"left"},"xAxis":{"gridLineWidth":1,"gridLineColor":"#D7D7D8","labels":{"style":{"fontFamily":"Unica One, sans-serif","color":"#3C3C3C"}},"lineColor":"#D7D7D8","minorGridLineColor":"#505053","tickColor":"#D7D7D8","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"yAxis":{"gridLineColor":"#D7D7D8","labels":{"style":{"fontFamily":"Unica One, sans-serif","color":"#3C3C3C"}},"lineColor":"#D7D7D8","minorGridLineColor":"#505053","tickColor":"#D7D7D8","tickWidth":1,"title":{"style":{"color":"#A0A0A3"}}},"tooltip":{"backgroundColor":"rgba(0, 0, 0, 0.85)","style":{"color":"#F0F0F0"}},"legend":{"itemStyle":{"color":"#3C3C3C"},"itemHiddenStyle":{"color":"#606063"}},"credits":{"style":{"color":"#666"}},"labels":{"style":{"color":"#D7D7D8"}},"legendBackgroundColor":"rgba(0, 0, 0, 0.5)","background2":"#505053","dataLabelsColor":"#B0B0B3","textColor":"#C0C0C0","contrastTextColor":"#F0F0F3","maskColor":"rgba(255,255,255,0.3)"},
+                "conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","drillUpText":"Back to {series.name}","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"thousandsSep":" ","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},
+                "type":"chart",
+                "fonts":["Roboto","Unica+One"],
+                "debug":false
+            },
+            "evals":[],
+            "jsHooks":[]
+        }
+    </script> -->
+
+    <!-- <h2>Chart 2</h2>
+    <div id="htmlwidget-1"></div>
+    <script type="application/json" data-for="htmlwidget-1">
+        {
+            "x": {
+              "hc_opts": {
+                "title": {
+                  "text": "Ernstige arbeidsongevallen in door de jaren heen"
+                },
+                "yAxis": {
+                  "title": {
+                    "text": null
+                  }
+                },
+                "credits": {
+                  "enabled": false
+                },
+                "exporting": {
+                  "enabled": false
+                },
+                "plotOptions": {
+                  "series": {
+                    "turboThreshold": 0
+                  },
+                  "treemap": {
+                    "layoutAlgorithm": "squarified"
+                  },
+                  "bubble": {
+                    "minSize": 5,
+                    "maxSize": 25
+                  }
+                },
+                "annotationsOptions": {
+                  "enabledButtons": false
+                },
+                "tooltip": {
+                  "delayForDisplay": 10
+                },
+                "xAxis": {
+                  "categories": [
+                    "1998",
+                    "1999",
+                    "2000",
+                    "2001",
+                    "2002",
+                    "2003",
+                    "2004",
+                    "2005",
+                    "2006",
+                    "2007",
+                    "2008",
+                    "2009",
+                    "2010",
+                    "2011",
+                    "2012",
+                    "2013",
+                    "2014"
+                  ]
+                },
+                "series": [
+                  {
+                    
+                    "data": [
+                      205,
+                      231,
+                      239,
+                      231,
+                      185,
+                      162,
+                      164,
+                      150,
+                      189,
+                      245,
+                      167,
+                      177,
+                      140,
+                      141,
+                      128,
+                      122,
+                      105
+                    ],
+                    "name": "SBI 4120"
+                  },
+                  {
+                    "data": [
+                      207.9,
+                      215.8,
+                      201.5,
+                      208.9,
+                      185,
+                      174.5,
+                      173.4,
+                      165.9,
+                      162.3,
+                      176.5,
+                      174.8,
+                      168.7,
+                      149.6,
+                      148.5,
+                      152.1,
+                      166.2,
+                      149.5
+                    ],
+                    "name": "Algemene trend in SB"
+                  }
+                ],
+                "subtitle": {
+                  "text": "Sector: SBI 4120 Algemene burgerlijke en utiliteitsbouw"
+                }
+              },
+              "theme": {
+                "colors": [
+                  "#FF2700",
+                  "#008FD5",
+                  "#77AB43",
+                  "#636464",
+                  "#C4C4C4"
+                ],
+                "chart": {
+                    "type": "column",
+                  "backgroundColor": "#F0F0F0",
+                  "plotBorderColor": "#606063",
+                  "style": {
+                    "fontFamily": "Roboto",
+                    "color": "#3C3C3C"
+                  }
+                },
+                "title": {
+                  "align": "left",
+                  "style": {
+                    "fontWeight": "bold"
+                  }
+                },
+                "subtitle": {
+                  "align": "left"
+                },
+                "xAxis": {
+                  "gridLineWidth": 1,
+                  "gridLineColor": "#D7D7D8",
+                  "labels": {
+                    "style": {
+                      "fontFamily": "Unica One, sans-serif",
+                      "color": "#3C3C3C"
+                    }
+                  },
+                  "lineColor": "#D7D7D8",
+                  "minorGridLineColor": "#505053",
+                  "tickColor": "#D7D7D8",
+                  "tickWidth": 1,
+                  "title": {
+                    "style": {
+                      "color": "#A0A0A3"
+                    }
+                  }
+                },
+                "yAxis": {
+                  "gridLineColor": "#D7D7D8",
+                  "labels": {
+                    "style": {
+                      "fontFamily": "Unica One, sans-serif",
+                      "color": "#3C3C3C"
+                    }
+                  },
+                  "lineColor": "#D7D7D8",
+                  "minorGridLineColor": "#505053",
+                  "tickColor": "#D7D7D8",
+                  "tickWidth": 1,
+                  "title": {
+                    "style": {
+                      "color": "#A0A0A3"
+                    }
+                  }
+                },
+                "tooltip": {
+                  "backgroundColor": "rgba(0, 0, 0, 0.85)",
+                  "style": {
+                    "color": "#F0F0F0"
+                  }
+                },
+                "legend": {
+                  "itemStyle": {
+                    "color": "#3C3C3C"
+                  },
+                  "itemHiddenStyle": {
+                    "color": "#606063"
+                  }
+                },
+                "credits": {
+                  "style": {
+                    "color": "#666"
+                  }
+                },
+                "labels": {
+                  "style": {
+                    "color": "#D7D7D8"
+                  }
+                },
+                "legendBackgroundColor": "rgba(0, 0, 0, 0.5)",
+                "background2": "#505053",
+                "dataLabelsColor": "#B0B0B3",
+                "textColor": "#C0C0C0",
+                "contrastTextColor": "#F0F0F3",
+                "maskColor": "rgba(255,255,255,0.3)"
+              },
+              "conf_opts": {
+                "global": {
+                  "Date": null,
+                  "VMLRadialGradientURL": "http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png",
+                  "canvasToolsURL": "http =//code.highcharts.com/list(version)/modules/canvas-tools.js",
+                  "getTimezoneOffset": null,
+                  "timezoneOffset": 0,
+                  "useUTC": true
+                },
+                "lang": {
+                  "contextButtonTitle": "Chart context menu",
+                  "decimalPoint": ".",
+                  "downloadJPEG": "Download JPEG image",
+                  "downloadPDF": "Download PDF document",
+                  "downloadPNG": "Download PNG image",
+                  "downloadSVG": "Download SVG vector image",
+                  "drillUpText": "Back to {series.name}",
+                  "invalidDate": null,
+                  "loading": "Loading...",
+                  "months": [
+                    "January",
+                    "February",
+                    "March",
+                    "April",
+                    "May",
+                    "June",
+                    "July",
+                    "August",
+                    "September",
+                    "October",
+                    "November",
+                    "December"
+                  ],
+                  "noData": "No data to display",
+                  "numericSymbols": [
+                    "k",
+                    "M",
+                    "G",
+                    "T",
+                    "P",
+                    "E"
+                  ],
+                  "printChart": "Print chart",
+                  "resetZoom": "Reset zoom",
+                  "resetZoomTitle": "Reset zoom level 1:1",
+                  "shortMonths": [
+                    "Jan",
+                    "Feb",
+                    "Mar",
+                    "Apr",
+                    "May",
+                    "Jun",
+                    "Jul",
+                    "Aug",
+                    "Sep",
+                    "Oct",
+                    "Nov",
+                    "Dec"
+                  ],
+                  "thousandsSep": " ",
+                  "weekdays": [
+                    "Sunday",
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                  ]
+                }
+              },
+              "type": "chart",
+              "fonts": [
+                "Roboto",
+                "Unica+One"
+              ],
+              "debug": false
+            },
+            "evals": [],
+            "jsHooks": []
+          }
+    </script> -->
+
+    <h2>Ranglijst sterte</h2>
+    <div id="htmlwidget-2"></div>
+    <!-- https://www.volksgezondheidenzorg.info/ranglijst/ranglijst-ziekten-op-basis-van-sterfte/geslacht#!node-top-tien-sterfte-mannen -->
+    <script type="application/json" data-for="htmlwidget-2">
+        {
+            "chart":{"type":"bar","renderTo":{}},
+            "colors":["rgba(0,80,149,0.4)","rgba(248,120,96,0.6)","#c00027","#c00027","#c00027","#c0c0c0"],
+            "title":{"text":"Top 5 sterfte 2016 voor mannen en vrouwen"},
+            "xAxis":{"visible":false, "categories":[1,2,3,4,5],"labels":{"step":1},"reversed":true},
+            "yAxis":{"opposite": true, "title":{"text":"Aantal sterfgevallen"},"labels":{},"allowDecimals":false, 
+                    "min": -12000, "max": 12000, "tickInterval":2000},
+            "tooltip":{},
+            "legend": {"enabled": true},
+            "plotOptions":{"bar":{"groupPadding":0,"borderWidth":0.5,"grouping":false}},
+                "series":[
+                    {"id":"Vrouwen","name":"vrouwen",
+                        "data":[{"y": -10051, "name": "Dementie"},{"y": -5585, "name": "Beroerte"},{"y": -4527, "name": "Hartfalen"},{"y": -4383, "name": "Longkanker"},{"y": -3573, "name": "Coronaire hartziekten"}],
+                        "pointPadding":0.05,"showInLegend":true,"_colorIndex":1}, 
+                    {"id":"Mannen","name":"mannen",
+                            "data":[{"y": 6291, "name": "Longkanker"},{"y": 5061, "name": "Coronaire hartziekten"},{"y": 4804, "name": "Dementie"},{"y": 3935, "name": "Beroerte"},{"y": 3389, "name": "COPD"} ],
+                            "pointPadding":0.05,"showInLegend":true,"_colorIndex":0}
+              
+              ]
+            }
+    </script>
+
+
+    <script type="text/javascript">
+
+        function renderRCharts() {
+            /* Rendering all R Charts by looping all htmlwidget containers, 
+            |  find correspondig R-config object (script.json) and render chart 
+            
+            */
+            $('div[id|="htmlwidget"').each(function (index, value) {
+                container = this;
+                id = $(this).attr('id');
+                console.log('div' + index + ':' + id);
+
+                strConfig = $('script[data-for="' + id + '"').text();
+                objConfig = JSON.parse(strConfig);
+
+                console.log(objConfig);
+                if(objConfig.x != undefined){
+                    hcConfig = objConfig.x.hc_opts;
+                    hcConfig = objRConfig.x.hc_opts;
+                } else {
+                    hcConfig = objConfig;
+                }
+                
+                Highcharts.chart(id, hcConfig);
+            });
+        }
+
+        renderRCharts();
+    </script>
+</body>
+
+</html>
