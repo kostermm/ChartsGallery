@@ -3,27 +3,13 @@
     "type": "bar",
     "renderTo": {}
   },
-  "colors": [
-    "rgba(0,80,149,0.4)",
-    "rgba(248,120,96,0.6)",
-    "#c00027",
-    "#c00027",
-    "#c00027",
-    "#c0c0c0"
-  ],
-  "title": {
-    "text": "Top 5 sterfte 2016 voor mannen en vrouwen"
-  },
+  "colors": [ "rgba(0,80,149,0.4)" ],
+  "title": { "text": "mannen" },
   "xAxis": {
-    "visible": false,
-    "categories": [
-      1,
-      2,
-      3,
-      4,
-      5
-    ],
+    "visible": true,
+    "categories": [],
     "labels": {
+      "align": "center",
       "step": 1
     },
     "reversed": true
@@ -35,71 +21,28 @@
     },
     "labels": {},
     "allowDecimals": false,
-    "min": -12000,
-    "max": 12000,
+    "min": 0,
+    "max": 15000,
     "tickInterval": 2000
   },
   "tooltip": {},
   "legend": {
-    "enabled": true
+    "enabled": false
   },
   "plotOptions": {
     "bar": {
       "groupPadding": 0,
       "borderWidth": 0.5,
       "grouping": false
+    },
+    "series": {
+      "dataLabels": {
+        "enabled": true,
+        "align": "left"
+      }
     }
   },
   "series": [
-    {
-      "id": "Vrouwen",
-      "name": "vrouwen",
-      "data": [
-        {
-          "y": -10719,
-          "name": "Dementie"
-        },
-        {
-          "y": -5421,
-          "name": "Beroerte"
-        },
-        {
-          "y": -4509,
-          "name": "Hartfalen"
-        },
-        {
-          "y": -4257,
-          "name": "Longkanker"
-        },
-        {
-          "y": -3363,
-          "name": "COPD"
-        },
-        {
-          "y": -3350,
-          "name": "Coronaire hartziekten"
-        },
-        {
-          "y": -3106,
-          "name": "Borstkanker"
-        },
-        {
-          "y": -2408,
-          "name": "Accidentele val"
-        },
-        {
-          "y": -2326,
-          "name": "Dikkedarmkanker"
-        },
-        {
-          "y": -2085,
-          "name": "Infecties van de onderste luchtwegen"
-        }
-      ],
-      "pointPadding": 0.05,
-      "showInLegend": true,
-      "_colorIndex": 1
-    },
     {
       "id": "Mannen",
       "name": "mannen",
@@ -146,8 +89,7 @@
         }
       ],
       "pointPadding": 0.05,
-      "showInLegend": true,
-      "_colorIndex": 0
+      "showInLegend": true
     }
   ]
 }
