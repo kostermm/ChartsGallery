@@ -8,7 +8,9 @@
   "xAxis": {
     "visible": true,
     "categories": [],
+    "lineWidth": 0,
     "labels": {
+      "x": -5,
       "align": "center",
       "step": 1
     },

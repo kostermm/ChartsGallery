@@ -92,5 +92,8 @@
       "pointPadding": 0.05,
       "showInLegend": true
     }
-  ]
+  ],
+  "exporting": {
+    "enabled": false
+  }
 }

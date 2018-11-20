@@ -64,7 +64,7 @@ Highcharts.galleryTheme = {
     spacingBottom: 0,
     spacingTop: 10,
     spacingLeft: 0,
-    spacingRight: 10,
+    spacingRight: 0,
     style: {
       color: '#333333',
       fontFamily: '"RO Sans", Verdana',
@@ -76,7 +76,7 @@ Highcharts.galleryTheme = {
     style: {
       color: '#333333',
       fontSize: '13pt',
-      fontWeight: 'bold'
+      fontWeight: 'normal'
     },
     align: 'center',
     x: 0,
@@ -97,7 +97,7 @@ Highcharts.galleryTheme = {
     lineColor: '#c0d0e0',
     lineWidth: 1,
     tickLength: 0,
-    tickmarkPlacement: 'on'
+    tickmarkPlacement: 'on',
   },
   yAxis: {
     visible: false,
@@ -155,9 +155,13 @@ Highcharts.galleryTheme = {
     }
   },
   tooltip: {
-    enabled: false,
+    enabled: true,
     headerFormat: '<strong><large>{point.key}</large></strong><br>',
     pointFormat: '<span style="color:{point.color}">\u25A0</span> {series.name}: <b>{point.y}</b><br/>',
+    formatter: function () {
+      return '<strong><large>' + this.points[0].key + '</large></strong><br>'  + Highcharts.numberFormat(Math.abs(this.y), 0);
+
+    },
     shared: true,
     borderColor: '#007bc7',
     markerRadius: 0,
@@ -265,7 +269,7 @@ Highcharts.galleryTheme = {
       // negativeColor: 'orange',  
       dataLabels: {
         formatter: function () {
-          return this.point.name + ': ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+          return this.point.name; // + ': ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
 
         }
       },
@@ -284,6 +288,20 @@ Highcharts.galleryTheme = {
         legendItemClick: function (event) {
           // toggle legend checkboxes
           this.chart.series[event.target.index].select();
+        },
+        afterDrawDataLabels: function (event) {
+          // toggle legend checkboxes
+          console.log('afterDrawDataLabels', this, event);
+          var chartIndex = this.chart.index;
+          var dataLabels = this.dataLabelsGroup.element.childNodes;
+          $.each(dataLabels, function(index, item) {
+            itemWidth = $(item)[0].getBBox().width;
+            console.log(index, itemWidth);
+            attrTransform = $(item).attr('transform');
+            attrTransform = 'translate(' + (chartIndex * (350  - itemWidth)) + attrTransform.substr(attrTransform.indexOf(','));
+            $(item).attr('transform', attrTransform)
+            console.log(item.attributes);
+          });
         },
 
       },
@@ -346,6 +364,17 @@ Highcharts.wrap(Highcharts.Legend.prototype, 'renderItem', function (proceed) {
   }
 });
 
+// Align data labels
+//  Series.prototype.alignDataLabel
+// Highcharts.wrap(Highcharts.Series.prototype, 'alignDataLabel', function (proceed) {
+//   // Slice off this original argument of prototype function
+//   var labelItems = Array.prototype.slice.call(arguments, 1);
+//   labelItems[0].plotX = labelItems[0].clientX - 41;
+//   // Apply the original function with the original arguments
+//   proceed.apply(this, labelItems);
+//   console.log(labelItems[0]);
+// });
+
 // Function for synchronized highlighting of data points with equal property
 function syncHighlight(event) {
   eventType = event.type;
@@ -371,7 +400,7 @@ function syncHighlight(event) {
   console.log(eventType + ' chart: ' + chartIndex + ' series: ' + seriesIndex + ' point: ' + pointIndex);
 
   // Highlight points in all series with same 'name'
-  if (seriesCount > 1) {
+  $.each(Highcharts.charts, function (index,  chart) {
     $.each(chart.series, function () {
       $.each(this.data, function () {
         if (this.name == point.name || eventType == 'mouseOut') {
@@ -383,6 +412,6 @@ function syncHighlight(event) {
         }
       })
     })
-  }
+  })
 
 }
