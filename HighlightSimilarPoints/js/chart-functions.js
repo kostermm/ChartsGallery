@@ -52,7 +52,7 @@ function renderCharts() {
 }
 
 // Papaparse Test
-Papa.parse("/data/AandoeningenEnRanglijsten.csv", {
+Papa.parse("data/AandoeningenEnRanglijsten.csv", {
   download: true,
   header: true,
   complete: function (results) {
