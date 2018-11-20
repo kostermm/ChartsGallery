@@ -24,10 +24,7 @@ colorPalettes = {
   //color palettes supercharts
   categorien: ['#42145f', '#ffb612', '#a90061', '#777c00', '#007bc7', '#673327', '#e17000', '#39870c', '#94710a', '#01689b', '#f9e11e', '#76d2b6', '#d52b1e', '#8fcae7', '#ca005d', '#275937', '#f092cd'],
   // 1)paars, 2)donkergeel, 3)robijnrood, 4)mosgroen, 5)hemelblauw, 6)donkerbruin, 7)oranje, 8)groen, 9)bruin, 10)donkerblauw, 11)geel, 12)mintgroen, 13)rood, 14)lichtblauw, 15violet), 16)donkergroen, 17)roze
-  geslacht: ['#007bc7', '#ca005d', '#42145f'], // 1)men, 2)women, 3)total
-  internationaal: ['#42145f', '#e17000', '#ffb612'],
-  ses: ['#DDDF00', '#24CBE5', '#64E572', '#FF9655', '#CB2326', '#6AF9C4', '#8FCAE7', '#F092CD'],
-};
+ };
 
 // Specific theming for supercharts
 Highcharts.galleryTheme = {
@@ -298,7 +295,7 @@ Highcharts.galleryTheme = {
             itemWidth = $(item)[0].getBBox().width;
             console.log(index, itemWidth);
             attrTransform = $(item).attr('transform');
-            attrTransform = 'translate(' + (chartIndex * (350  - itemWidth)) + attrTransform.substr(attrTransform.indexOf(','));
+            attrTransform = 'translate(' + (chartIndex * (370  - itemWidth)) + attrTransform.substr(attrTransform.indexOf(','));
             $(item).attr('transform', attrTransform)
             console.log(item.attributes);
           });
