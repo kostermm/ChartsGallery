@@ -10,15 +10,31 @@
     body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    divX {
+      border: 1px red solid;
+    }
     div.wrapper {
       text-align: center;
       float:left;
+      margin-bottom: 4em;
     }
     div.wrapper h2 {
       margin-bottom: 0;
     }
     div.chart-container {
       display: inline-block;
+    }
+    div.info-table {
+      float: left;
+      margin-top: 3em;
+      margin-left: 2em;
+    }
+    div.info-table table td {
+      padding: 2px 5px;
+    }
+    div.info-table table td.right {
+      text-align: right;
+      width: 3em;
     }
   </style>
 
@@ -27,9 +43,13 @@
   <script src="js/highcharts/highcharts.js"></script>
   <script src="js/highcharts/modules/exporting.js"></script>
   <script src="js/highcharts/modules/export-data.js"></script>
-  <!-- <script src="js/highcharts/modules/xAxis-zero-crossing.js"></script> -->
-  <script src="js/themes/sdv_highchartstheme.js"></script>
+  
+  <!-- papaparse -->
+  <script src="js/papaparse/papaparse.min.js"></script>
+  
+  <!-- Ranglijsten theme & script -->
   <script type="text/javascript" src="js/chart-functions.js"></script>
+  <script src="js/themes/sdv_highchartstheme.js"></script>
 </head>
 
 <body>
@@ -63,6 +83,7 @@
     <div id="htmlwidget-female" class="chart-container"></div>
     <div id="htmlwidget-male" class="chart-container"></div>
   </div>
+  <div class="info-table"></div>
 
   <!-- Chart configs - script with json source is not loaded automically? -->
   <script type="application/json" src="chart-config/Ranglijst-Sterfte-female.json" data-for="htmlwidget-female"></script>
@@ -71,6 +92,8 @@
   <script type="text/javascript">
     // Call render functions to render chars for all containers
     renderCharts();
+
+    
   </script>
 </body>
 

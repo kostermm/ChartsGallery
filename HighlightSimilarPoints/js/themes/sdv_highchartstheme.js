@@ -153,13 +153,16 @@ Highcharts.galleryTheme = {
   },
   tooltip: {
     enabled: true,
-    headerFormat: '<strong><large>{point.key}</large></strong><br>',
-    pointFormat: '<span style="color:{point.color}">\u25A0</span> {series.name}: <b>{point.y}</b><br/>',
+    animation: false,
+    hideDelay: 0,
+    // headerFormat: '<strong><large>{point.key}</large></strong><br>',
+    // pointFormat: '<span style="color:{point.color}">\u25A0</span> {series.name}: <b>{point.y}</b><br/>',
     formatter: function () {
       return '<strong><large>' + this.points[0].key + '</large></strong><br>'  + Highcharts.numberFormat(Math.abs(this.y), 0);
 
     },
     shared: true,
+    shape: 'square',
     borderColor: '#007bc7',
     markerRadius: 0,
     style: {
@@ -271,7 +274,7 @@ Highcharts.galleryTheme = {
         }
       },
       animation: {
-        duration: 100
+        duration: 500
       },
       events: {
         checkboxClick: function (event) {
@@ -287,25 +290,24 @@ Highcharts.galleryTheme = {
           this.chart.series[event.target.index].select();
         },
         afterDrawDataLabels: function (event) {
-          // toggle legend checkboxes
-          console.log('afterDrawDataLabels', this, event);
           var chartIndex = this.chart.index;
           var dataLabels = this.dataLabelsGroup.element.childNodes;
           $.each(dataLabels, function(index, item) {
             itemWidth = $(item)[0].getBBox().width;
-            console.log(index, itemWidth);
             attrTransform = $(item).attr('transform');
             attrTransform = 'translate(' + (chartIndex * (370  - itemWidth)) + attrTransform.substr(attrTransform.indexOf(','));
             $(item).attr('transform', attrTransform)
-            console.log(item.attributes);
           });
-        },
+        }
 
       },
       point: {
         events: {
           mouseOver: syncHighlight,
-          mouseOut: syncHighlight
+          mouseOut: syncHighlight,
+          click: function (event) { 
+            showInfoTable(this.name); 
+          }
         }
       },
       stickyTracking: false,
@@ -319,9 +321,7 @@ Highcharts.galleryTheme = {
       //     }
       // 	}
       // },
-      animation: {
-        duration: 2000
-      }
+
     }
   },
   // , responsive: {
@@ -394,7 +394,7 @@ function syncHighlight(event) {
   chartIndex = chart.index;
 
   seriesCount = event.target.series.chart.series.length;
-  console.log(eventType + ' chart: ' + chartIndex + ' series: ' + seriesIndex + ' point: ' + pointIndex);
+  // console.log(eventType + ' chart: ' + chartIndex + ' series: ' + seriesIndex + ' point: ' + pointIndex);
 
   // Highlight points in all series with same 'name'
   $.each(Highcharts.charts, function (index,  chart) {
