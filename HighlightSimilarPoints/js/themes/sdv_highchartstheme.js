@@ -339,6 +339,7 @@ Highcharts.galleryTheme = {
   //   }]
   // }
 };
+console.log('galleryTheme loaded.');
 Highcharts.setOptions(Highcharts.galleryTheme);
 
 // Wrapping function for creating checkbox with title attribute
