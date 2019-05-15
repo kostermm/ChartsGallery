@@ -13,6 +13,7 @@ var chartConfig = {
       "visible": true,
       "categories": [],
       "lineWidth": 0,
+      "tickLength": 0,
       "labels": {
         "enabled": false,
       },
@@ -23,12 +24,22 @@ var chartConfig = {
       "title": {
         "text": "Aantal sterfgevallen"
       },
-      "labels": {},
+      "labels": {
+        "align": "center",
+        "formatter": function () { return Highcharts.numberFormat(Math.abs(this.value), 0); }
+      },
       "allowDecimals": false,
       "tickInterval": 2000
     },
-    "tooltip": {},
+    "tooltip": {
+      formatter: function () {
+        return '<strong><large>' + this.point.name + '</large></strong><br>'  + Highcharts.numberFormat(Math.abs(this.y), 0);
+      }
+    },
     "legend": {
+      "enabled": false
+    },
+    "credits": {
       "enabled": false
     },
     "plotOptions": {
@@ -40,7 +51,13 @@ var chartConfig = {
       "series": {
         "pointPadding": 0.05,
         "dataLabels": {
-          "enabled": true
+          "enabled": true,
+          "formatter": function () {
+            return this.point.name; // + ': ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+          }
+        },
+        "animation": {
+          "duration": 500
         },
         "point": {
           "events": {
@@ -65,7 +82,7 @@ var chartConfig = {
     },
     "yAxis": {
       "min": 0,
-      "max": 15000,
+      "max": 14000,
     },
 
     "plotOptions": {
@@ -134,7 +151,7 @@ var chartConfig = {
       "text": "vrouwen"
     },
     "yAxis": {
-      "min": -15000,
+      "min": -14000,
       "max": 0,
     },
     "plotOptions": {

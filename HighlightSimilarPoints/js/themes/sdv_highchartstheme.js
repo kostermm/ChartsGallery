@@ -90,12 +90,12 @@ Highcharts.galleryTheme = {
     y: 40
   },
   colors: colorPalettes.categorien,
-  xAxis: {
-    lineColor: '#c0d0e0',
-    lineWidth: 1,
-    tickLength: 0,
-    tickmarkPlacement: 'on',
-  },
+  // xAxis: {
+  //   lineColor: '#c0d0e0',
+  //   lineWidth: 1,
+  //   tickLength: 0,
+  //   tickmarkPlacement: 'on',
+  // },
   yAxis: {
     visible: false,
     title: {
@@ -110,9 +110,9 @@ Highcharts.galleryTheme = {
       },
       y: -10
     },
-    labels: {
-      formatter: function () { return Highcharts.numberFormat(Math.abs(this.value), 0); }
-    },
+    // labels: {
+    //   formatter: function () { return Highcharts.numberFormat(Math.abs(this.value), 0); }
+    // },
     lineColor: '#c0d0e0',
     lineWidth: 1,
     gridLineColor: '#c0d0e0',
@@ -157,11 +157,10 @@ Highcharts.galleryTheme = {
     hideDelay: 0,
     // headerFormat: '<strong><large>{point.key}</large></strong><br>',
     // pointFormat: '<span style="color:{point.color}">\u25A0</span> {series.name}: <b>{point.y}</b><br/>',
-    formatter: function () {
-      return '<strong><large>' + this.points[0].key + '</large></strong><br>'  + Highcharts.numberFormat(Math.abs(this.y), 0);
-
-    },
-    shared: true,
+    // formatter: function () {
+    //   return '<strong><large>' + this.points[0].key + '</large></strong><br>'  + Highcharts.numberFormat(Math.abs(this.y), 0);
+    // },
+    // shared: true,
     shape: 'square',
     borderColor: '#007bc7',
     markerRadius: 0,
@@ -267,15 +266,14 @@ Highcharts.galleryTheme = {
       showCheckbox: true,
       selected: true,
       // negativeColor: 'orange',  
-      dataLabels: {
-        formatter: function () {
-          return this.point.name; // + ': ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
-
-        }
-      },
-      animation: {
-        duration: 500
-      },
+      // dataLabels: {
+      //   formatter: function () {
+      //     return this.point.name; // + ': ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+      //   }
+      // },
+      // animation: {
+      //   duration: 500
+      // },
       events: {
         checkboxClick: function (event) {
           // toggle series by clicking legend checkboxes
