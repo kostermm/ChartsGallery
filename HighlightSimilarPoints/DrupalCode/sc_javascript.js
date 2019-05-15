@@ -77,7 +77,7 @@ var chartConfig = {
     },
     "tooltip": {
       formatter: function () {
-        return '<strong><large>' + this.point.name + '</large></strong><br>'  + Highcharts.numberFormat(Math.abs(this.y), 0);
+        return '<strong><large>' + this.point.name + '</large></strong><br>' + Highcharts.numberFormat(Math.abs(this.y), 0);
       }
     },
     "legend": {
@@ -259,6 +259,7 @@ var chartConfig = {
   }
 };
 
+var strInfoTable = "Aandoening;Incidentie;Doodsoorzaken;Verloren levensjaren;verlies van gezonde levensjaren;ziektelast;zorgkosten\nLongkanker;1;1;4;2;9;1\nDementie;8;2;6;5;4;2\nCoronaire hartziekten;6;7;2;10;8;3\nBeroerte;7;6;10;8;7;7\nCOPD;4;8;1;7;2;9\nHartfalen;9;9;5;9;6;5\nProstaatkanker;3;10;3;6;5;6\nDikkedarmkanker;5;5;7;3;10;4\nInfecties van de onderste luchtwegen;2;4;8;4;1;8\nAccidentele val;10;3;9;1;3;10"
 
 // Function for synchronized highlighting of data points with equal property
 function syncHighlight(event) {
@@ -305,7 +306,7 @@ function renderCharts() {
   /* 
     Rendering Charts by looping all containers
   */
-  $('div.chart-container.ranglijst').each(function (index, value) {
+  $('div.ranglijst .chart-container').each(function (index, value) {
     var id = $(this).attr('id');
 
     console.log('div' + index + ':' + id);
@@ -318,47 +319,46 @@ function renderCharts() {
 
 function showInfoTable(aandoening) {
   if (aandoeningRanglijsten.length == 0) {
+    aandoeningRanglijsten = CSVToArray(strInfoTable, ';');
+  }
+  renderTable(aandoening);
+}
+/*
+  0: (7) ["Aandoening", "Incidentie", "Doodsoorzaken", "Verloren levensjaren", "verlies van gezonde levensjaren", "ziektelast", "zorgkosten"]
+1: (7) ["Longkanker", "1", "1", "4", "2", "9", "1"]
+2: (7) ["Dementie", "8", "2", "6", "5", "4", "2"]
+3: (7) ["Coronaire hartziekten", "6", "7", "2", "10", "8", "3"]
+4: (7) ["Beroerte", "7", "6", "10", "8", "7", "7"]
+5: (7) ["COPD", "4", "8", "1", "7", "2", "9"]
+6: (7) ["Hartfalen", "9", "9", "5", "9", "6", "5"]
+7: (7) ["Prostaatkanker", "3", "10", "3", "6", "5", "6"]
+8: (7) ["Dikkedarmkanker", "5", "5", "7", "3", "10", "4"]
+9: (7) ["Infecties van de onderste luchtwegen", "2", "4", "8", "4", "1", "8"]
+10: (7) ["Accidentele val", "10", "3", "9", "1", "3", "10"]
+*/
+function renderTable(aandoening) {
+  var indicators = aandoeningRanglijsten[0].slice(1);
+  var arrAandoeningen = aandoeningRanglijsten.slice(1);
 
-    // jQuery.ajaxSetup({async:true});
+  // Filter row of 'aandoening'
+  var rankInLists = arrAandoeningen.filter(function (item, index, filter) {
+    return (item[0] == aandoening);
+  });
+  var rows = '', strCaption = '';
 
-    Papa.parse("data/AandoeningenEnRanglijsten.csv", {
-      download: true,
-      header: true,
-      complete: function (results) {
-        aandoeningRanglijsten = results.data;
+  console.log('renderTable - selected', rankInLists[0]);
 
-        renderTable(aandoening);
-        // jQuery.ajaxSetup({async:false});
-      }
+  if (rankInLists.length > 0) {
+    strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>'
+    // Loop ranking of selected aandoening
+    $.each(rankInLists[0].slice(1), function (index, value) {
+      rows += '<tr><td>' + indicators[index] + '</td><td class="right">' + value + '</td></tr>';
     });
   } else {
-    renderTable(aandoening);
-  }
-}
-
-function renderTable(aandoening) {
-  var aandoeningFilter = {
-    prop: 'Aandoening',
-    val: aandoening || 'Dementie'
+    strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>: Geen data gevonden';
   }
 
-  var rankInLists = aandoeningRanglijsten.filter(function (item, index, filter) {
-    if (item[aandoeningFilter.prop] == aandoeningFilter.val) {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  var rows = '', caption = '<caption>Positie in alle ranglijsten <br/>Aandoening: <strong> ' + rankInLists[0].Aandoening + '</strong></caption>';
-
-
-  $.each(rankInLists[0], function (key, value) {
-    if (key != 'Aandoening') {
-      rows += '<tr><td>' + key + '</td><td class="right">' + value + '</td></tr>';
-    }
-  });
-  // console.log(rows);
-  $('div.info-table').html('<table>' + caption + rows + '</table>');
+  $('div.info-table').html('<table><caption>' + strCaption + '</caption>' + rows + '</table>');
 }
 
 // ref: http://stackoverflow.com/a/1293163/2343
