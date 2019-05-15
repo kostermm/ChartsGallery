@@ -1,35 +1,44 @@
-<div class="wrapper">
-  <h2>Top 10 sterfte oorzaken 2016</h2>
+<div class="ranglijst chart-wrapper">
+  <div class="ranglijst chart-container" id="ranglijst_female">&nbsp;</div>
+  <div class="ranglijst chart-container" id="ranglijst_male">&nbsp;</div>
 
-  <div class="chart-container ranglijst" id="ranglijst_female">&nbsp;</div>
-  <div class="chart-container ranglijst" id="ranglijst_male">&nbsp;</div>
+  <div class="ranglijst info-table"></div>
 </div>
 
-<div class="info-table">
-  <table>
-    <tr>
-      <td>1e cel </td>
-    </tr>
-  </table>
+
 </div>
+
 
 <style type="text/css">
-  div.ranglijst.chart-container {
-    width: 40%;
-    display: inline-block;
-  }
-
-  div.info-table {
+  div.ranglijst .wrapper {
     float: left;
-    margin-top: 3em;
-    margin-left: 2em;
+    margin-bottom: 4em;
   }
 
-  div.info-table table td {
+  div.ranglijst .chart-container {
+    display: inline-block;
+    width: 32%;
+  }
+
+  div.ranglijst .info-table {
+    float: right;
+    margin: 3em 2em;
+  }
+
+  div.ranglijst .info-table table {
+    border-collapse: collapse;
+  }
+
+  div.ranglijst .info-table table caption {
+    padding-bottom: .5em;
+  }
+
+  div.ranglijst .info-table table td {
     padding: 2px 5px;
+    border: 1px solid silver;
   }
 
-  div.info-table table td.right {
+  div.ranglijst .info-table table td.right {
     text-align: right;
     width: 3em;
   }

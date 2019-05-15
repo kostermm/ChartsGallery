@@ -280,6 +280,7 @@ function showInfoTable(aandoening) {
   }
   renderTable(aandoening);
 }
+
 /*
   0: (7) ["Aandoening", "Incidentie", "Doodsoorzaken", "Verloren levensjaren", "verlies van gezonde levensjaren", "ziektelast", "zorgkosten"]
 1: (7) ["Longkanker", "1", "1", "4", "2", "9", "1"]

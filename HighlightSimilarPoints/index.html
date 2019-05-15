@@ -10,49 +10,57 @@
     body {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
-    divX {
-      border: 1px red solid;
-    }
-    div.wrapper {
-      text-align: center;
-      float:left;
+
+    div.ranglijst .wrapper {
+      float: left;
       margin-bottom: 4em;
     }
-    div.wrapper h2 {
-      margin-bottom: 0;
-    }
-    div.chart-container {
+
+    div.ranglijst .chart-container {
       display: inline-block;
+      width: 32%;
     }
-    div.info-table {
-      float: left;
-      margin-top: 3em;
-      margin-left: 2em;
+
+    div.ranglijst .info-table {
+      float: right;
+      margin: 3em 2em;
     }
-    div.info-table table td {
+
+    div.ranglijst .info-table table {
+      border-collapse: collapse;
+    }
+
+    div.ranglijst .info-table table caption {
+      padding-bottom: .5em;
+    }
+
+    div.ranglijst .info-table table td {
       padding: 2px 5px;
+      border: 1px solid silver;
     }
-    div.info-table table td.right {
+
+    div.ranglijst .info-table table td.right {
       text-align: right;
       width: 3em;
     }
   </style>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/highcharts/highcharts.src.js"></script>
   <script src="js/highcharts/modules/exporting.js"></script>
   <script src="js/highcharts/modules/export-csv.js"></script>
-  
-  
+
+
   <!-- Ranglijsten theme & script -->
-  <script type="text/javascript" src="js/chart-functions.js?201811211026"></script>
-  <script src="js/themes/sdv_highchartstheme.js?201811211026"></script>
+  <script type="text/javascript" src="js/chart-functions.js?20190215"></script>
+  <script src="js/themes/sdv_highchartstheme.js?20190215"></script>
 </head>
 
 <body>
   <h1>Demo met highlighten overeenklomstige data punten</h1>
-  <p>Op <a href="https://www.volksgezondheidenzorg.info/ranglijst/ranglijst-ziekten-op-basis-van-sterfte/geslacht">VZinfo.nl</a>
+  <p>Op <a
+      href="https://www.volksgezondheidenzorg.info/ranglijst/ranglijst-ziekten-op-basis-van-sterfte/geslacht">VZinfo.nl</a>
     staan ranglijsten in tabel vorm met bijvoorbeeld sterfte cijfers van mannen en vrouwen.
     Er is een wens om die tabellen ook te visualiseren door in een grafiek met data punten voor beide geslachten de
     overeenkomstige data punten
@@ -76,22 +84,17 @@
       }
     </pre>
 
-  <div class="wrapper">
-    <h2>Top 10 sterfte oorzaken 2016</h2>
-    <div id="ranglijst_female" class="chart-container ranglijst"></div>
-    <div id="ranglijst_male" class="chart-container ranglijst"></div>
-  </div>
-  <div class="info-table"></div>
+  <h2>Top 10 sterfte oorzaken 2016</h2>
 
-  <!-- Chart configs - script with json source is not loaded automically? -->
-  <!-- <script type="application/json" src="chart-config/Ranglijst-Sterfte-female.json" data-for="htmlwidget-female"></script>
-  <script type="application/json" src="chart-config/Ranglijst-Sterfte-male.json" data-for="htmlwidget-male"></script> -->
+  <div class="ranglijst wrapper">
+    <div id="ranglijst_female" class="chart-container"></div>
+    <div id="ranglijst_male" class="chart-container"></div>
+    <div class="info-table"></div>
+  </div>
 
   <script type="text/javascript">
     // Call render functions to render chars for all containers
     renderCharts();
-
-    
   </script>
 </body>
 
