@@ -36,10 +36,32 @@
   div.ranglijst .info-table table td {
     padding: 2px 5px;
     border: 1px solid silver;
+    position: relative;
   }
 
   div.ranglijst .info-table table td.right {
     text-align: right;
     width: 3em;
+    display: none;
+  }
+
+  div.ranglijst .info-table table td.slider {
+    width: 6em;
+  }
+
+  div.ranglijst .circle {
+    border: 2px solid blue;
+    height: .5em;
+    width: .5em;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -1em;
+    margin-top: 10%;
+    top: 0;
+  }
+
+  div.ranglijst hr {
+    color: red;
   }
 </style>

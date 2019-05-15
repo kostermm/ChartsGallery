@@ -352,7 +352,7 @@ function renderTable(aandoening) {
     strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>'
     // Loop ranking of selected aandoening
     $.each(rankInLists[0].slice(1), function (index, value) {
-      rows += '<tr><td>' + indicators[index] + '</td><td class="right">' + value + '</td></tr>';
+      rows += '<tr title="' + value + '"><td>' + indicators[index] + '</td><td class="right">' + value + '</td><td class="slider"><hr /><span class="circle" style="left:' + value + '0%"></span></td></tr>';
     });
   } else {
     strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>: Geen data gevonden';
