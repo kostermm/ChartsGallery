@@ -40,9 +40,9 @@
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
-  <script src="js/highcharts/highcharts.js"></script>
+  <script src="js/highcharts/highcharts.src.js"></script>
   <script src="js/highcharts/modules/exporting.js"></script>
-  <script src="js/highcharts/modules/export-data.js"></script>
+  <script src="js/highcharts/modules/export-csv.js"></script>
   
   <!-- papaparse -->
   <script src="js/papaparse/papaparse.min.js"></script>
@@ -80,14 +80,14 @@
 
   <div class="wrapper">
     <h2>Top 10 sterfte oorzaken 2016</h2>
-    <div id="htmlwidget-female" class="chart-container"></div>
-    <div id="htmlwidget-male" class="chart-container"></div>
+    <div id="ranglijst_female" class="chart-container ranglijst"></div>
+    <div id="ranglijst_male" class="chart-container ranglijst"></div>
   </div>
   <div class="info-table"></div>
 
   <!-- Chart configs - script with json source is not loaded automically? -->
-  <script type="application/json" src="chart-config/Ranglijst-Sterfte-female.json" data-for="htmlwidget-female"></script>
-  <script type="application/json" src="chart-config/Ranglijst-Sterfte-male.json" data-for="htmlwidget-male"></script>
+  <!-- <script type="application/json" src="chart-config/Ranglijst-Sterfte-female.json" data-for="htmlwidget-female"></script>
+  <script type="application/json" src="chart-config/Ranglijst-Sterfte-male.json" data-for="htmlwidget-male"></script> -->
 
   <script type="text/javascript">
     // Call render functions to render chars for all containers
