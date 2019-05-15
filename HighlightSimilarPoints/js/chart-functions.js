@@ -1,25 +1,20 @@
 var aandoeningRanglijsten = [], aandoeningFilter = {};
 
 var chartConfig = {
-  "ranglijst_male": {
+  "general":
+  {
     "chart": {
       "type": "bar",
-      "renderTo": "ranglijst_male"
     },
     "colors": [
       "rgba(0,80,149,0.4)"
     ],
-    "title": {
-      "text": "mannen"
-    },
     "xAxis": {
       "visible": true,
       "categories": [],
       "lineWidth": 0,
       "labels": {
-        "x": -5,
-        "align": "center",
-        "step": 1
+        "enabled": false,
       },
       "reversed": true
     },
@@ -30,8 +25,6 @@ var chartConfig = {
       },
       "labels": {},
       "allowDecimals": false,
-      "min": 0,
-      "max": 15000,
       "tickInterval": 2000
     },
     "tooltip": {},
@@ -45,8 +38,39 @@ var chartConfig = {
         "grouping": false
       },
       "series": {
+        "pointPadding": 0.05,
         "dataLabels": {
-          "enabled": true,
+          "enabled": true
+        },
+        "point": {
+          "events": {
+            "mouseOver": syncHighlight,
+            "mouseOut": syncHighlight,
+            "click": function (event) {
+              showInfoTable(this.name);
+            }
+          }
+        }
+      }
+    }
+  },
+
+  // ***** male *****
+  "ranglijst_male": {
+    "chart": {
+      "renderTo": "ranglijst_male"
+    },
+    "title": {
+      "text": "mannen"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 15000,
+    },
+
+    "plotOptions": {
+      "series": {
+        "dataLabels": {
           "align": "left"
         }
       }
@@ -96,66 +120,26 @@ var chartConfig = {
             "y": 1623,
             "name": "Accidentele val"
           }
-        ],
-        "pointPadding": 0.05,
-        "showInLegend": true,
-        point: {
-          events: {
-            mouseOver: syncHighlight,
-            mouseOut: syncHighlight,
-            click: function (event) { 
-              showInfoTable(this.name); 
-            }
-          }
-        },
+        ]
       }
     ]
   },
+
+  // ***** female *****
   "ranglijst_female": {
     "chart": {
-      "type": "bar",
       "renderTo": "ranglijst_female"
     },
-    "colors": [
-      "rgba(0,80,149,0.4)"
-    ],
     "title": {
       "text": "vrouwen"
     },
-    "xAxis": {
-      "visible": true,
-      "opposite": true,
-      "categories": [],
-      "labels": {
-        "enabled": false,
-        "step": 1
-      },
-      "reversed": true
-    },
     "yAxis": {
-      "opposite": true,
-      "title": {
-        "text": "Aantal sterfgevallen"
-      },
-      "labels": {},
-      "allowDecimals": false,
       "min": -15000,
       "max": 0,
-      "tickInterval": 2000
-    },
-    "tooltip": {},
-    "legend": {
-      "enabled": false
     },
     "plotOptions": {
-      "bar": {
-        "groupPadding": 0,
-        "borderWidth": 0.5,
-        "grouping": false
-      },
       "series": {
         "dataLabels": {
-          "enabled": true,
           "align": "right"
         }
       }
@@ -205,18 +189,7 @@ var chartConfig = {
             "y": -2085,
             "name": "Infecties van de onderste luchtwegen"
           }
-        ],
-        "pointPadding": 0.05,
-        "showInLegend": true,
-        point: {
-          events: {
-            mouseOver: syncHighlight,
-            mouseOut: syncHighlight,
-            click: function (event) { 
-              showInfoTable(this.name); 
-            }
-          }
-        },
+        ]
       }
     ],
     "exporting": {
@@ -250,7 +223,7 @@ function syncHighlight(event) {
   // console.log(eventType + ' chart: ' + chartIndex + ' series: ' + seriesIndex + ' point: ' + pointIndex);
 
   // Highlight points in all series with same 'name'
-  $.each(Highcharts.charts, function (index,  chart) {
+  $.each(Highcharts.charts, function (index, chart) {
     $.each(chart.series, function () {
       $.each(this.data, function () {
         if (this.name == point.name || eventType == 'mouseOut') {
@@ -275,27 +248,28 @@ function renderCharts() {
     var id = $(this).attr('id');
 
     console.log('div' + index + ':' + id);
-    
+
+    $.extend(true, chartConfig[id], chartConfig['general']);
     var chart = new Highcharts.Chart(chartConfig[id]);
 
   });
 }
 
-function showInfoTable(aandoening){
-  if(aandoeningRanglijsten.length == 0) {
+function showInfoTable(aandoening) {
+  if (aandoeningRanglijsten.length == 0) {
 
     // jQuery.ajaxSetup({async:true});
 
     Papa.parse("data/AandoeningenEnRanglijsten.csv", {
-        download: true,
-        header: true,
-        complete: function (results) {
-          aandoeningRanglijsten = results.data;
+      download: true,
+      header: true,
+      complete: function (results) {
+        aandoeningRanglijsten = results.data;
 
-          renderTable(aandoening);
-          // jQuery.ajaxSetup({async:false});
-        }
-      });
+        renderTable(aandoening);
+        // jQuery.ajaxSetup({async:false});
+      }
+    });
   } else {
     renderTable(aandoening);
   }
@@ -307,7 +281,7 @@ function renderTable(aandoening) {
     val: aandoening || 'Dementie'
   }
 
-  var rankInLists = aandoeningRanglijsten.filter(function(item, index, filter){
+  var rankInLists = aandoeningRanglijsten.filter(function (item, index, filter) {
     if (item[aandoeningFilter.prop] == aandoeningFilter.val) {
       return true;
     } else {
@@ -317,8 +291,8 @@ function renderTable(aandoening) {
   var rows = '', caption = '<caption>Positie in alle ranglijsten <br/>Aandoening: <strong> ' + rankInLists[0].Aandoening + '</strong></caption>';
 
 
-  $.each(rankInLists[0], function(key, value){
-    if(key != 'Aandoening'){
+  $.each(rankInLists[0], function (key, value) {
+    if (key != 'Aandoening') {
       rows += '<tr><td>' + key + '</td><td class="right">' + value + '</td></tr>';
     }
   });
