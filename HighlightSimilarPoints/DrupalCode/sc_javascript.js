@@ -1,5 +1,3 @@
-// highchartstheme.js
-
 // Function for synchronized highlighting of data points with equal property
 function syncHighlight(event) {
   eventType = event.type;
@@ -352,13 +350,26 @@ function renderTable(aandoening) {
     strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>'
     // Loop ranking of selected aandoening
     $.each(rankInLists[0].slice(1), function (index, value) {
-      rows += '<tr title="' + value + '"><td>' + indicators[index] + '</td><td class="right">' + value + '</td><td class="slider"><hr /><span class="circle" style="left:' + value + '0%"></span></td></tr>';
+      rows += '<tr title="' + value + '"><td>' + indicators[index] +
+        '</td><td class="slider">' + renderSlider(value) + '</td></tr>';
     });
   } else {
     strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>: Geen data gevonden';
   }
 
   $('div.info-table').html('<table><caption>' + strCaption + '</caption>' + rows + '</table>');
+}
+
+// Render SVG slider
+function renderSlider(value) {
+  var height = 20, length = 100, svgWidth = length + 5 + (height / 3);
+  var strSVG = '<svg width="' + svgWidth + '" height="' + height + '">' +
+    '<line id="e1_line" x1="0" y1="' + height / 2 + '" x2="' + length + '" y2="' + height / 2 + '" style="stroke:black;fill:none;stroke-width:1px;"/>' +
+    '<circle id="e2_circle" cx="' + value * (length / 10) + '" cy="' + height / 2 +
+    '" style="fill:none;stroke:green;stroke-width:4px;" r="' + height / 3 + '"/>' +
+    '</svg>';
+
+  return strSVG;
 }
 
 // ref: http://stackoverflow.com/a/1293163/2343
