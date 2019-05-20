@@ -1,7 +1,7 @@
 var vzinfo = {
   aandoeningRanglijsten: [],
   aandoeningFilter: {},
-  strInfoTable:  "Aandoening;Incidentie;Doodsoorzaken;Verloren levensjaren;verlies van gezonde levensjaren;ziektelast;zorgkosten\nLongkanker;1;1;4;2;9;1\nDementie;8;2;6;5;4;2\nCoronaire hartziekten;6;7;2;10;8;3\nBeroerte;7;6;10;8;7;7\nCOPD;4;8;1;7;2;9\nHartfalen;9;9;5;9;6;5\nProstaatkanker;3;10;3;6;5;6\nDikkedarmkanker;5;5;7;3;10;4\nInfecties van de onderste luchtwegen;2;4;8;4;1;8\nAccidentele val;10;3;9;1;3;10",
+  strInfoTable: "Aandoening;Incidentie;Doodsoorzaken;Verloren levensjaren;verlies van gezonde levensjaren;ziektelast;zorgkosten\nLongkanker;1;1;4;2;9;1\nDementie;8;2;6;5;4;2\nCoronaire hartziekten;6;7;2;10;8;3\nBeroerte;7;6;10;8;7;7\nCOPD;4;8;1;7;2;9\nHartfalen;9;9;5;9;6;5\nProstaatkanker;3;10;3;6;5;6\nDikkedarmkanker;5;5;7;3;10;4\nInfecties van de onderste luchtwegen;2;4;8;4;1;8\nAccidentele val;10;3;9;1;3;10",
 
   chartConfig: {
     "general":
@@ -74,7 +74,7 @@ var vzinfo = {
         }
       }
     },
-  
+
     // ***** male *****
     "ranglijst_male": {
       "chart": {
@@ -87,7 +87,7 @@ var vzinfo = {
         "min": 0,
         "max": 14000,
       },
-  
+
       "plotOptions": {
         "series": {
           "dataLabels": {
@@ -144,7 +144,7 @@ var vzinfo = {
         }
       ]
     },
-  
+
     // ***** female *****
     "ranglijst_female": {
       "chart": {
@@ -314,7 +314,9 @@ var vzinfo = {
       // Loop ranking of selected aandoening
       $.each(rankInLists[0].slice(1), function (index, value) {
         rows += '<tr title="' + value + '"><td>' + indicators[index] +
-          '</td><td class="slider">' + vzinfo.renderSlider(value) + '</td></tr>';
+          '</td><td class="number">' + value +
+          // '</td><td class="slider">' + vzinfo.renderSlider(value) +
+          '</td></tr>';
       });
     } else {
       strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>: Geen data gevonden';
@@ -426,7 +428,7 @@ var vzinfo = {
   |   Properties: name, chart, chartOptions, dataSet, series
   |   Methods:    getData, createChart
   */
- Chart: function (chart, dataSet) {
+  Chart: function (chart, dataSet) {
     this.name = chart.name;
     this.type = chart.type || 'chart';
     this.chartOptions = chart.options;
