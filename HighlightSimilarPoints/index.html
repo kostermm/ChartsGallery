@@ -50,7 +50,6 @@
     div.ranglijst .info-table table td.slider {
       padding-left: .5em;
     }
-
   </style>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -94,7 +93,19 @@
 
   <h2>Top 10 sterfte oorzaken 2016</h2>
 
+  <div class="ranglijst indicator">
+    <label for="indicator">Kies een indicator</label>
+    <select id="indicator">
+      <option>Incidentie</option>
+      <option>Doodsoorzaken</option>
+      <option>Verloren levensjaren</option>
+      <option>Verlies van gezonde levensjaren</option>
+      <option>Ziektelast</option>
+      <option>Zorgkosten</option>
+    </select>
+  </div>
   <div class="ranglijst wrapper">
+
     <div id="ranglijst_female" class="chart-container"></div>
     <div id="ranglijst_male" class="chart-container"></div>
     <div class="info-table"></div>
