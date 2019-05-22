@@ -178,17 +178,19 @@ $.extend(true, vzinfo, {
 
     // Highlight points in all series with same 'name'
     $.each(Highcharts.charts, function (index, chart) {
-      $.each(chart.series, function () {
-        $.each(this.data, function () {
-          if (this.name == point.name || eventType == 'mouseOut') {
-            if (eventType == 'mouseOut') highlightColor = undefined;   //this.series.color;
-            highlightStyle = { color: highlightColor };
-            this.update(highlightStyle, true, false);
-          } else {
-            // this.update({color: 'lightgray'}, true, false);
-          }
+      if (chart != undefined) {
+        $.each(chart.series, function () {
+          $.each(this.data, function () {
+            if (this.name == point.name || eventType == 'mouseOut') {
+              if (eventType == 'mouseOut') highlightColor = undefined;   //this.series.color;
+              highlightStyle = { color: highlightColor };
+              this.update(highlightStyle, true, false);
+            } else {
+              // this.update({color: 'lightgray'}, true, false);
+            }
+          })
         })
-      })
+      }
     })
 
   },
@@ -211,11 +213,13 @@ $.extend(true, vzinfo, {
       options: vzinfo.chartConfig.ranglijst_vrouwen
     }
   },
-  renderCharts: function () {
+  renderCharts: function (indicator) {
     /* Rendering all R Charts by looping all htmlwidget containers, 
     |  find correspondig R-config object (script.json) and render chart 
     
     */
+    vzinfo.paramIndicator = indicator || $('#ranglijst_indicator').val();
+
     $('div.ranglijst .chart-container').each(function (index, value) {
       var id = $(this).attr('id').replace('ranglijst_', ''),
         thisChart = vzinfo.charts[id];
@@ -381,7 +385,7 @@ $.extend(true, vzinfo, {
 
   /* Chart object definition
   |   Params: dataSet, chart
-  |   Properties: name, chart, chartOptions, dataSet, series
+  |   Properties: name, chart, chartOptions, dataSet
   |   Methods:    getData, createChart
   */
   Chart: function (chart, dataSet, filter) {
@@ -390,25 +394,12 @@ $.extend(true, vzinfo, {
     this.chartOptions.chart.renderTo = chart.options.chart.renderTo || this.name; // Use chart name if renderTo not set
     this.dataSet = dataSet || vzinfo.dataSets[this.name]; // Use chart name for dataset if dataset undefined
 
-    // console.log('Chart.init - renderTo:', this.chartOptions.chart.renderTo, ' using dataset', this.dataSet.name);
+    console.log('Chart.init - renderTo:', this.chartOptions.chart.renderTo, ' using dataset', this.dataSet.name);
 
     // Get data from dataSet config to load data array
-    /*
-      "series": [
-        {
-          "id": "Mannen",
-          "name": "mannen",
-          "data": [
-            {
-              "y": 6134,
-              "name": "Longkanker"
-            },
-
-    */
     this.getData = function () {
       var chart = this, ds = chart.dataSet,
-        chartOptions = chart.chartOptions, data,
-        Indicator = 'Doodsoorzaken';
+        chartOptions = chart.chartOptions, data;
 
       var series = { name: chart.name, data: [] };
       var columns = {
@@ -416,8 +407,9 @@ $.extend(true, vzinfo, {
         category: 'Aandoening',
         value: 'Aantal',
         rank: 'Positie',
+        indicator: 'Indicator',
         filter: function (item, index, filter) {
-          return (item.Indicator == Indicator) && (item['Geslacht'].toLowerCase() == chart.name);
+          return (item.Indicator == vzinfo.paramIndicator) && (item['Geslacht'].toLowerCase() == chart.name);
         }
       }
       // Filter column
@@ -430,7 +422,8 @@ $.extend(true, vzinfo, {
         series.data.push({
           name: item[columns.category],
           y: chart.name == 'vrouwen' ? - item[columns.value] : item[columns.value],
-          rank: item[columns.rank]
+          rank: item[columns.rank],
+          indicator: item[columns.indicator]
         });
       });
 

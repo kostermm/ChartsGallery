@@ -24,7 +24,7 @@ colorPalettes = {
   //color palettes supercharts
   categorien: ['#42145f', '#ffb612', '#a90061', '#777c00', '#007bc7', '#673327', '#e17000', '#39870c', '#94710a', '#01689b', '#f9e11e', '#76d2b6', '#d52b1e', '#8fcae7', '#ca005d', '#275937', '#f092cd'],
   // 1)paars, 2)donkergeel, 3)robijnrood, 4)mosgroen, 5)hemelblauw, 6)donkerbruin, 7)oranje, 8)groen, 9)bruin, 10)donkerblauw, 11)geel, 12)mintgroen, 13)rood, 14)lichtblauw, 15violet), 16)donkergroen, 17)roze
- };
+};
 
 // Specific theming for supercharts
 Highcharts.galleryTheme = {
@@ -290,24 +290,24 @@ Highcharts.galleryTheme = {
         afterDrawDataLabels: function (event) {
           var chartIndex = this.chart.index;
           var dataLabels = this.dataLabelsGroup.element.childNodes;
-          $.each(dataLabels, function(index, item) {
+          $.each(dataLabels, function (index, item) {
             itemWidth = $(item)[0].getBBox().width;
             attrTransform = $(item).attr('transform');
-            attrTransform = 'translate(' + (chartIndex * (370  - itemWidth)) + attrTransform.substr(attrTransform.indexOf(','));
+            attrTransform = 'translate(' + (chartIndex * (370 - itemWidth)) + attrTransform.substr(attrTransform.indexOf(','));
             $(item).attr('transform', attrTransform)
           });
         }
 
       },
-      point: {
-        events: {
-          mouseOver: syncHighlight,
-          mouseOut: syncHighlight,
-          click: function (event) { 
-            showInfoTable(this.name); 
-          }
-        }
-      },
+      // point: {
+      //   events: {
+      //     mouseOver: syncHighlight,
+      //     mouseOut: syncHighlight,
+      //     click: function (event) { 
+      //       showInfoTable(this.name); 
+      //     }
+      //   }
+      // },
       stickyTracking: false,
       // states: {
       // 	hover: {
@@ -396,18 +396,20 @@ function syncHighlight(event) {
   // console.log(eventType + ' chart: ' + chartIndex + ' series: ' + seriesIndex + ' point: ' + pointIndex);
 
   // Highlight points in all series with same 'name'
-  $.each(Highcharts.charts, function (index,  chart) {
-    $.each(chart.series, function () {
-      $.each(this.data, function () {
-        if (this.name == point.name || eventType == 'mouseOut') {
-          if (eventType == 'mouseOut') highlightColor = undefined;   //this.series.color;
-          highlightStyle = { color: highlightColor };
-          this.update(highlightStyle, true, false);
-        } else {
-          // this.update({color: 'lightgray'}, true, false);
-        }
+  $.each(Highcharts.charts, function (index, chart) {
+    if (chart != undefined) {
+      $.each(chart.series, function () {
+        $.each(this.data, function () {
+          if (this.name == point.name || eventType == 'mouseOut') {
+            if (eventType == 'mouseOut') highlightColor = undefined;   //this.series.color;
+            highlightStyle = { color: highlightColor };
+            this.update(highlightStyle, true, false);
+          } else {
+            // this.update({color: 'lightgray'}, true, false);
+          }
+        })
       })
-    })
+    }
   })
 
 }

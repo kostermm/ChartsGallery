@@ -94,8 +94,8 @@
   <h2>Top 10 sterfte oorzaken 2016</h2>
 
   <div class="ranglijst indicator">
-    <label for="indicator">Kies een indicator</label>
-    <select id="indicator">
+    <label for="ranglijst_indicator">Kies een indicator</label>
+    <select id="ranglijst_indicator">
       <option>Incidentie</option>
       <option>Doodsoorzaken</option>
       <option>Verloren levensjaren</option>
@@ -112,6 +112,11 @@
   </div>
 
   <script type="text/javascript">
+    $('.ranglijst.indicator select').change(function(){
+      console.log('Selected indicator:', this.value);
+      vzinfo.renderCharts();
+    })
+    
     // Call render functions to render chars for all containers
     vzinfo.renderCharts();
   </script>
