@@ -1,128 +1,12 @@
 var vzinfo = {
+  rhs_kleuren: {
+    base: '#01689b',
+    lighter: '#cce0f1',
+    lightest: '#e5f0f9'
+  },
   aandoeningRanglijsten: [],
   aandoeningFilter: {},
   strInfoTable: "Aandoening;Incidentie;Doodsoorzaken;Verloren levensjaren;verlies van gezonde levensjaren;ziektelast;zorgkosten\nLongkanker;1;1;4;2;9;1\nDementie;8;2;6;5;4;2\nCoronaire hartziekten;6;7;2;10;8;3\nBeroerte;7;6;10;8;7;7\nCOPD;4;8;1;7;2;9\nHartfalen;9;9;5;9;6;5\nProstaatkanker;3;10;3;6;5;6\nDikkedarmkanker;5;5;7;3;10;4\nInfecties van de onderste luchtwegen;2;4;8;4;1;8\nAccidentele val;10;3;9;1;3;10",
-
-  chartConfig: {
-    "ranglijst_basis":
-    {
-      "chart": {
-        "type": "bar",
-      },
-      "colors": [
-        "rgba(0,80,149,0.4)"
-      ],
-      "xAxis": {
-        "visible": true,
-        "categories": [],
-        "lineWidth": 0,
-        "tickLength": 0,
-        "labels": {
-          "enabled": false,
-        },
-        "reversed": true
-      },
-      "yAxis": {
-        "opposite": true,
-        "title": {
-          "text": "Aantal sterfgevallen"
-        },
-        "labels": {
-          "align": "center",
-          "formatter": function () { return Highcharts.numberFormat(Math.abs(this.value), 0); }
-        },
-        "allowDecimals": false,
-        "tickInterval": 2000
-      },
-      "tooltip": {
-        formatter: function () {
-          return '<strong><large>' + this.point.name + '</large></strong>'
-            + '<br>Aantal: ' + Highcharts.numberFormat(Math.abs(this.y), 0)
-            + (this.point.rank != undefined ? '<br>Positie: ' + this.point.rank : '');
-        }
-      },
-      "legend": {
-        "enabled": false
-      },
-      "credits": {
-        "enabled": false
-      },
-      "plotOptions": {
-        "bar": {
-          "groupPadding": 0,
-          "borderWidth": 0.5,
-          "grouping": false
-        },
-        "series": {
-          "pointPadding": 0.05,
-          "dataLabels": {
-            "enabled": true,
-            "formatter": function () {
-              return this.point.name; // + ': ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
-            }
-          },
-          "animation": {
-            "duration": 500
-          },
-          "point": {
-            "events": {
-              "mouseOver": this.syncHighlight,
-              "mouseOut": this.syncHighlight,
-              "click": function (event) {
-                vzinfo.showInfoTable(this.name);
-              }
-            }
-          }
-        }
-      }
-    },
-
-    // ***** male *****
-    "ranglijst_mannen": {
-      "chart": {
-        "renderTo": "ranglijst_mannen"
-      },
-      "title": {
-        "text": "mannen"
-      },
-      "yAxis": {
-        "min": 0,
-        "max": 14000,
-      },
-
-      "plotOptions": {
-        "series": {
-          "dataLabels": {
-            "align": "left"
-          }
-        }
-      }
-    },
-
-    // ***** female *****
-    "ranglijst_vrouwen": {
-      "chart": {
-        "renderTo": "ranglijst_vrouwen"
-      },
-      "title": {
-        "text": "vrouwen"
-      },
-      "yAxis": {
-        "min": -14000,
-        "max": 0,
-      },
-      "plotOptions": {
-        "series": {
-          "dataLabels": {
-            "align": "right"
-          }
-        }
-      },
-      "exporting": {
-        "enabled": true
-      }
-    }
-  },
   dataSets: {
     geslacht: {
     },
@@ -132,6 +16,139 @@ var vzinfo = {
   },
 
 }
+vzinfo.chartConfig = {
+  "ranglijst_basis":
+  {
+    "chart": {
+      "type": "bar",
+      "height": null
+    },
+    "colors": [
+      "white"
+      // "rgba(0,80,149,0.4)"
+    ],
+    "xAxis": {
+      "visible": true,
+      "categories": [],
+      "lineWidth": 0,
+      "tickLength": 0,
+      "labels": {
+        "enabled": false,
+      },
+      "reversed": true
+    },
+    "yAxis": {
+      "opposite": true,
+      "title": {
+        "text": "Aantal sterfgevallen"
+      },
+      "labels": {
+        "align": "center",
+        "formatter": function () { return Highcharts.numberFormat(Math.abs(this.value), 0); }
+      },
+      "allowDecimals": false,
+      "tickInterval": 2000
+    },
+    "tooltip": {
+      formatter: function () {
+        return '<strong><large>' + this.point.name + '</large></strong>'
+          + '<br>Aantal: ' + Highcharts.numberFormat(Math.abs(this.y), 0)
+          + (this.point.rank != undefined ? '<br>Positie: ' + this.point.rank : '')
+          + '<br>Indicator: ' + this.point.indicator;
+      }
+    },
+    "legend": {
+      "enabled": false
+    },
+    "credits": {
+      "enabled": false
+    },
+    "plotOptions": {
+      "bar": {
+        "borderColor": vzinfo.rhs_kleuren.base,
+        "pointWidth": 20,
+        "pointPadding": 0,
+        "groupPadding": 0,
+        "borderWidth": 2,
+        "grouping": false
+      },
+      "series": {
+        "pointPadding": 0.05,
+        "dataLabels": {
+          "enabled": true,
+          "style": {
+            "fontSize": "13px",
+          },
+          "formatter": function () {
+            return this.point.name; // + ': ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+          }
+        },
+        "animation": {
+          "duration": 500
+        },
+        "point": {
+          "events": {
+            "mouseOver": function (event) {
+              vzinfo.syncHighlight(event);
+            },
+            "mouseOut": function (event) {
+              vzinfo.syncHighlight(event);
+            },
+            "click": function (event) {
+              vzinfo.showInfoTable(this.name);
+            }
+          }
+        }
+      }
+    }
+  },
+
+  // ***** male *****
+  "ranglijst_mannen": {
+    "chart": {
+      "renderTo": "ranglijst_mannen"
+    },
+    "title": {
+      "text": "mannen"
+    },
+    "yAxis": {
+      "min": 0,
+      "max": 14000,
+    },
+
+    "plotOptions": {
+      "series": {
+        "dataLabels": {
+          "align": "left"
+        }
+      }
+    }
+  },
+
+  // ***** female *****
+  "ranglijst_vrouwen": {
+    "chart": {
+      "renderTo": "ranglijst_vrouwen"
+    },
+    "title": {
+      "text": "vrouwen"
+    },
+    "yAxis": {
+      "min": -14000,
+      "max": 0,
+    },
+    "plotOptions": {
+      "series": {
+        "dataLabels": {
+          "align": "right"
+        }
+      }
+    },
+    "exporting": {
+      "enabled": true
+    }
+  }
+};
 
 // Methods
 $.extend(true, vzinfo, {
