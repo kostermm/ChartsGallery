@@ -4,9 +4,10 @@ var vzinfo = {
     lighter: '#cce0f1',
     lightest: '#e5f0f9'
   },
+  indicators: ['Incidentie', 'Doodsoorzaken', 'Verloren levensjaren', 'Verlies van gezonde levensjaren', 'Ziektelast', 'Zorgkosten'],
   aandoeningRanglijsten: [],
   aandoeningFilter: {},
-  strInfoTable: "Aandoening;Incidentie;Doodsoorzaken;Verloren levensjaren;verlies van gezonde levensjaren;ziektelast;zorgkosten\nLongkanker;1;1;4;2;9;1\nDementie;8;2;6;5;4;2\nCoronaire hartziekten;6;7;2;10;8;3\nBeroerte;7;6;10;8;7;7\nCOPD;4;8;1;7;2;9\nHartfalen;9;9;5;9;6;5\nProstaatkanker;3;10;3;6;5;6\nDikkedarmkanker;5;5;7;3;10;4\nInfecties van de onderste luchtwegen;2;4;8;4;1;8\nAccidentele val;10;3;9;1;3;10",
+  strInfoTable: 'Aandoening;Incidentie;Doodsoorzaken;Verloren levensjaren;verlies van gezonde levensjaren;ziektelast;zorgkosten\nLongkanker;1;1;4;2;9;1\nDementie;8;2;6;5;4;2\nCoronaire hartziekten;6;7;2;10;8;3\nBeroerte;7;6;10;8;7;7\nCOPD;4;8;1;7;2;9\nHartfalen;9;9;5;9;6;5\nProstaatkanker;3;10;3;6;5;6\nDikkedarmkanker;5;5;7;3;10;4\nInfecties van de onderste luchtwegen;2;4;8;4;1;8\nAccidentele val;10;3;9;1;3;10',
   dataSets: {
     geslacht: {
     },
@@ -95,7 +96,7 @@ vzinfo.chartConfig = {
               vzinfo.syncHighlight(event);
             },
             "click": function (event) {
-              vzinfo.showInfoTable(this.name);
+              vzinfo.showInfoTable(this);
             }
           }
         }
@@ -213,6 +214,20 @@ $.extend(true, vzinfo, {
       options: vzinfo.chartConfig.ranglijst_vrouwen
     }
   },
+
+  init: function() {
+    $('.ranglijst.indicator select').change(function(){
+      // Clear info table
+      $('div.info-table').html('');
+
+      console.log('Selected indicator:', this.value);
+      vzinfo.renderCharts();
+    })
+    
+    // Call render functions to render chars for all containers
+    vzinfo.renderCharts();
+  },
+
   renderCharts: function (indicator) {
     /* Rendering all R Charts by looping all htmlwidget containers, 
     |  find correspondig R-config object (script.json) and render chart 
@@ -235,54 +250,70 @@ $.extend(true, vzinfo, {
     });
   },
 
-  showInfoTable: function (aandoening) {
+  showInfoTable: function (point) {
+    var aandoening = point.name,
+      selectedChart = vzinfo.charts[point.series.name],
+      dataSet = vzinfo.dataSets[selectedChart.datasetName];
+
     if (vzinfo.aandoeningRanglijsten.length == 0) {
-      vzinfo.aandoeningRanglijsten = this.CSVToArray(vzinfo.strInfoTable, ';');
+      console.log('Infotable - ', aandoening, selectedChart)
+
+      // vzinfo.aandoeningRanglijsten = this.CSVToArray(vzinfo.strInfoTable, ';');
     }
-    this.renderTable(aandoening);
+    this.renderTable(aandoening, dataSet.data);
   },
 
   /*
-  0: (7) ["Aandoening", "Incidentie", "Doodsoorzaken", "Verloren levensjaren", "verlies van gezonde levensjaren", "ziektelast", "zorgkosten"]
-1: (7) ["Longkanker", "1", "1", "4", "2", "9", "1"]
-2: (7) ["Dementie", "8", "2", "6", "5", "4", "2"]
-3: (7) ["Coronaire hartziekten", "6", "7", "2", "10", "8", "3"]
-4: (7) ["Beroerte", "7", "6", "10", "8", "7", "7"]
-5: (7) ["COPD", "4", "8", "1", "7", "2", "9"]
-6: (7) ["Hartfalen", "9", "9", "5", "9", "6", "5"]
-7: (7) ["Prostaatkanker", "3", "10", "3", "6", "5", "6"]
-8: (7) ["Dikkedarmkanker", "5", "5", "7", "3", "10", "4"]
-9: (7) ["Infecties van de onderste luchtwegen", "2", "4", "8", "4", "1", "8"]
-10: (7) ["Accidentele val", "10", "3", "9", "1", "3", "10"]
+  [{
+    "Indicator": "Doodsoorzaken",
+    "Geslacht": "Vrouwen",
+    "Aandoening": "Dementie",
+    "Aantal": 10719,
+    "Positie": 1
+  }, ..]
 */
-
-  renderTable: function (aandoening) {
-    var vzinfo = this;
-    var indicators = vzinfo.aandoeningRanglijsten[0].slice(1);
-    var arrAandoeningen = vzinfo.aandoeningRanglijsten.slice(1);
+  // Render info table to show ranking of selected aandoening in other ranglijsten
+  renderTable: function (aandoening, arrData) {
+    var vzinfo = this,
+      indicators = vzinfo.indicators;
 
     // Filter row of 'aandoening'
-    var rankInLists = arrAandoeningen.filter(function (item, index, filter) {
-      return (item[0] == aandoening);
+    var rankInLists = arrData.filter(function (item, index, filter) {
+      return (item.Aandoening == aandoening);
     });
     var rows = '', strCaption = '';
 
     console.log('RenderTable - selected', rankInLists[0]);
 
     if (rankInLists.length > 0) {
-      strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>'
+      strCaption = 'Positie in alle ranglijsten van <br/><strong> ' + aandoening + '</strong>'
+      rows = '<tr><th>Indicator</th><th>Mannen</th><th>Vrouwen</th><th>Totaal</th></tr>';
+
       // Loop ranking of selected aandoening
-      $.each(rankInLists[0].slice(1), function (index, value) {
-        rows += '<tr title="' + value + '"><td>' + indicators[index] +
-          '</td><td class="number">' + value +
-          // '</td><td class="slider">' + vzinfo.renderSlider(value) +
-          '</td></tr>';
+      $.each(indicators, function (index, indicator) {
+          rows += '<tr class="' + (indicator == vzinfo.paramIndicator ? 'highlight' : '') + '"><th>' + indicator +
+            '</th><td class="number">' + vzinfo.getItem(rankInLists, 'Positie', { Indicator: indicator, Geslacht: 'Mannen'}) +
+            '</td><td class="number">' + vzinfo.getItem(rankInLists, 'Positie', { Indicator: indicator, Geslacht: 'Vrouwen'}) +
+            '</td><td class="number">' + vzinfo.getItem(rankInLists, 'Positie', { Indicator: indicator, Geslacht: 'Totaal'}) +
+            '</td></tr>';
       });
     } else {
       strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>: Geen data gevonden';
     }
 
     $('div.info-table').html('<table><caption>' + strCaption + '</caption>' + rows + '</table>');
+  },
+  
+  getItem: function(arrItems, prop, filter){
+    var items = [];
+    /*
+      filter = { Indicator: 'Incidentie', Geslacht: 'Mannen'}
+    */
+    items = arrItems.filter(  function (item, index) {
+      return (item.Indicator.toLowerCase() == filter.Indicator.toLowerCase()) && (item['Geslacht'].toLowerCase() == filter.Geslacht.toLowerCase());
+    })
+    return (items[0] != undefined && items[0][prop] !=undefined) ? items[0][prop] : '';
+
   },
 
   renderSlider: function (value) { // Render SVG slider

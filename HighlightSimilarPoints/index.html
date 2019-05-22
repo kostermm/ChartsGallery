@@ -34,17 +34,20 @@
     div.ranglijst .info-table table caption {
       padding-bottom: .5em;
     }
-
-    div.ranglijst .info-table table td {
-      padding: 2px 5px;
-      border: 1px solid silver;
-      position: relative;
+    
+    div.ranglijst .info-table table tr.highlight {
+      background-color: #e5f0f9; 
+      font-weight: bold;
     }
 
-    div.ranglijst .info-table table td.right {
-      text-align: right;
+    div.ranglijst .info-table table tr > * {
+      padding: 2px 5px;
+      border: 1px solid silver;
+    }
+
+    div.ranglijst .info-table table td.number {
+      text-align: center;
       width: 3em;
-      display: none;
     }
 
     div.ranglijst .info-table table td.slider {
@@ -112,13 +115,7 @@
   </div>
 
   <script type="text/javascript">
-    $('.ranglijst.indicator select').change(function(){
-      console.log('Selected indicator:', this.value);
-      vzinfo.renderCharts();
-    })
-    
-    // Call render functions to render chars for all containers
-    vzinfo.renderCharts();
+    vzinfo.init();
   </script>
 </body>
 
