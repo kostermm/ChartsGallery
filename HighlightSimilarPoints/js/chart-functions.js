@@ -253,6 +253,7 @@ $.extend(true, vzinfo, {
     vzinfo.renderCharts();
   },
 
+  // Render charts: get indicator & ranglijst, process all ranglijst.charts (append containers, get options, create chart)
   renderCharts: function (indicator) {
     // Get indicator from select
     vzinfo.paramIndicator = indicator || $('#ranglijst_indicator').val();
@@ -293,17 +294,17 @@ $.extend(true, vzinfo, {
     this.renderTable(aandoening, data);
   },
 
-  /* Data structure
-  [{
-   "indicator": "Doodsoorzaken",
-   "leeftijd": "0- tot 15-jarigen" | "15- tot 65-jarigen" | "65-plussers" | "totaal",   of  "geslacht": "vrouwen" | "mannen" | "totaal"
-   "aandoening": "Dementie",
-   "aantal": 10719,
-   "positie": 1
- },, ..]
-*/
   // Render info table to show ranking of selected aandoening in other ranglijsten
   renderTable: function (aandoening, arrData) {
+    /* Data structure
+    [{
+     "indicator": "Doodsoorzaken",
+     "leeftijd": "0- tot 15-jarigen" | "15- tot 65-jarigen" | "65-plussers" | "totaal",   of  "geslacht": "vrouwen" | "mannen" | "totaal"
+     "aandoening": "Dementie",
+     "aantal": 10719,
+     "positie": 1
+   },, ..]
+  */
     var vzinfo = this, ranglijst = vzinfo.ranglijst, indicators = vzinfo.indicators, itemFilter = {};
     var thead = '', rows = '', strCaption = vzinfo.infoTableCaptionPrefix + '<br/><strong>' + aandoening + '</strong>'
 
@@ -326,7 +327,7 @@ $.extend(true, vzinfo, {
       // Loop indicators to show rank for selected aandoening
       $.each(indicators, function (index, indicator) {
         itemFilter = { indicator: indicator };
-        
+
         // row heading: indicator
         rows += '<tr class="' + (indicator == vzinfo.paramIndicator ? 'highlight' : '') + '"><th>' + indicator + '</th>';
 
