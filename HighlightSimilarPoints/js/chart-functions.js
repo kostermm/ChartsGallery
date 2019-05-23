@@ -291,7 +291,7 @@ $.extend(true, vzinfo, {
     console.log('RenderTable - selected', rankInLists[0]);
 
     if (rankInLists.length > 0) {
-      strCaption = 'Positie in alle ranglijsten van <br/><strong> ' + aandoening + '</strong>'
+      strCaption = 'Positie in alle ranglijsten:<br/><strong> ' + aandoening + '</strong>'
       rows = '<tr><th>Indicator</th><th>Mannen</th><th>Vrouwen</th><th>Totaal</th></tr>';
 
       // Loop ranking of selected aandoening

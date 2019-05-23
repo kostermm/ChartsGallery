@@ -1,0 +1,95 @@
+// 1. Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+// Grayscale
+$gray-darkest:              #535353 !default;
+$gray-darker:               #696969 !default;
+$gray-dark:                 #999999;
+$gray:                      #b4b4b4;
+$gray-light:                #cccccc;
+$gray-lighter:              #e6e6e6;
+$gray-lightest:             #f3f3f3;
+
+// Violet
+$violet:                    #a90061 !default;
+$violet-light:              #e5b2cf !default;
+$violet-lightest:           #f2d9e7 !default;
+// pink
+$pink:                      #f092cd !default;
+$pink-light:                #fadef0 !default;
+$pink-lightest:             #fdeff8 !default;
+// red
+$red:                       #d52b1e !default;
+$red-light:                 #f2bfbb !default;
+$red-lightest:              #f9dfdd !default;
+// ruby
+$ruby:                      #ca005d !default;
+$ruby-light:                #efb2ce !default;
+$ruby-lightest:             #f7d9e7 !default;
+// purple
+$purple:                    #42145f !default;
+$purple-light:              #c6b8cf !default;
+$purple-lightest:           #e3dce7 !default;
+// orange
+$orange:                    #e17000 !default;
+$orange-light:              #f6d4b2 !default;
+$orange-lightest:           #fbead9 !default;
+// light-blue
+$light-blue:                #8fcae7 !default;
+$light-blue-light:          #ddeff8 !default;
+$light-blue-lightest:       #eef7fb !default;
+// azure
+$azure:                     #007bc7 !default;
+$azure-light:               #b2d7ee !default;
+$azure-lightest:            #d9ebf7 !default;
+// dark-blue
+$dark-blue:                 #01689b !default;
+$dark-blue-light:           #cce0f1 !default;
+$dark-blue-lightest:        #e5f0f9 !default;
+// moss-green
+$moss-green:                #777c00 !default;
+$moss-green-light:          #d6d7b2 !default;
+$moss-green-lightest:       #ebebd9 !default;
+// mint-green
+$mint-green:                #76d2b6 !default;
+$mint-green-light:          #d6f1e9 !default;
+$mint-green-lightest:       #ebf8f4 !default;
+// green
+$green:                     #39870c !default;
+$green-light:               #c3dbb6 !default;
+$green-lightest:            #e1eddb !default;
+// dark-green
+$dark-green:                #275937 !default;
+$dark-green-light:          #becdc3 !default;
+$dark-green-lightest:       #dfe6e1 !default;
+// yellow
+$yellow:                    #f9e11e !default;
+$yellow-light:              #fdf6bb !default;
+$yellow-lightest:           #fefbdd !default;
+// dark-yellow
+$dark-yellow:               #ffb612 !default;
+$dark-yellow-light:         #ffe9b7 !default;
+$dark-yellow-lightest:      #fff4dc !default;
+// brown
+$brown:                     #94710a !default;
+$brown-light:               #dfd4b5 !default;
+$brown-lightest:            #efeada !default;
+// dark-brown
+$dark-brown:                #673327 !default;
+$dark-brown-light:          #d1c1be !default;
+$dark-brown-lightest:       #e8e1df !default;
+// white
+$white:                     #fff !default;
+$white-light:               #e6e6e6 !default;
+$white-lightest:            #f3f3f3 !default;
+
+
+// Logo colors
+//
+// for colored background or photo:
+$logo-blue-1:               #123552 ;
+// for white background:
+$logo-blue-2:               #154273 ;
+
+$logo-color:                $logo-blue-2 !default;
