@@ -9,13 +9,14 @@ div.ranglijst .chart-container {
 }
 
 div.ranglijst .info-table {
-  float: right;
-  margin: 3em 2em;
+  display: inline-block;
   width: 30%;
 }
 
 div.ranglijst .info-table table {
   border-collapse: collapse;
+  width: 100%;
+  font-size: 80%;
 }
 
 div.ranglijst .info-table table caption {
@@ -30,6 +31,10 @@ div.ranglijst .info-table table tr.highlight {
 div.ranglijst .info-table table tr>* {
   padding: 2px 5px;
   border: 1px solid silver;
+}
+
+div.ranglijst .info-table table tbody th {
+  text-align: left;
 }
 
 div.ranglijst .info-table table td.number {

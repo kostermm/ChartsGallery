@@ -4,7 +4,8 @@ var vzinfo = {
   indicators: ['Incidentie', 'Doodsoorzaken', 'Verloren levensjaren', 'Verlies van gezonde levensjaren', 'Ziektelast', 'Zorgkosten'],
   aandoeningRanglijsten: [],
   aandoeningFilter: {},
-  strInfoTable: 'Aandoening;Incidentie;Doodsoorzaken;Verloren levensjaren;verlies van gezonde levensjaren;ziektelast;zorgkosten\nLongkanker;1;1;4;2;9;1\nDementie;8;2;6;5;4;2\nCoronaire hartziekten;6;7;2;10;8;3\nBeroerte;7;6;10;8;7;7\nCOPD;4;8;1;7;2;9\nHartfalen;9;9;5;9;6;5\nProstaatkanker;3;10;3;6;5;6\nDikkedarmkanker;5;5;7;3;10;4\nInfecties van de onderste luchtwegen;2;4;8;4;1;8\nAccidentele val;10;3;9;1;3;10',
+  infoTableCaptionPrefix: 'Positie in alle ranglijsten:',
+  infoTableNoData: 'Geen data gevonden voor geselecteerd punt',
 
   rhs_kleuren: {
     base: '#01689b',
@@ -37,7 +38,7 @@ vzinfo.chartConfig = {
     "yAxis": {
       "opposite": true,
       "title": {
-        "text": "Aantal sterfgevallen"
+        "text": "Aantal"
       },
       "labels": {
         "align": "center",
@@ -138,6 +139,7 @@ vzinfo.chartConfig = {
 vzinfo.ranglijsten = {
   geslacht: {
     name: 'geslacht',
+    dimensions: ['Vrouwen', 'Mannen', 'Totaal'],
     charts: {
       vrouwen: {
         name: 'vrouwen',
@@ -157,6 +159,7 @@ vzinfo.ranglijsten = {
   },
   leeftijd: {
     name: 'leeftijd',
+    dimensions: ['0- tot 15-jarigen', '15- tot 65-jarigen', '65-plussers', 'Totaal'],
     charts: {
       '0-15': {
         name: '0-15',
@@ -232,6 +235,7 @@ $.extend(true, vzinfo, {
 
   },
 
+  // Initialize ranglijst: styling, events, rendering
   init: function () {
     // Full-width containers
     $('div.ranglijst.wrapper').closest('.field-name-field-paragraph-chart').width('100%');
@@ -239,7 +243,7 @@ $.extend(true, vzinfo, {
     // indicator select event
     $('div.ranglijst.indicator select').change(function () {
       // Clear info table
-      $('div.ranglijst div.info-table').html('');
+      $('div.ranglijst div.info-table').remove();
 
       console.log('Selected indicator:', this.value);
       vzinfo.renderCharts();
@@ -250,31 +254,30 @@ $.extend(true, vzinfo, {
   },
 
   renderCharts: function (indicator) {
-    /* Rendering all R Charts by looping all htmlwidget containers, 
-    |  find correspondig R-config object (script.json) and render chart 
-    
-    */
+    // Get indicator from select
     vzinfo.paramIndicator = indicator || $('#ranglijst_indicator').val();
-
+    // Get ranglijst from data attribute
     vzinfo.ranglijst = vzinfo.ranglijsten[$('div.ranglijst.wrapper').data('ranglijst')];
-    console.warn('Ranglijst:', vzinfo.ranglijst);
+    console.log('Ranglijst:', vzinfo.ranglijst);
 
     // Process charts of ranglijst
     $.each(vzinfo.ranglijst.charts, function (index, chart) {
       console.log(index, chart);
 
-      // add container
-      var chartContainer = $('div.ranglijst.wrapper').append('<div id="ranglijst_' + chart.name + '" class="chart-container"></div>');
+      // add chart container if not present
+      if ($('div.ranglijst.wrapper #ranglijst_' + chart.name).length == 0) {
+        $('div.ranglijst.wrapper').append('<div id="ranglijst_' + chart.name + '" class="chart-container"></div>');
+      }
 
       // Merge basis and specific config
-      $.extend(true, chart.options, vzinfo.chartConfig['basis']);
+      $.extend(true, chart.options, vzinfo.chartConfig.basis);
 
       // Set parameters of chart options
       chart.options.title.text = chart.label || chart.name
       chart.options.chart.renderTo = 'ranglijst_' + chart.name;
 
       // Create Chart object, getData & create chart
-      chart.Chart = new vzinfo.Chart(chart, vzinfo.ranglijst.data, {});
+      chart.Chart = new vzinfo.Chart(chart, vzinfo.ranglijst.data);
       chart.Chart.getData();
       chart.Chart.createChart();
     });
@@ -283,23 +286,17 @@ $.extend(true, vzinfo, {
     $('div.ranglijst.wrapper').append('<div class="info-table"></div>');
   },
 
+  // Render Info table for selected data point
   showInfoTable: function (point) {
-    var aandoening = point.name,
-      selectedChart = vzinfo.ranglijst.charts[point.series.name],
-      data = vzinfo.ranglijst.data;
+    var aandoening = point.name, data = vzinfo.ranglijst.data;
 
-    if (vzinfo.aandoeningRanglijsten.length == 0) {
-      console.log('Infotable - ', aandoening, selectedChart)
-
-      // vzinfo.aandoeningRanglijsten = this.CSVToArray(vzinfo.strInfoTable, ';');
-    }
     this.renderTable(aandoening, data);
   },
 
-  /*
+  /* Data structure
   [{
    "indicator": "Doodsoorzaken",
-   "leeftijd": "0- tot 15-jarigen" | "15- tot 65-jarigen" | "65-plussers",   of  "geslacht": "vrouwen" | "mannen"
+   "leeftijd": "0- tot 15-jarigen" | "15- tot 65-jarigen" | "65-plussers" | "totaal",   of  "geslacht": "vrouwen" | "mannen" | "totaal"
    "aandoening": "Dementie",
    "aantal": 10719,
    "positie": 1
@@ -307,43 +304,57 @@ $.extend(true, vzinfo, {
 */
   // Render info table to show ranking of selected aandoening in other ranglijsten
   renderTable: function (aandoening, arrData) {
-    var vzinfo = this,
-      indicators = vzinfo.indicators;
+    var vzinfo = this, ranglijst = vzinfo.ranglijst, indicators = vzinfo.indicators, itemFilter = {};
+    var thead = '', rows = '', strCaption = vzinfo.infoTableCaptionPrefix + '<br/><strong>' + aandoening + '</strong>'
 
     // Filter row of 'aandoening'
     var rankInLists = arrData.filter(function (item, index, filter) {
-      return (item.Aandoening == aandoening);
+      return (item.aandoening == aandoening);
     });
-    var rows = '', strCaption = '';
 
     console.log('RenderTable - selected', rankInLists[0]);
 
     if (rankInLists.length > 0) {
-      strCaption = 'Positie in alle ranglijsten:<br/><strong> ' + aandoening + '</strong>'
-      rows = '<tr><th>Indicator</th><th>Mannen</th><th>Vrouwen</th><th>Totaal</th></tr>';
-
-      // Loop ranking of selected aandoening
-      $.each(indicators, function (index, indicator) {
-        rows += '<tr class="' + (indicator == vzinfo.paramIndicator ? 'highlight' : '') + '"><th>' + indicator +
-          '</th><td class="number">' + vzinfo.getItem(rankInLists, 'Positie', { Indicator: indicator, Geslacht: 'Mannen' }) +
-          '</td><td class="number">' + vzinfo.getItem(rankInLists, 'Positie', { Indicator: indicator, Geslacht: 'Vrouwen' }) +
-          '</td><td class="number">' + vzinfo.getItem(rankInLists, 'Positie', { Indicator: indicator, Geslacht: 'Totaal' }) +
-          '</td></tr>';
+      thead = '<thead><tr><th>Indicator</th>';
+      // Render column headings for dimensions 
+      $.each(vzinfo.ranglijst.dimensions, function (index, item) {
+        thead += '<th class="number">' + item + '</th>';
       });
-    } else {
-      strCaption = 'Positie in alle ranglijsten van <strong> ' + aandoening + '</strong>: Geen data gevonden';
+      thead += '</tr></thead><tbody>';
+
+
+      // Loop indicators to show rank for selected aandoening
+      $.each(indicators, function (index, indicator) {
+        itemFilter = { indicator: indicator };
+        
+        // row heading: indicator
+        rows += '<tr class="' + (indicator == vzinfo.paramIndicator ? 'highlight' : '') + '"><th>' + indicator + '</th>';
+
+        // Loop dimensions and get rank
+        $.each(vzinfo.ranglijst.dimensions, function (index, item) {
+          itemFilter[ranglijst.name] = item;
+          rows += '<td class="number">' + vzinfo.getItemProp('positie', rankInLists, itemFilter)
+        })
+        rows += '</tr>';
+      });
+      rows += '</tbody>';
+    } else { // Show no data is found
+      strCaption += '<br/><br/><em>' + vzinfo.infoTableNoData + '</em>';
     }
 
-    $('div.info-table').html('<table><caption>' + strCaption + '</caption>' + rows + '</table>');
+    $('div.info-table').html('<table><caption>' + strCaption + '</caption>'
+      + thead + rows + '</table>');
   },
 
-  getItem: function (arrItems, prop, filter) {
+  // Get specified property of filtered item
+  getItemProp: function (prop, arrItems, itemFilter) {
     var items = [];
     /*
-      filter = { Indicator: 'Incidentie', Geslacht: 'Mannen'}
+      itemFilter = { Indicator: filterValue, ranglijst_name: filterValue}
     */
     items = arrItems.filter(function (item, index) {
-      return (item.Indicator.toLowerCase() == filter.Indicator.toLowerCase()) && (item['Geslacht'].toLowerCase() == filter.Geslacht.toLowerCase());
+      return (item.indicator.toLowerCase() == itemFilter.indicator.toLowerCase()) &&
+        (item[vzinfo.ranglijst.name].toLowerCase() == itemFilter[vzinfo.ranglijst.name].toLowerCase());
     })
     return (items[0] != undefined && items[0][prop] != undefined) ? items[0][prop] : '';
 
@@ -365,7 +376,7 @@ $.extend(true, vzinfo, {
   |   Properties: name, chart, chartOptions, dataSet
   |   Methods:    getData, createChart
   */
-  Chart: function (chart, dataSet, filter) {
+  Chart: function (chart, dataSet) {
     this.name = chart.name;
     this.label = chart.label;
     this.chartOptions = chart.options;
@@ -381,7 +392,6 @@ $.extend(true, vzinfo, {
 
       var series = { name: chart.name, data: [] };
       var columns = {
-        // series: 'geslacht',
         category: 'aandoening',
         value: 'aantal',
         rank: 'positie',
@@ -1895,70 +1905,70 @@ vzinfo.ranglijsten.leeftijd.data = [
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "Borstkanker",
     "aantal": 16853,
     "positie": 1
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "Prostaatkanker",
     "aantal": 10680,
     "positie": 2
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "Dementie",
     "aantal": 9492,
     "positie": 3
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "Longkanker",
     "aantal": 8192,
     "positie": 4
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "Beroerte",
     "aantal": 7122,
     "positie": 5
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "Coronaire hartziekten",
     "aantal": 6530,
     "positie": 6
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "Hartfalen",
     "aantal": 5968,
     "positie": 7
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "COPD",
     "aantal": 5179,
     "positie": 8
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "Dikkedarmkanker",
     "aantal": 4010,
     "positie": 9
   },
   {
     "indicator": "Doodsoorzaken",
-    "leeftijd": "65-plussers",
+    "leeftijd": "Totaal",
     "aandoening": "Accidentele val",
     "aantal": 3106,
     "positie": 10
