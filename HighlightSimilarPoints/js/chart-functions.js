@@ -104,6 +104,8 @@ vzinfo.chartConfig = {
       }
     }
   },
+  // ***** algemeen *****
+  "algemeen": {},
 
   // ***** geslacht *****
   "mannen": {
@@ -137,6 +139,19 @@ vzinfo.chartConfig = {
 
 // Define ranglijsten
 vzinfo.ranglijsten = {
+  algemeen: {
+    name: 'algemeen',
+    dimensions: ['Totaal'],
+    charts: {
+      totaal: {
+        name: 'totaal',
+        dataFilter: function (item, geslacht) {
+          return item.geslacht == geslacht;
+        },
+        options: vzinfo.chartConfig.algemeen
+      }
+    }
+  },
   geslacht: {
     name: 'geslacht',
     dimensions: ['Vrouwen', 'Mannen', 'Totaal'],
@@ -431,6 +446,1268 @@ $.extend(true, vzinfo, {
 });
 
 // ***** Data *****
+vzinfo.ranglijsten.algemeen.data = [
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dementie",
+    "aantal": 10719,
+    "positie": 1
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "Beroerte",
+    "aantal": 5421,
+    "positie": 2
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "Hartfalen",
+    "aantal": 4509,
+    "positie": 3
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "Longkanker",
+    "aantal": 4257,
+    "positie": 4
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "COPD",
+    "aantal": 3363,
+    "positie": 5
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 3350,
+    "positie": 6
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 7
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "Accidentele val",
+    "aantal": 2408,
+    "positie": 8
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2326,
+    "positie": 9
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Vrouwen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 2085,
+    "positie": 10
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "Longkanker",
+    "aantal": 6134,
+    "positie": 1
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "Dementie",
+    "aantal": 5259,
+    "positie": 2
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 4983,
+    "positie": 3
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "Beroerte",
+    "aantal": 3935,
+    "positie": 4
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "COPD",
+    "aantal": 3759,
+    "positie": 5
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "Hartfalen",
+    "aantal": 3180,
+    "positie": 6
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "Prostaatkanker",
+    "aantal": 2862,
+    "positie": 7
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2771,
+    "positie": 8
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 1684,
+    "positie": 9
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Mannen",
+    "aandoening": "Accidentele val",
+    "aantal": 1623,
+    "positie": 10
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "Borstkanker",
+    "aantal": 16853,
+    "positie": 1
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "Prostaatkanker",
+    "aantal": 10680,
+    "positie": 2
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "Dementie",
+    "aantal": 9492,
+    "positie": 3
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "Longkanker",
+    "aantal": 8192,
+    "positie": 4
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "Beroerte",
+    "aantal": 7122,
+    "positie": 5
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 6530,
+    "positie": 6
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "Hartfalen",
+    "aantal": 5968,
+    "positie": 7
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "COPD",
+    "aantal": 5179,
+    "positie": 8
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 4010,
+    "positie": 9
+  },
+  {
+    "indicator": "Doodsoorzaken",
+    "algemeen": "Totaal",
+    "aandoening": "Accidentele val",
+    "aantal": 3106,
+    "positie": 10
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dementie",
+    "aantal": 10719,
+    "positie": 1
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "Beroerte",
+    "aantal": 5421,
+    "positie": 2
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "Hartfalen",
+    "aantal": 4509,
+    "positie": 3
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "Longkanker",
+    "aantal": 4257,
+    "positie": 4
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "COPD",
+    "aantal": 3363,
+    "positie": 5
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 3350,
+    "positie": 6
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 7
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "Accidentele val",
+    "aantal": 2408,
+    "positie": 8
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2326,
+    "positie": 9
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Vrouwen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 2085,
+    "positie": 10
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "Longkanker",
+    "aantal": 6134,
+    "positie": 1
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "Dementie",
+    "aantal": 5259,
+    "positie": 2
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 4983,
+    "positie": 3
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "Beroerte",
+    "aantal": 3935,
+    "positie": 4
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "COPD",
+    "aantal": 3759,
+    "positie": 5
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "Hartfalen",
+    "aantal": 3180,
+    "positie": 6
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "Prostaatkanker",
+    "aantal": 2862,
+    "positie": 7
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2771,
+    "positie": 8
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 1684,
+    "positie": 9
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Mannen",
+    "aandoening": "Accidentele val",
+    "aantal": 1623,
+    "positie": 10
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "Dementie",
+    "aantal": 16853,
+    "positie": 1
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "Longkanker",
+    "aantal": 10680,
+    "positie": 2
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "Beroerte",
+    "aantal": 9492,
+    "positie": 3
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 8192,
+    "positie": 4
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "Hartfalen",
+    "aantal": 7122,
+    "positie": 5
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "COPD",
+    "aantal": 6530,
+    "positie": 6
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 5968,
+    "positie": 7
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "Accidentele val",
+    "aantal": 5179,
+    "positie": 8
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 4010,
+    "positie": 9
+  },
+  {
+    "indicator": "Incidentie",
+    "algemeen": "Totaal",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 10
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dementie",
+    "aantal": 10719,
+    "positie": 1
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Beroerte",
+    "aantal": 5421,
+    "positie": 2
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Hartfalen",
+    "aantal": 4509,
+    "positie": 3
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Longkanker",
+    "aantal": 4257,
+    "positie": 4
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "COPD",
+    "aantal": 3363,
+    "positie": 5
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 3350,
+    "positie": 6
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 7
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Accidentele val",
+    "aantal": 2408,
+    "positie": 8
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2326,
+    "positie": 9
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 2085,
+    "positie": 10
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Longkanker",
+    "aantal": 6134,
+    "positie": 1
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Dementie",
+    "aantal": 5259,
+    "positie": 2
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 4983,
+    "positie": 3
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Beroerte",
+    "aantal": 3935,
+    "positie": 4
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "COPD",
+    "aantal": 3759,
+    "positie": 5
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Hartfalen",
+    "aantal": 3180,
+    "positie": 6
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Prostaatkanker",
+    "aantal": 2862,
+    "positie": 7
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2771,
+    "positie": 8
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 1684,
+    "positie": 9
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Accidentele val",
+    "aantal": 1623,
+    "positie": 10
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Dementie",
+    "aantal": 16853,
+    "positie": 1
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Longkanker",
+    "aantal": 10680,
+    "positie": 2
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Beroerte",
+    "aantal": 9492,
+    "positie": 3
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 8192,
+    "positie": 4
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Hartfalen",
+    "aantal": 7122,
+    "positie": 5
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "COPD",
+    "aantal": 6530,
+    "positie": 6
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 5968,
+    "positie": 7
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Accidentele val",
+    "aantal": 5179,
+    "positie": 8
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 4010,
+    "positie": 9
+  },
+  {
+    "indicator": "Verlies van gezonde levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 10
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dementie",
+    "aantal": 10719,
+    "positie": 1
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Beroerte",
+    "aantal": 5421,
+    "positie": 2
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Hartfalen",
+    "aantal": 4509,
+    "positie": 3
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Longkanker",
+    "aantal": 4257,
+    "positie": 4
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "COPD",
+    "aantal": 3363,
+    "positie": 5
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 3350,
+    "positie": 6
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 7
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Accidentele val",
+    "aantal": 2408,
+    "positie": 8
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2326,
+    "positie": 9
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Vrouwen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 2085,
+    "positie": 10
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Longkanker",
+    "aantal": 6134,
+    "positie": 1
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Dementie",
+    "aantal": 5259,
+    "positie": 2
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 4983,
+    "positie": 3
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Beroerte",
+    "aantal": 3935,
+    "positie": 4
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "COPD",
+    "aantal": 3759,
+    "positie": 5
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Hartfalen",
+    "aantal": 3180,
+    "positie": 6
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Prostaatkanker",
+    "aantal": 2862,
+    "positie": 7
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2771,
+    "positie": 8
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 1684,
+    "positie": 9
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Mannen",
+    "aandoening": "Accidentele val",
+    "aantal": 1623,
+    "positie": 10
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Dementie",
+    "aantal": 16853,
+    "positie": 1
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Longkanker",
+    "aantal": 10680,
+    "positie": 2
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Beroerte",
+    "aantal": 9492,
+    "positie": 3
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 8192,
+    "positie": 4
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Hartfalen",
+    "aantal": 7122,
+    "positie": 5
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "COPD",
+    "aantal": 6530,
+    "positie": 6
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 5968,
+    "positie": 7
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Accidentele val",
+    "aantal": 5179,
+    "positie": 8
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 4010,
+    "positie": 9
+  },
+  {
+    "indicator": "Verloren levensjaren",
+    "algemeen": "Totaal",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 10
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dementie",
+    "aantal": 10719,
+    "positie": 1
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "Beroerte",
+    "aantal": 5421,
+    "positie": 2
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "Hartfalen",
+    "aantal": 4509,
+    "positie": 3
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "Longkanker",
+    "aantal": 4257,
+    "positie": 4
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "COPD",
+    "aantal": 3363,
+    "positie": 5
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 3350,
+    "positie": 6
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 7
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "Accidentele val",
+    "aantal": 2408,
+    "positie": 8
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2326,
+    "positie": 9
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Vrouwen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 2085,
+    "positie": 10
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "Longkanker",
+    "aantal": 6134,
+    "positie": 1
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "Dementie",
+    "aantal": 5259,
+    "positie": 2
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 4983,
+    "positie": 3
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "Beroerte",
+    "aantal": 3935,
+    "positie": 4
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "COPD",
+    "aantal": 3759,
+    "positie": 5
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "Hartfalen",
+    "aantal": 3180,
+    "positie": 6
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "Prostaatkanker",
+    "aantal": 2862,
+    "positie": 7
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2771,
+    "positie": 8
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 1684,
+    "positie": 9
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Mannen",
+    "aandoening": "Accidentele val",
+    "aantal": 1623,
+    "positie": 10
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "Dementie",
+    "aantal": 16853,
+    "positie": 1
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "Longkanker",
+    "aantal": 10680,
+    "positie": 2
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "Beroerte",
+    "aantal": 9492,
+    "positie": 3
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 8192,
+    "positie": 4
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "Hartfalen",
+    "aantal": 7122,
+    "positie": 5
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "COPD",
+    "aantal": 6530,
+    "positie": 6
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 5968,
+    "positie": 7
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "Accidentele val",
+    "aantal": 5179,
+    "positie": 8
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 4010,
+    "positie": 9
+  },
+  {
+    "indicator": "Ziektelast",
+    "algemeen": "Totaal",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 10
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dementie",
+    "aantal": 10719,
+    "positie": 1
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "Beroerte",
+    "aantal": 5421,
+    "positie": 2
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "Hartfalen",
+    "aantal": 4509,
+    "positie": 3
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "Longkanker",
+    "aantal": 4257,
+    "positie": 4
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "COPD",
+    "aantal": 3363,
+    "positie": 5
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 3350,
+    "positie": 6
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 7
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "Accidentele val",
+    "aantal": 2408,
+    "positie": 8
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2326,
+    "positie": 9
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Vrouwen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 2085,
+    "positie": 10
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "Longkanker",
+    "aantal": 6134,
+    "positie": 1
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "Dementie",
+    "aantal": 5259,
+    "positie": 2
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 4983,
+    "positie": 3
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "Beroerte",
+    "aantal": 3935,
+    "positie": 4
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "COPD",
+    "aantal": 3759,
+    "positie": 5
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "Hartfalen",
+    "aantal": 3180,
+    "positie": 6
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "Prostaatkanker",
+    "aantal": 2862,
+    "positie": 7
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 2771,
+    "positie": 8
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 1684,
+    "positie": 9
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Mannen",
+    "aandoening": "Accidentele val",
+    "aantal": 1623,
+    "positie": 10
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "Dementie",
+    "aantal": 16853,
+    "positie": 1
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "Longkanker",
+    "aantal": 10680,
+    "positie": 2
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "Beroerte",
+    "aantal": 9492,
+    "positie": 3
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "Coronaire hartziekten",
+    "aantal": 8192,
+    "positie": 4
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "Hartfalen",
+    "aantal": 7122,
+    "positie": 5
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "COPD",
+    "aantal": 6530,
+    "positie": 6
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "Dikkedarmkanker",
+    "aantal": 5968,
+    "positie": 7
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "Accidentele val",
+    "aantal": 5179,
+    "positie": 8
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "Infecties van de onderste luchtwegen",
+    "aantal": 4010,
+    "positie": 9
+  },
+  {
+    "indicator": "Zorgkosten",
+    "algemeen": "Totaal",
+    "aandoening": "Borstkanker",
+    "aantal": 3106,
+    "positie": 10
+  }
+]
 
 vzinfo.ranglijsten.geslacht.data = [
   {
