@@ -132,7 +132,7 @@ vzinfo.chartConfig = {
   // ***** leeftijd *****
   "0-15": {},
   "15-65": {},
-  "65+": {}
+  "65plus": {}
 };
 
 // Define ranglijsten
@@ -177,13 +177,13 @@ vzinfo.ranglijsten = {
         },
         options: vzinfo.chartConfig['15-65']
       },
-      '65+': {
-        name: '65+',
+      '65plus': {
+        name: '65plus',
         label: '65-plussers',
         dataFilter: function (item, dimensie) {
           return item.leeftijd == dimensie;
         },
-        options: vzinfo.chartConfig['65+']
+        options: vzinfo.chartConfig['65plus']
       }
     }
   },
@@ -259,11 +259,11 @@ $.extend(true, vzinfo, {
     vzinfo.paramIndicator = indicator || $('#ranglijst_indicator').val();
     // Get ranglijst from data attribute
     vzinfo.ranglijst = vzinfo.ranglijsten[$('div.ranglijst.wrapper').data('ranglijst')];
-    console.log('Ranglijst:', vzinfo.ranglijst);
+    console.log('- Ranglijst', vzinfo.ranglijst.name + ':', vzinfo.ranglijst);
 
     // Process charts of ranglijst
-    $.each(vzinfo.ranglijst.charts, function (index, chart) {
-      console.log(index, chart);
+    $.each(vzinfo.ranglijst.charts, function (key, chart) {
+      console.log('-- Chart', key + ':', chart);
 
       // add chart container if not present
       if ($('div.ranglijst.wrapper #ranglijst_' + chart.name).length == 0) {
@@ -429,6 +429,8 @@ $.extend(true, vzinfo, {
     }
   }
 });
+
+// ***** Data *****
 
 vzinfo.ranglijsten.geslacht.data = [
   {
@@ -3024,4 +3026,5 @@ vzinfo.ranglijsten.leeftijd.data = [
     "aantal": 3106,
     "positie": 10
   }
-]
+];
+
