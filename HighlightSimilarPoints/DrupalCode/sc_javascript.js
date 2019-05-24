@@ -241,6 +241,8 @@ $.extend(true, vzinfo, {
   init: function () {
     // Full-width containers
     $('div.ranglijst.wrapper').closest('.field-name-field-paragraph-chart').width('100%');
+    $('div.ranglijst.wrapper').closest('article.venz_paragraph').find('>h2').remove();
+
 
     // indicator select event
     $('div.ranglijst.indicator select').change(function () {
