@@ -1,63 +1,71 @@
+<!-- VZinfo Supercharts.html to include - start -->
+
 <div class="ranglijst indicator">
-    <label for="ranglijst_indicator">Kies een indicator</label>
-    <select id="ranglijst_indicator">
-      <option>Incidentie</option>
-      <option>Doodsoorzaken</option>
-      <option>Verloren levensjaren</option>
-      <option>Verlies van gezonde levensjaren</option>
-      <option>Ziektelast</option>
-      <option>Zorgkosten</option>
-    </select>
-  </div>
+  <label for="ranglijst_indicator">Kies een indicator</label>
+  <select id="ranglijst_indicator">
+    <option>Incidentie</option>
+    <option>Doodsoorzaken</option>
+    <option>Verloren levensjaren</option>
+    <option>Verlies van gezonde levensjaren</option>
+    <option>Ziektelast</option>
+    <option>Zorgkosten</option>
+  </select>
+</div>
 
-  <div class="ranglijst wrapper">
+<div class="ranglijst wrapper" data-ranglijst="geslacht"></div>
 
-    <div id="ranglijst_vrouwen" class="chart-container"></div>
-    <div id="ranglijst_mannen" class="chart-container"></div>
-    <div class="info-table"></div>
-  </div>
+<!-- VZinfo Supercharts.html to include - end -->
 
 <style type="text/css">
   div.ranglijst .wrapper {
-      float: left;
-      margin-bottom: 4em;
-    }
+    float: left;
+    margin-bottom: 4em;
+  }
 
-    div.ranglijst .chart-container {
-      display: inline-block;
-      width: 32%;
-    }
+  div.ranglijst .chart-container {
+    display: inline-block;
+    width: 32%;
+    min-width: 296px;
+  }
 
-    div.ranglijst .info-table {
-      float: right;
-      margin: 3em 2em;
-      width: 30%;
-    }
+  div.ranglijst .info-table {
+    display: inline-block;
+    width: 30%;
+    min-width: 280px;
+  }
 
-    div.ranglijst .info-table table {
-      border-collapse: collapse;
-    }
+  div.ranglijst .info-table table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 80%;
+  }
 
-    div.ranglijst .info-table table caption {
-      padding-bottom: .5em;
-    }
-    
-    div.ranglijst .info-table table tr.highlight {
-      background-color: #e5f0f9; 
-      font-weight: bold;
-    }
+  div.ranglijst .info-table table caption {
+    padding-bottom: .5em;
+  }
 
-    div.ranglijst .info-table table tr > * {
-      padding: 2px 5px;
-      border: 1px solid silver;
-    }
+  div.ranglijst .info-table table tr.highlight {
+    background-color: #e5f0f9;
+    font-weight: bold;
+  }
 
-    div.ranglijst .info-table table td.number {
-      text-align: center;
-      width: 3em;
-    }
+  div.ranglijst .info-table table tr>* {
+    padding: 2px 5px;
+    border: 1px solid silver;
+    line-height: 1;
+  }
 
-    div.ranglijst .info-table table td.slider {
-      padding-left: .5em;
-    }
+  div.ranglijst .info-table table tbody th {
+    text-align: left;
+    word-break: break-word;
+  }
+
+  div.ranglijst .info-table table td.number {
+    text-align: center;
+    width: 3em;
+  }
+
+  div.ranglijst .info-table table td.slider {
+    padding-left: .5em;
+  }
 </style>

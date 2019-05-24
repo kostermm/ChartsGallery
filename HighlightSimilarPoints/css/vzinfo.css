@@ -6,11 +6,13 @@ div.ranglijst .wrapper {
 div.ranglijst .chart-container {
   display: inline-block;
   width: 32%;
+  min-width: 296px;
 }
 
 div.ranglijst .info-table {
   display: inline-block;
   width: 30%;
+  min-width: 280px;
 }
 
 div.ranglijst .info-table table {
@@ -31,10 +33,12 @@ div.ranglijst .info-table table tr.highlight {
 div.ranglijst .info-table table tr>* {
   padding: 2px 5px;
   border: 1px solid silver;
+  line-height: 1;
 }
 
 div.ranglijst .info-table table tbody th {
   text-align: left;
+  word-break: break-word;
 }
 
 div.ranglijst .info-table table td.number {
