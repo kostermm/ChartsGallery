@@ -18,7 +18,9 @@ vzinfo.chartConfig = {
   {
     "chart": {
       "type": "bar",
-      "height": null
+      "height": null,
+      marginTop: 30
+
     },
     "title": { text: '' },
     "colors": [
@@ -26,26 +28,36 @@ vzinfo.chartConfig = {
       // "rgba(0,80,149,0.4)"
     ],
     "xAxis": {
-      "visible": true,
-      "categories": [],
+      // "visible": true,
+      // "categories": [],
       "lineWidth": 0,
       "tickLength": 0,
+      "tickInterval": 1,
       "labels": {
-        "enabled": false,
+        "align": "center",
+        "x": -15,
+        "style": {
+          "fontWeight": "bold"
+        }
       },
       "reversed": true
     },
     "yAxis": {
-      "opposite": true,
-      "title": {
-        "text": "Aantal"
-      },
+      visible: true,
+      // "opposite": true,
+      // "title": {
+      //   "text": "Aantal"
+      // },
       "labels": {
-        "align": "center",
-        "formatter": function () { return Highcharts.numberFormat(Math.abs(this.value), 0); }
+        enabled: "false",
+        //   "align": "center",
+        //   // "formatter": function () { 
+        //     // return Highcharts.numberFormat(Math.abs(this.value), 0); 
+        //     // return ''
+        //   // }
       },
-      "allowDecimals": false,
-      "tickInterval": 2000
+      // "allowDecimals": false,
+      // "tickInterval": 2000
     },
     "tooltip": {
       formatter: function () {
@@ -62,7 +74,13 @@ vzinfo.chartConfig = {
       "enabled": false
     },
     "exporting": {
-      "enabled": true
+      "enabled": true,
+      buttons:
+      {
+        contextButton: {
+          y: -8
+        }
+      }
     },
     "plotOptions": {
       "bar": {
@@ -105,16 +123,34 @@ vzinfo.chartConfig = {
     }
   },
   // ***** algemeen *****
-  "algemeen": {},
+  "algemeen": {
+    "chart": {
+      marginLeft: 22
+    }
+  },
 
   // ***** geslacht *****
   "mannen": {
+    "chart": {
+      marginLeft: 22
+    },
+    "xAxis": {
+      "labels": {
+        "enabled": true
+      }
+    },
     "yAxis": {
       "min": 0,
       "max": 14000,
     }
   },
   "vrouwen": {
+    "xAxis": {
+      "visible": false,
+      "labels": {
+        "enabled": false
+      }
+    },
     "yAxis": {
       "min": -14000,
       "max": 0,
@@ -132,9 +168,25 @@ vzinfo.chartConfig = {
   },
 
   // ***** leeftijd *****
-  "0-15": {},
-  "15-65": {},
-  "65plus": {}
+  "0-15": {
+    "chart": {
+      marginLeft: 22
+    }
+  },
+  "15-65": {
+    "xAxis": {
+      "labels": {
+        "enabled": false
+      }
+    }
+  },
+  "65plus": {
+    "xAxis": {
+      "labels": {
+        "enabled": false
+      }
+    }
+  }
 };
 
 // Define ranglijsten
@@ -426,6 +478,7 @@ $.extend(true, vzinfo, {
       // Fill data array with x/category and for each row
       $.each(data, function (index, item) {
         series.data.push({
+          x: item[columns.rank],
           name: item[columns.category],
           y: chart.name == 'vrouwen' ? - item[columns.value] : item[columns.value],
           rank: item[columns.rank],
