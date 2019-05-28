@@ -52,7 +52,7 @@ vzinfo.chartConfig = {
         return '<strong><large>' + this.point.name + '</large></strong>'
           + '<br>Aantal: ' + Highcharts.numberFormat(Math.abs(this.y), 0)
           + (this.point.rank != undefined ? '<br>Positie: ' + this.point.rank : '')
-          + '<br>Indicator: ' + this.point.indicator;
+          + '<br>Ranglijst: ' + this.point.indicator;
       }
     },
     "legend": {
@@ -333,7 +333,7 @@ $.extend(true, vzinfo, {
     console.log('RenderTable - selected', rankInLists[0]);
 
     if (rankInLists.length > 0) {
-      thead = '<thead><tr><th>Indicator</th>';
+      thead = '<thead><tr><th>Ranglijst</th>';
       // Render column headings for dimensions 
       $.each(vzinfo.ranglijst.dimensions, function (index, item) {
         thead += '<th class="number">' + item + '</th>';
