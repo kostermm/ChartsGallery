@@ -4,7 +4,8 @@ var vzinfo = {
   indicators: ['Incidentie', 'Doodsoorzaken', 'Verloren levensjaren', 'Verlies van gezonde levensjaren', 'Ziektelast', 'Zorgkosten'],
   aandoeningRanglijsten: [],
   aandoeningFilter: {},
-  infoTableCaptionPrefix: 'Positie in alle ranglijsten:',
+  infoTableCaptionPrefix: 'Positie van ',
+  infoTableCaptionPostfix: ' in alle ranglijsten:',
   infoTableNoData: 'Geen data gevonden voor geselecteerd punt',
 
   rhs_kleuren: {
@@ -375,7 +376,7 @@ $.extend(true, vzinfo, {
    },, ..]
   */
     var vzinfo = this, ranglijst = vzinfo.ranglijst, indicators = vzinfo.indicators, itemFilter = {};
-    var thead = '', rows = '', strCaption = vzinfo.infoTableCaptionPrefix + '<br/><strong>' + aandoening + '</strong>'
+    var thead = '', rows = '', strCaption = vzinfo.infoTableCaptionPrefix + '<strong>' + aandoening + '</strong>' + vzinfo.infoTableCaptionPostfix
 
     // Filter row of 'aandoening'
     var rankInLists = arrData.filter(function (item, index, filter) {
