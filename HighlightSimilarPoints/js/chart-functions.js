@@ -87,13 +87,12 @@ vzinfo.chartConfig = {
       "bar": {
         "borderColor": vzinfo.rhs_kleuren.base,
         "pointWidth": 20,
-        "pointPadding": 0,
+        "pointPadding": 0.05,
         "groupPadding": 0,
         "borderWidth": 2,
         "grouping": false
       },
       "series": {
-        "pointPadding": 0.05,
         "dataLabels": {
           "enabled": true,
           "align": "left",
@@ -101,7 +100,7 @@ vzinfo.chartConfig = {
             "fontSize": "13px",
           },
           "formatter": function () {
-            return this.point.name; // + ': ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+            return this.point.name;
           }
         },
         "animation": {
@@ -403,9 +402,18 @@ $.extend(true, vzinfo, {
       chart.Chart.getData();
       chart.Chart.createChart();
     });
-
+    
     // Add container for info table
     $('div.ranglijst.wrapper').append('<div class="info-table"></div>');
+
+    // Show popup table
+    $.each(Highcharts.charts, function(index, chart){
+      if(chart != undefined) {
+        vzinfo.showInfoTable(chart.series[0].points[0]);
+        return false;
+      }
+
+    });
   },
 
   // Render Info table for selected data point
