@@ -205,11 +205,13 @@ vzinfo.ranglijsten = {
     charts: {
       totaal: {
         name: 'totaal',
+        title: 'Totaal',
         ranglijst: 'algemeen',
         chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
             && item.geslacht.toLowerCase().trim() == 'totaal'
             && item.leeftijd.toLowerCase().trim() == 'totaal'
+            && item.positie <= 10
           );
         },
         options: vzinfo.chartConfig.algemeen
@@ -225,6 +227,7 @@ vzinfo.ranglijsten = {
     charts: {
       vrouwen: {
         name: 'vrouwen',
+        title: 'Vrouwen',
         ranglijst: 'geslacht',
         chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
@@ -236,6 +239,7 @@ vzinfo.ranglijsten = {
       },
       mannen: {
         name: 'mannen',
+        title: 'Mannen',
         ranglijst: 'geslacht',
         chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
@@ -256,7 +260,7 @@ vzinfo.ranglijsten = {
     charts: {
       '0-15': {
         name: '0-15',
-        label: '0- tot 15-jarigen',
+        title: '0- tot 15-jarigen',
         ranglijst: 'leeftijd',
         chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
@@ -268,7 +272,7 @@ vzinfo.ranglijsten = {
       },
       '15-65': {
         name: '15-65',
-        label: '15- tot 65-jarigen',
+        title: '15- tot 65-jarigen',
         ranglijst: 'leeftijd',
         chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
@@ -280,7 +284,7 @@ vzinfo.ranglijsten = {
       },
       '65plus': {
         name: '65plus',
-        label: '65-plussers',
+        title: '65-plussers',
         ranglijst: 'leeftijd',
         chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
@@ -380,7 +384,7 @@ $.extend(true, vzinfo, {
       $.extend(true, chart.options, vzinfo.chartConfig.basis);
 
       // Set parameters of chart options
-      chart.options.title.text = chart.label || chart.name
+      chart.options.title.text = chart.title || chart.name
       chart.options.chart.renderTo = 'ranglijst_' + chart.name;
 
       // Create Chart object, getData & create chart
@@ -489,7 +493,7 @@ $.extend(true, vzinfo, {
   */
   Chart: function (chart, dataSet) {
     this.name = chart.name;
-    this.label = chart.label;
+    this.title = chart.title;
     this.ranglijst = chart.ranglijst;
     this.chartOptions = chart.options;
     this.chartOptions.chart.renderTo = chart.options.chart.renderTo || this.name; // Use chart name if renderTo not set
