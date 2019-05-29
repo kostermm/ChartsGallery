@@ -1,7 +1,7 @@
 // vzinfo object contains all props and methods used for rendering ranglijsten
 var vzinfo = {
 
-  indicators: ['Incidentie', 'Doodsoorzaken', 'Verloren levensjaren', 'Verlies van gezonde levensjaren', 'Ziektelast', 'Zorgkosten'],
+  indicators: ['Doodsoorzaak', 'Verloren levensjaren', 'Verlies gezonde levensjaren', 'Voorkomen', 'Ziektelast', 'Zorgkosten'],
   aandoeningRanglijsten: [],
   aandoeningFilter: {},
   infoTableCaptionPrefix: 'Positie van ',
@@ -198,11 +198,15 @@ vzinfo.ranglijsten = {
   algemeen: {
     name: 'algemeen',
     dimensions: ['Totaal'],
+    ranglijstFilter: function (item) {
+      return (item.geslacht.toLowerCase().trim() == 'totaal'
+        && item.leeftijd.toLowerCase().trim() == 'totaal');
+    },
     charts: {
       totaal: {
         name: 'totaal',
         ranglijst: 'algemeen',
-        dataFilter: function (item) {
+        chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
             && item.geslacht.toLowerCase().trim() == 'totaal'
             && item.leeftijd.toLowerCase().trim() == 'totaal'
@@ -215,11 +219,14 @@ vzinfo.ranglijsten = {
   geslacht: {
     name: 'geslacht',
     dimensions: ['Vrouwen', 'Mannen', 'Totaal'],
+    ranglijstFilter: function (item) {
+      return item.leeftijd.toLowerCase().trim() == 'totaal';
+    },
     charts: {
       vrouwen: {
         name: 'vrouwen',
         ranglijst: 'geslacht',
-        dataFilter: function (item) {
+        chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
             && item.geslacht.toLowerCase().trim() == 'vrouwen'
             && item.leeftijd.toLowerCase().trim() == 'totaal'
@@ -230,7 +237,7 @@ vzinfo.ranglijsten = {
       mannen: {
         name: 'mannen',
         ranglijst: 'geslacht',
-        dataFilter: function (item) {
+        chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
             && item.geslacht.toLowerCase().trim() == 'mannen'
             && item.leeftijd.toLowerCase().trim() == 'totaal'
@@ -242,13 +249,16 @@ vzinfo.ranglijsten = {
   },
   leeftijd: {
     name: 'leeftijd',
-    dimensions: ['0- tot 15-jarigen', '15- tot 65-jarigen', '65-plussers', 'Totaal'],
+    dimensions: ['0-15 jaar', '15-65 jaar', '65+', 'Totaal'],
+    ranglijstFilter: function (item) {
+      return item.geslacht.toLowerCase().trim() == 'totaal';
+    },
     charts: {
       '0-15': {
         name: '0-15',
         label: '0- tot 15-jarigen',
         ranglijst: 'leeftijd',
-        dataFilter: function (item) {
+        chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
             && item.geslacht.toLowerCase().trim() == 'totaal'
             && item.leeftijd.toLowerCase().trim() == '0-15 jaar'
@@ -260,7 +270,7 @@ vzinfo.ranglijsten = {
         name: '15-65',
         label: '15- tot 65-jarigen',
         ranglijst: 'leeftijd',
-        dataFilter: function (item) {
+        chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
             && item.geslacht.toLowerCase().trim() == 'totaal'
             && item.leeftijd.toLowerCase().trim() == '15-65 jaar'
@@ -272,7 +282,7 @@ vzinfo.ranglijsten = {
         name: '65plus',
         label: '65-plussers',
         ranglijst: 'leeftijd',
-        dataFilter: function (item) {
+        chartFilter: function (item) {
           return (item.indicator == vzinfo.paramIndicator
             && item.geslacht.toLowerCase().trim() == 'totaal'
             && item.leeftijd.toLowerCase().trim() == '65+'
@@ -385,7 +395,11 @@ $.extend(true, vzinfo, {
 
   // Render Info table for selected data point
   showInfoTable: function (point) {
-    var aandoening = point.name, data = vzinfo.ranglijst.data;
+    var aandoening = point.name, data = vzinfo.ranglijsten.data;
+
+    console.log('showInfoTable - ', point);
+    // Filter data for this ranglijst
+    data = data.filter(vzinfo.ranglijst.ranglijstFilter);
 
     this.renderTable(aandoening, data);
   },
@@ -428,8 +442,8 @@ $.extend(true, vzinfo, {
         rows += '<tr class="' + (indicator == vzinfo.paramIndicator ? 'highlight' : '') + '"><th>' + indicator + '</th>';
 
         // Loop dimensions and get rank
-        $.each(vzinfo.ranglijst.dimensions, function (index, item) {
-          itemFilter[ranglijst.name] = item;
+        $.each(vzinfo.ranglijst.dimensions, function (index, dimension) {
+          itemFilter[ranglijst.name] = dimension;
           rows += '<td class="number">' + vzinfo.getItemProp('positie', rankInLists, itemFilter)
         })
         rows += '</tr>';
@@ -494,7 +508,7 @@ $.extend(true, vzinfo, {
         value: 'aantal',
         rank: 'positie',
         indicator: 'indicator',
-        filter: vzinfo.ranglijsten[chart.ranglijst].charts[chart.name].dataFilter
+        filter: vzinfo.ranglijsten[chart.ranglijst].charts[chart.name].chartFilter
       }
       // Filter column
       if (columns.filter != undefined) {
@@ -6118,4 +6132,4 @@ vzinfo.ranglijsten.data = [
     "maat": "Miljoen euro",
     "jaar": 2011
   }
- ]
+]
