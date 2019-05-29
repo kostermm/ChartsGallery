@@ -562,7 +562,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "1",
+    "positie": 1,
     "aantal": 1982300,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -572,7 +572,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "2",
+    "positie": 2,
     "aantal": 1199100,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -582,7 +582,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "3",
+    "positie": 3,
     "aantal": 1111000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -592,7 +592,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "4",
+    "positie": 4,
     "aantal": 1046300,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -602,7 +602,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Contacteczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "5",
+    "positie": 5,
     "aantal": 961700,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -612,7 +612,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gezichtsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "6",
+    "positie": 6,
     "aantal": 749500,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -622,7 +622,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "7",
+    "positie": 7,
     "aantal": 732200,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -632,7 +632,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "8",
+    "positie": 8,
     "aantal": 624600,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -642,7 +642,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "9",
+    "positie": 9,
     "aantal": 619300,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
@@ -652,7 +652,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "10",
+    "positie": 10,
     "aantal": 613500,
     "maat": "Zorgprevalentie",
     "jaar": 2015
@@ -662,7 +662,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "11",
+    "positie": 11,
     "aantal": 607300,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -672,7 +672,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "12",
+    "positie": 12,
     "aantal": 551600,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -682,7 +682,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "13",
+    "positie": 13,
     "aantal": 437000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -692,7 +692,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Osteoporose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "14",
+    "positie": 14,
     "aantal": 431400,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -702,7 +702,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartritmestoornissen (boezemfibrilleren)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "15",
+    "positie": 15,
     "aantal": 389800,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -712,7 +712,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Constitutioneel eczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "16",
+    "positie": 16,
     "aantal": 378600,
     "maat": "Zorgprevalentie",
     "jaar": 2015
@@ -722,7 +722,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prive-ongevallen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "17",
+    "positie": 17,
     "aantal": 374200,
     "maat": "Aantal SEH-bezoeken",
     "jaar": 2015
@@ -732,7 +732,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "ADHD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "18",
+    "positie": 18,
     "aantal": 334600,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -742,7 +742,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infectieziekten van het maagdarmkanaal",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "19",
+    "positie": 19,
     "aantal": 284000,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
@@ -752,7 +752,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Migraine",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "20",
+    "positie": 20,
     "aantal": 274400,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -762,7 +762,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Overspannenheid en burn-out",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "21",
+    "positie": 21,
     "aantal": 261000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -772,17 +772,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Influenza",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "22",
+    "positie": 22,
     "aantal": 252300,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
   },
   {
     "indicator": "Voorkomen",
-    "aandoening": "Reumato�de artritis (RA)",
+    "aandoening": "ReumatoÔde artritis (RA)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "23",
+    "positie": 23,
     "aantal": 234400,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -792,7 +792,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "24",
+    "positie": 24,
     "aantal": 227300,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -802,7 +802,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Epilepsie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "25",
+    "positie": 25,
     "aantal": 180600,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -812,7 +812,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Persoonlijkheidsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "26",
+    "positie": 26,
     "aantal": 179700,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -822,7 +822,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "27",
+    "positie": 27,
     "aantal": 154000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -832,7 +832,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "28",
+    "positie": 28,
     "aantal": 142600,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -842,7 +842,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gedragsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "29",
+    "positie": 29,
     "aantal": 142200,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -852,7 +852,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Sportblessures",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "30",
+    "positie": 30,
     "aantal": 132300,
     "maat": "Aantal SEH-bezoeken",
     "jaar": 2015
@@ -862,7 +862,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker ",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "31",
+    "positie": 31,
     "aantal": 128900,
     "maat": "10-jaarsprevalentie",
     "jaar": 2015
@@ -872,7 +872,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vervoersongevallen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "32",
+    "positie": 32,
     "aantal": 124800,
     "maat": "Aantal SEH-bezoeken",
     "jaar": 2015
@@ -882,7 +882,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aandoeningen van het endocard/klepafwijkingen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "33",
+    "positie": 33,
     "aantal": 116800,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -892,7 +892,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aandoeningen gerelateerd aan alcohol",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "34",
+    "positie": 34,
     "aantal": 109000,
     "maat": "Benadering puntprevalentie",
     "jaar": 2015
@@ -902,7 +902,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Huidkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "35",
+    "positie": 35,
     "aantal": 94300,
     "maat": "10-jaarsprevalentie",
     "jaar": 2015
@@ -912,7 +912,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Autisme",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "36",
+    "positie": 36,
     "aantal": 78700,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -922,7 +922,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "37",
+    "positie": 37,
     "aantal": 77900,
     "maat": "10-jaarsprevalentie",
     "jaar": 2015
@@ -932,7 +932,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "38",
+    "positie": 38,
     "aantal": 72000,
     "maat": "10-jaarsprevalentie",
     "jaar": 2015
@@ -942,7 +942,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nierfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "39",
+    "positie": 39,
     "aantal": 62400,
     "maat": "Puntprevalentie",
     "jaar": 2015
@@ -952,7 +952,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aandoeningen gerelateerd aan drugs",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "40",
+    "positie": 40,
     "aantal": 61800,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -962,7 +962,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aangeboren afwijkingen van het hartvaatstelsel",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "41",
+    "positie": 41,
     "aantal": 61200,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -972,7 +972,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Arbeidsongevallen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "42",
+    "positie": 42,
     "aantal": 48800,
     "maat": "Aantal SEH-bezoeken",
     "jaar": 2015
@@ -982,7 +982,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Schizofrenie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "43",
+    "positie": 43,
     "aantal": 48500,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -992,7 +992,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Ziekte van Parkinson",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "44",
+    "positie": 44,
     "aantal": 48300,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1002,7 +1002,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "45",
+    "positie": 45,
     "aantal": 24100,
     "maat": "10-jaarsprevalentie",
     "jaar": 2015
@@ -1012,7 +1012,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Non-Hodgkin lymfomen (NHL)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "46",
+    "positie": 46,
     "aantal": 24000,
     "maat": "10-jaarsprevalentie",
     "jaar": 2015
@@ -1022,7 +1022,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "AIDS en hiv-infectie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "47",
+    "positie": 47,
     "aantal": 23000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1032,7 +1032,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Letsel als gevolg van geweld",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "48",
+    "positie": 48,
     "aantal": 17700,
     "maat": "Aantal SEH-bezoeken",
     "jaar": 2015
@@ -1042,7 +1042,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartstilstand",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "49",
+    "positie": 49,
     "aantal": 16800,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
@@ -1052,7 +1052,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Zelftoegebracht letsel",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "50",
+    "positie": 50,
     "aantal": 15000,
     "maat": "Aantal SEH-bezoeken",
     "jaar": 2015
@@ -1062,7 +1062,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Baarmoederhalskanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal ",
-    "positie": "51",
+    "positie": 51,
     "aantal": 5100,
     "maat": "10-jaarsprevalentie",
     "jaar": 2015
@@ -1072,7 +1072,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 832700,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1082,7 +1082,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 572000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1092,7 +1092,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 450100,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1102,7 +1102,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 421100,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1112,7 +1112,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 409900,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1122,7 +1122,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Contacteczeem",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 395000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1132,7 +1132,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 325900,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1142,7 +1142,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gezichtsstoornissen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 322100,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1152,7 +1152,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 308800,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1162,7 +1162,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 282300,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
@@ -1172,7 +1172,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 1149600,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1182,7 +1182,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 789200,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1192,7 +1192,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 625200,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1202,7 +1202,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Contacteczeem",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 566700,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1212,7 +1212,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 539000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1222,7 +1222,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gezichtsstoornissen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 427400,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1232,7 +1232,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Osteoporose",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 368500,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1242,7 +1242,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 355600,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1252,7 +1252,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 346300,
     "maat": "Zorgprevalentie",
     "jaar": 2015
@@ -1262,7 +1262,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Vrouwen",
     "leeftijd": "",
-    "positie": "10",
+    "positie": 10,
     "aantal": 337000,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
@@ -1272,7 +1272,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Constitutioneel eczeem",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 150200,
     "maat": "Zorgprevalentie",
     "jaar": 2015
@@ -1282,7 +1282,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infectieziekten van het maagdarmkanaal",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 107900,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
@@ -1292,7 +1292,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Contacteczeem",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 106900,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1302,7 +1302,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 101400,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
@@ -1312,7 +1312,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 99900,
     "maat": "Zorgprevalentie",
     "jaar": 2015
@@ -1322,7 +1322,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prive-ongevallen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 91100,
     "maat": "Aantal SEH-bezoeken",
     "jaar": 2015
@@ -1332,7 +1332,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gedragsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 84200,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1342,7 +1342,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "ADHD",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 76200,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1352,7 +1352,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Influenza",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 70200,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
@@ -1362,7 +1362,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Sportblessures",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 49600,
     "maat": "Aantal SEH-bezoeken",
     "jaar": 2015
@@ -1372,7 +1372,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 1334700,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1382,7 +1382,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 840100,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1392,7 +1392,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Contacteczeem",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 613000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1402,7 +1402,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 447000,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1412,7 +1412,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 426400,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1422,7 +1422,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 394600,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1432,7 +1432,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 394400,
     "maat": "Zorgprevalentie",
     "jaar": 2015
@@ -1442,7 +1442,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 272300,
     "maat": "Aantal nieuwe gevallen",
     "jaar": 2015
@@ -1452,7 +1452,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 244300,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1462,7 +1462,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Overspannenheid en burn-out",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 243700,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1472,7 +1472,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "1",
+    "positie": 1,
     "aantal": 803800,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1482,7 +1482,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "2",
+    "positie": 2,
     "aantal": 656700,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1492,7 +1492,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "3",
+    "positie": 3,
     "aantal": 601200,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1502,7 +1502,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gezichtsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "4",
+    "positie": 4,
     "aantal": 540400,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1512,7 +1512,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "5",
+    "positie": 5,
     "aantal": 512800,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1522,7 +1522,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "6",
+    "positie": 6,
     "aantal": 390800,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1532,7 +1532,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "7",
+    "positie": 7,
     "aantal": 354100,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1542,7 +1542,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Osteoporose",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "8",
+    "positie": 8,
     "aantal": 319800,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1552,7 +1552,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "9",
+    "positie": 9,
     "aantal": 309400,
     "maat": "Jaarprevalentie",
     "jaar": 2015
@@ -1562,7 +1562,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartritmestoornissen (boezemfibrilleren)",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "10",
+    "positie": 10,
     "aantal": 285400,
     "maat": "Jaarprevalentie",
     "jaar": null
@@ -1572,7 +1572,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 15978,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1582,7 +1582,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 10391,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1592,7 +1592,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 9180,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1602,7 +1602,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 8333,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1612,7 +1612,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 7689,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1622,7 +1622,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 6820,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1632,7 +1632,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 5097,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1642,7 +1642,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele val",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 4031,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1652,7 +1652,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 3769,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1662,7 +1662,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 3132,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1672,7 +1672,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "11",
+    "positie": 11,
     "aantal": 2862,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1682,7 +1682,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "12",
+    "positie": 12,
     "aantal": 2779,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1692,7 +1692,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aandoeningen van het endocard/klepafwijkingen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "13",
+    "positie": 13,
     "aantal": 2368,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1702,7 +1702,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartritmestoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "14",
+    "positie": 14,
     "aantal": 2255,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1712,7 +1712,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartstilstand",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "15",
+    "positie": 15,
     "aantal": 1936,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1722,7 +1722,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Zelftoegebracht letsel",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "16",
+    "positie": 16,
     "aantal": 1917,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1732,7 +1732,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Ziekte van Parkinson",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "17",
+    "positie": 17,
     "aantal": 1908,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1742,7 +1742,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nierfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "18",
+    "positie": 18,
     "aantal": 1769,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1752,7 +1752,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Non-Hodgkin lymfomen (NHL)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "19",
+    "positie": 19,
     "aantal": 1324,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1762,7 +1762,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Huidkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "20",
+    "positie": 20,
     "aantal": 925,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1772,7 +1772,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vervoersongeval",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "21",
+    "positie": 21,
     "aantal": 665,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1782,7 +1782,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infectieziekten van het maagdarmkanaal",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "22",
+    "positie": 22,
     "aantal": 515,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1792,7 +1792,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Influenza",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "23",
+    "positie": 23,
     "aantal": 489,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1802,7 +1802,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Epilepsie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "24",
+    "positie": 24,
     "aantal": 279,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1812,7 +1812,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "25",
+    "positie": 25,
     "aantal": 234,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1822,7 +1822,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele vergiftiging",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "26",
+    "positie": 26,
     "aantal": 224,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1832,17 +1832,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Baarmoederhalskanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "27",
+    "positie": 27,
     "aantal": 206,
     "maat": "Aantal doden",
     "jaar": 2017
   },
   {
     "indicator": "Doodsoorzaak",
-    "aandoening": "Reumato�de artritis (RA)",
+    "aandoening": "ReumatoÔde artritis (RA)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "28",
+    "positie": 28,
     "aantal": 205,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1852,7 +1852,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Downsyndroom",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "29",
+    "positie": 29,
     "aantal": 180,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1862,7 +1862,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "30",
+    "positie": 30,
     "aantal": 160,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1872,7 +1872,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "31",
+    "positie": 31,
     "aantal": 151,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1882,7 +1882,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Geweld",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "32",
+    "positie": 32,
     "aantal": 132,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1892,7 +1892,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Osteoporose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "33",
+    "positie": 33,
     "aantal": 130,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1902,7 +1902,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "34",
+    "positie": 34,
     "aantal": 124,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1912,7 +1912,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "35",
+    "positie": 35,
     "aantal": 96,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1922,7 +1922,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aangeboren afwijkingen van het hartvaatstelsel",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "36",
+    "positie": 36,
     "aantal": 93,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1932,7 +1932,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele verdrinking",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "37",
+    "positie": 37,
     "aantal": 86,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1942,7 +1942,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Laag geboortegewicht",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "38",
+    "positie": 38,
     "aantal": 46,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1952,7 +1952,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aids en hiv-infectie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "39",
+    "positie": 39,
     "aantal": 25,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1962,7 +1962,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "40",
+    "positie": 40,
     "aantal": 12,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1972,7 +1972,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Persoonlijkheidsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "41",
+    "positie": 41,
     "aantal": 11,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1982,7 +1982,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Migraine",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "42",
+    "positie": 42,
     "aantal": 1,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -1992,7 +1992,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "ADHD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "999",
+    "positie": 999,
     "aantal": 0,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2002,7 +2002,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Constitutioneel eczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "999",
+    "positie": 999,
     "aantal": 0,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2012,7 +2012,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Contacteczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "999",
+    "positie": 999,
     "aantal": 0,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2022,7 +2022,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gedragsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "999",
+    "positie": 999,
     "aantal": 0,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2032,7 +2032,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 6134,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2042,7 +2042,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 5259,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2052,7 +2052,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 4983,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2062,7 +2062,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 3759,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2072,7 +2072,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 3457,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2082,7 +2082,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 3180,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2092,7 +2092,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 2862,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2102,7 +2102,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 2771,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2112,7 +2112,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 1684,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2122,7 +2122,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele val",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 1623,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2132,7 +2132,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 10719,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2142,7 +2142,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 5421,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2152,7 +2152,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 4509,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2162,7 +2162,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 4257,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2172,7 +2172,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 3363,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2182,7 +2182,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 3350,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2192,7 +2192,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 3106,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2202,7 +2202,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele val",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 2408,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2212,7 +2212,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 2326,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2222,7 +2222,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 2085,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2232,7 +2232,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aangeboren afwijkingen van het hartvaatstelsel",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 51,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2242,7 +2242,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Laag geboortegewicht",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 46,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2252,7 +2252,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vervoersongeval",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 19,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2262,7 +2262,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Epilepsie",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 17,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2272,7 +2272,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Geweld",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 12,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2282,7 +2282,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Zelftoegebracht letsel",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 11,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2292,7 +2292,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele verdrinking",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "6",
+    "positie": 7,
     "aantal": 11,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2302,7 +2302,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 2627,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2312,7 +2312,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Zelftoegebracht letsel",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 1493,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2322,7 +2322,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 1087,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2332,7 +2332,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 1047,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2342,7 +2342,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 997,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2352,7 +2352,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 724,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2362,7 +2362,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 666,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2372,7 +2372,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartstilstand",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 347,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2382,7 +2382,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vervoersongeval",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 346,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2392,7 +2392,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 296,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2402,7 +2402,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "1",
+    "positie": 1,
     "aantal": 15842,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2412,7 +2412,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "2",
+    "positie": 2,
     "aantal": 8512,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2422,7 +2422,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "3",
+    "positie": 3,
     "aantal": 7764,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2432,7 +2432,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "4",
+    "positie": 4,
     "aantal": 7478,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2442,7 +2442,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "5",
+    "positie": 5,
     "aantal": 7336,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2452,7 +2452,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "6",
+    "positie": 6,
     "aantal": 6096,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2462,7 +2462,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "7",
+    "positie": 7,
     "aantal": 4050,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2472,7 +2472,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele val",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "8",
+    "positie": 8,
     "aantal": 3849,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2482,7 +2482,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "9",
+    "positie": 9,
     "aantal": 3609,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2492,7 +2492,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "10",
+    "positie": 10,
     "aantal": 2670,
     "maat": "Aantal doden",
     "jaar": 2017
@@ -2502,7 +2502,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 155497,
     "maat": "Jaren",
     "jaar": 2017
@@ -2512,7 +2512,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 95423,
     "maat": "Jaren",
     "jaar": 2017
@@ -2522,7 +2522,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 85422,
     "maat": "Jaren",
     "jaar": 2017
@@ -2532,7 +2532,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 79669,
     "maat": "Jaren",
     "jaar": 2017
@@ -2542,7 +2542,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 72032,
     "maat": "Jaren",
     "jaar": 2017
@@ -2552,7 +2552,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 68136,
     "maat": "Jaren",
     "jaar": 2017
@@ -2562,7 +2562,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Zelftoegebracht letsel",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 61327,
     "maat": "Jaren",
     "jaar": 2017
@@ -2572,7 +2572,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 54151,
     "maat": "Jaren",
     "jaar": 2017
@@ -2582,7 +2582,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 49545,
     "maat": "Jaren",
     "jaar": 2017
@@ -2592,7 +2592,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele val",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 28273,
     "maat": "Jaren",
     "jaar": 2017
@@ -2602,7 +2602,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "11",
+    "positie": 11,
     "aantal": 27582,
     "maat": "Jaren",
     "jaar": 2017
@@ -2612,7 +2612,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "12",
+    "positie": 12,
     "aantal": 26162,
     "maat": "Jaren",
     "jaar": 2017
@@ -2622,7 +2622,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "13",
+    "positie": 13,
     "aantal": 25127,
     "maat": "Jaren",
     "jaar": 2017
@@ -2632,7 +2632,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartstilstand",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "14",
+    "positie": 14,
     "aantal": 22645,
     "maat": "Jaren",
     "jaar": 2017
@@ -2642,7 +2642,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aandoeningen van het endocard/klepafwijkingen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "15",
+    "positie": 15,
     "aantal": 18686,
     "maat": "Jaren",
     "jaar": 2017
@@ -2652,7 +2652,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vervoersongeval",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "16",
+    "positie": 16,
     "aantal": 18563,
     "maat": "Jaren",
     "jaar": 2017
@@ -2662,7 +2662,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartritmestoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "17",
+    "positie": 17,
     "aantal": 17503,
     "maat": "Jaren",
     "jaar": 2017
@@ -2672,7 +2672,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Non-Hodgkin lymfomen (NHL)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "18",
+    "positie": 18,
     "aantal": 17392,
     "maat": "Jaren",
     "jaar": 2017
@@ -2682,7 +2682,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Ziekte van Parkinson",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "19",
+    "positie": 19,
     "aantal": 15235,
     "maat": "Jaren",
     "jaar": 2017
@@ -2692,7 +2692,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Huidkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "20",
+    "positie": 20,
     "aantal": 14873,
     "maat": "Jaren",
     "jaar": 2017
@@ -2702,7 +2702,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nierfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "21",
+    "positie": 21,
     "aantal": 12706,
     "maat": "Jaren",
     "jaar": 2017
@@ -2712,7 +2712,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele vergiftiging",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "22",
+    "positie": 22,
     "aantal": 7918,
     "maat": "Jaren",
     "jaar": 2017
@@ -2722,7 +2722,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Epilepsie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "23",
+    "positie": 23,
     "aantal": 7091,
     "maat": "Jaren",
     "jaar": 2017
@@ -2732,7 +2732,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Geweld",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "24",
+    "positie": 24,
     "aantal": 5443,
     "maat": "Jaren",
     "jaar": 2017
@@ -2742,7 +2742,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aangeboren afwijkingen van het hartvaatstelsel",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "25",
+    "positie": 25,
     "aantal": 5345,
     "maat": "Jaren",
     "jaar": 2017
@@ -2752,7 +2752,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Downsyndroom",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "26",
+    "positie": 26,
     "aantal": 4569,
     "maat": "Jaren",
     "jaar": 2017
@@ -2762,7 +2762,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Baarmoederhalskanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "27",
+    "positie": 27,
     "aantal": 4568,
     "maat": "Jaren",
     "jaar": 2017
@@ -2772,7 +2772,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infectieziekten van het maagdarmkanaal",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "28",
+    "positie": 28,
     "aantal": 4140,
     "maat": "Jaren",
     "jaar": 2017
@@ -2782,7 +2782,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Laag geboortegewicht",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "29",
+    "positie": 29,
     "aantal": 3747,
     "maat": "Jaren",
     "jaar": 2017
@@ -2792,7 +2792,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Influenza",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "30",
+    "positie": 30,
     "aantal": 3728,
     "maat": "Jaren",
     "jaar": 2017
@@ -2802,7 +2802,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele verdrinking",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "31",
+    "positie": 31,
     "aantal": 2986,
     "maat": "Jaren",
     "jaar": 2017
@@ -2812,7 +2812,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "32",
+    "positie": 32,
     "aantal": 2425,
     "maat": "Jaren",
     "jaar": 2017
@@ -2822,17 +2822,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "33",
+    "positie": 33,
     "aantal": 2123,
     "maat": "Jaren",
     "jaar": 2017
   },
   {
     "indicator": "Verloren levensjaren",
-    "aandoening": "Reumato�de artritis (RA)",
+    "aandoening": "ReumatoÔde artritis (RA)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "34",
+    "positie": 34,
     "aantal": 1963,
     "maat": "Jaren",
     "jaar": 2017
@@ -2842,7 +2842,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "35",
+    "positie": 35,
     "aantal": 1728,
     "maat": "Jaren",
     "jaar": 2017
@@ -2852,7 +2852,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "36",
+    "positie": 36,
     "aantal": 1511,
     "maat": "Jaren",
     "jaar": 2017
@@ -2862,7 +2862,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "37",
+    "positie": 37,
     "aantal": 1096,
     "maat": "Jaren",
     "jaar": 2017
@@ -2872,7 +2872,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Osteoporose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "38",
+    "positie": 38,
     "aantal": 734,
     "maat": "Jaren",
     "jaar": 2017
@@ -2882,7 +2882,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aids en hiv-infectie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "39",
+    "positie": 39,
     "aantal": 694,
     "maat": "Jaren",
     "jaar": 2017
@@ -2892,7 +2892,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "40",
+    "positie": 40,
     "aantal": 200,
     "maat": "Jaren",
     "jaar": 2017
@@ -2902,7 +2902,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Persoonlijkheidsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "41",
+    "positie": 41,
     "aantal": 194,
     "maat": "Jaren",
     "jaar": 2017
@@ -2912,7 +2912,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Migraine",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "42",
+    "positie": 42,
     "aantal": 29,
     "maat": "Jaren",
     "jaar": 2017
@@ -2922,7 +2922,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "ADHD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "geen sterfte/verloren levensjaren",
+    "positie": null,
     "aantal": 0,
     "maat": "Jaren",
     "jaar": 2017
@@ -2932,7 +2932,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Constitutioneel eczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "geen sterfte/verloren levensjaren",
+    "positie": null,
     "aantal": 0,
     "maat": "Jaren",
     "jaar": 2017
@@ -2942,7 +2942,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Contacteczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "geen sterfte/verloren levensjaren",
+    "positie": null,
     "aantal": 0,
     "maat": "Jaren",
     "jaar": 2017
@@ -2952,7 +2952,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gedragsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "geen sterfte/verloren levensjaren",
+    "positie": null,
     "aantal": 0,
     "maat": "Jaren",
     "jaar": 2017
@@ -2962,7 +2962,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 82694,
     "maat": "Jaren",
     "jaar": 2017
@@ -2972,7 +2972,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 56147,
     "maat": "Jaren",
     "jaar": 2017
@@ -2982,7 +2982,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Zelftoegebracht letsel",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 41357,
     "maat": "Jaren",
     "jaar": 2017
@@ -2992,7 +2992,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 36670,
     "maat": "Jaren",
     "jaar": 2017
@@ -3002,7 +3002,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 35264,
     "maat": "Jaren",
     "jaar": 2017
@@ -3012,7 +3012,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 33333,
     "maat": "Jaren",
     "jaar": 2017
@@ -3022,7 +3022,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 33260,
     "maat": "Jaren",
     "jaar": 2017
@@ -3032,7 +3032,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 26162,
     "maat": "Jaren",
     "jaar": 2017
@@ -3042,7 +3042,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 22937,
     "maat": "Jaren",
     "jaar": 2017
@@ -3052,7 +3052,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 14816,
     "maat": "Jaren",
     "jaar": 2017
@@ -3062,7 +3062,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 72802,
     "maat": "Jaren",
     "jaar": 2017
@@ -3072,7 +3072,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 62163,
     "maat": "Jaren",
     "jaar": 2017
@@ -3082,7 +3082,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 53803,
     "maat": "Jaren",
     "jaar": 2017
@@ -3092,7 +3092,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 44404,
     "maat": "Jaren",
     "jaar": 2017
@@ -3102,7 +3102,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 38699,
     "maat": "Jaren",
     "jaar": 2017
@@ -3112,7 +3112,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 31466,
     "maat": "Jaren",
     "jaar": 2017
@@ -3122,7 +3122,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 29275,
     "maat": "Jaren",
     "jaar": 2017
@@ -3132,7 +3132,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 26608,
     "maat": "Jaren",
     "jaar": 2017
@@ -3142,7 +3142,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Zelftoegebracht letsel",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 19969,
     "maat": "Jaren",
     "jaar": 2017
@@ -3152,7 +3152,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele val",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 14993,
     "maat": "Jaren",
     "jaar": 2017
@@ -3162,7 +3162,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aangeboren afwijkingen van het hartvaatstelsel",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 4058,
     "maat": "Jaren",
     "jaar": 2017
@@ -3172,7 +3172,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Laag geboortegewicht",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 3747,
     "maat": "Jaren",
     "jaar": 2017
@@ -3182,7 +3182,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vervoersongeval",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 1401,
     "maat": "Jaren",
     "jaar": 2017
@@ -3192,7 +3192,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Epilepsie",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 1256,
     "maat": "Jaren",
     "jaar": 2017
@@ -3202,7 +3202,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Geweld",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 906,
     "maat": "Jaren",
     "jaar": 2017
@@ -3212,7 +3212,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele verdrinking",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 826,
     "maat": "Jaren",
     "jaar": 2017
@@ -3222,7 +3222,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Zelftoegebracht letsel",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 757,
     "maat": "Jaren",
     "jaar": 2017
@@ -3232,7 +3232,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 552,
     "maat": "Jaren",
     "jaar": 2017
@@ -3242,7 +3242,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 68482,
     "maat": "Jaren",
     "jaar": 2017
@@ -3252,7 +3252,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Zelftoegebracht letsel",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 55536,
     "maat": "Jaren",
     "jaar": 2017
@@ -3262,7 +3262,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 32890,
     "maat": "Jaren",
     "jaar": 2017
@@ -3272,7 +3272,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 28426,
     "maat": "Jaren",
     "jaar": 2017
@@ -3282,7 +3282,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 26144,
     "maat": "Jaren",
     "jaar": 2017
@@ -3292,7 +3292,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 18632,
     "maat": "Jaren",
     "jaar": 2017
@@ -3302,7 +3302,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 18041,
     "maat": "Jaren",
     "jaar": 2017
@@ -3312,7 +3312,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vervoersongeval",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 14370,
     "maat": "Jaren",
     "jaar": 2017
@@ -3322,7 +3322,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartstilstand",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 9321,
     "maat": "Jaren",
     "jaar": 2017
@@ -3332,7 +3332,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Huidkanker",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 8261,
     "maat": "Jaren",
     "jaar": 2017
@@ -3342,7 +3342,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "1",
+    "positie": 1,
     "aantal": 91917,
     "maat": "Jaren",
     "jaar": 2017
@@ -3352,7 +3352,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "2",
+    "positie": 2,
     "aantal": 87015,
     "maat": "Jaren",
     "jaar": 2017
@@ -3362,7 +3362,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "3",
+    "positie": 3,
     "aantal": 60888,
     "maat": "Jaren",
     "jaar": 2017
@@ -3372,7 +3372,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "4",
+    "positie": 4,
     "aantal": 59278,
     "maat": "Jaren",
     "jaar": 2017
@@ -3382,7 +3382,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "5",
+    "positie": 5,
     "aantal": 53991,
     "maat": "Jaren",
     "jaar": 2017
@@ -3392,7 +3392,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "6",
+    "positie": 6,
     "aantal": 43814,
     "maat": "Jaren",
     "jaar": 2017
@@ -3402,7 +3402,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "7",
+    "positie": 7,
     "aantal": 39710,
     "maat": "Jaren",
     "jaar": 2017
@@ -3412,7 +3412,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Accidentele val",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "8",
+    "positie": 8,
     "aantal": 23057,
     "maat": "Jaren",
     "jaar": 2017
@@ -3422,7 +3422,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "9",
+    "positie": 9,
     "aantal": 21785,
     "maat": "Jaren",
     "jaar": 2017
@@ -3432,7 +3432,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "10",
+    "positie": 10,
     "aantal": 21261,
     "maat": "Jaren",
     "jaar": 2017
@@ -3442,7 +3442,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 173900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3452,7 +3452,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 164000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3462,7 +3462,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 159900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3472,7 +3472,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 158600,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3482,7 +3482,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 144700,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3492,7 +3492,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 141900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3502,7 +3502,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 127900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3512,17 +3512,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 108400,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
   },
   {
     "indicator": "Verlies gezonde levensjaren",
-    "aandoening": "Priv�-ongevallen",
+    "aandoening": "PrivÈ-ongevallen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 87100,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3532,7 +3532,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 83800,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3542,7 +3542,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "11",
+    "positie": 11,
     "aantal": 52900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3552,7 +3552,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Overspannenheid en burn-out",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "12",
+    "positie": 12,
     "aantal": 46500,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3562,17 +3562,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "13",
+    "positie": 13,
     "aantal": 45700,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
   },
   {
     "indicator": "Verlies gezonde levensjaren",
-    "aandoening": "Su�cide(poging)",
+    "aandoening": "SuÔcide(poging)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "14",
+    "positie": 14,
     "aantal": 44600,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3582,17 +3582,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gezichtsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "15",
+    "positie": 15,
     "aantal": 40000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
   },
   {
     "indicator": "Verlies gezonde levensjaren",
-    "aandoening": "Reumato�de artritis (RA)",
+    "aandoening": "ReumatoÔde artritis (RA)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "16",
+    "positie": 16,
     "aantal": 39200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3602,7 +3602,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vervoersongevallen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "17",
+    "positie": 17,
     "aantal": 37800,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3612,7 +3612,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "18",
+    "positie": 18,
     "aantal": 37200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3622,7 +3622,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartritmestoornissen (boezemfibrilleren)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "19",
+    "positie": 19,
     "aantal": 28500,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3632,7 +3632,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "20",
+    "positie": 20,
     "aantal": 26900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3642,7 +3642,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Persoonlijkheidsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "21",
+    "positie": 21,
     "aantal": 26200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3652,7 +3652,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Afhankelijkheid van alcohol",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "22",
+    "positie": 22,
     "aantal": 24900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3662,7 +3662,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "23",
+    "positie": 23,
     "aantal": 23600,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3672,7 +3672,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Schizofrenie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "24",
+    "positie": 24,
     "aantal": 22700,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3682,7 +3682,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Contacteczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "25",
+    "positie": 25,
     "aantal": 22200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3692,7 +3692,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Sportblessures",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "26",
+    "positie": 26,
     "aantal": 21700,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3702,7 +3702,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "27",
+    "positie": 27,
     "aantal": 20000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3712,7 +3712,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Autisme",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "28",
+    "positie": 28,
     "aantal": 19900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3722,7 +3722,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "29",
+    "positie": 29,
     "aantal": 17800,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3732,7 +3732,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "30",
+    "positie": 30,
     "aantal": 15300,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3742,7 +3742,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Ziekte van Parkinson",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "31",
+    "positie": 31,
     "aantal": 13700,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3752,7 +3752,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Constitutioneel eczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "32",
+    "positie": 32,
     "aantal": 13700,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3762,7 +3762,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Epilepsie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "33",
+    "positie": 33,
     "aantal": 9000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3772,7 +3772,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Influenza",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "34",
+    "positie": 34,
     "aantal": 8600,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3782,7 +3782,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aandoeningen van het endocard",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "35",
+    "positie": 35,
     "aantal": 8500,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3792,7 +3792,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nierfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "36",
+    "positie": 36,
     "aantal": 8400,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3802,7 +3802,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aangeboren afwijkingen van het hartvaatstelsel",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "37",
+    "positie": 37,
     "aantal": 8400,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3812,7 +3812,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Afhankelijkheid van drugs",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "38",
+    "positie": 38,
     "aantal": 7200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3822,7 +3822,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "39",
+    "positie": 39,
     "aantal": 5900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3832,7 +3832,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Huidkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "40",
+    "positie": 40,
     "aantal": 5900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3842,7 +3842,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infectieziekten van het maagdarmkanaal",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "41",
+    "positie": 41,
     "aantal": 5400,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3852,7 +3852,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "ADHD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "42",
+    "positie": 42,
     "aantal": 5300,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3862,7 +3862,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Migraine",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "43",
+    "positie": 43,
     "aantal": 5200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3872,7 +3872,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Arbeidsongevallen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "44",
+    "positie": 44,
     "aantal": 5100,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3882,7 +3882,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Non-Hodgkin lymfomen (NHL)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "45",
+    "positie": 45,
     "aantal": 4900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3892,7 +3892,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gedragsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "46",
+    "positie": 46,
     "aantal": 3800,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3902,7 +3902,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Letsel als gevolg van geweld",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "47",
+    "positie": 47,
     "aantal": 3200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3912,7 +3912,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Osteoporose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "48",
+    "positie": 48,
     "aantal": 2320,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3922,7 +3922,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aids en hiv-infectie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "49",
+    "positie": 49,
     "aantal": 1080,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3932,7 +3932,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Baarmoederhalskanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "50",
+    "positie": 50,
     "aantal": 750,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3942,7 +3942,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartstilstand",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "51",
+    "positie": 51,
     "aantal": 700,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3952,7 +3952,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 102200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3962,7 +3962,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 82900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3972,7 +3972,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 72600,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3982,7 +3982,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 70200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -3992,7 +3992,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 65400,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4002,7 +4002,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 58400,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4012,7 +4012,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 55100,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4022,7 +4022,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 44200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4032,17 +4032,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 43500,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
   },
   {
     "indicator": "Verlies gezonde levensjaren",
-    "aandoening": "Priv�-ongevallen",
+    "aandoening": "PrivÈ-ongevallen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 39100,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4052,7 +4052,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 103700,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4062,7 +4062,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 93100,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4072,7 +4072,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 86300,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4082,7 +4082,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 84400,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4092,7 +4092,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 77000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4102,7 +4102,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 69300,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4112,7 +4112,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 61800,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4122,17 +4122,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 53300,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
   },
   {
     "indicator": "Verlies gezonde levensjaren",
-    "aandoening": "Priv�-ongevallen",
+    "aandoening": "PrivÈ-ongevallen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 48000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4142,17 +4142,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 39600,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
   },
   {
     "indicator": "Verlies gezonde levensjaren",
-    "aandoening": "Letsel door priv�-ongevallen",
+    "aandoening": "Letsel door privÈ-ongevallen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 21200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4162,7 +4162,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Autisme",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 11000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4172,7 +4172,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 10200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4182,7 +4182,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Sportblessures",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 8100,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4192,7 +4192,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 6000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4202,7 +4202,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Constitutioneel eczeem",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 5400,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4212,7 +4212,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Letsel door vervoersongevallen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 5300,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4222,7 +4222,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 5000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4232,7 +4232,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 3900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4242,7 +4242,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 3800,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4252,7 +4252,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 142200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4262,7 +4262,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 133900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4272,7 +4272,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 85300,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4282,7 +4282,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 66900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4292,7 +4292,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 51000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4302,7 +4302,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 46000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4312,7 +4312,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 45300,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4322,7 +4322,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Burn-out en overspannenheid",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 43700,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4332,17 +4332,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 43500,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
   },
   {
     "indicator": "Verlies gezonde levensjaren",
-    "aandoening": "Su�cide(poging)",
+    "aandoening": "SuÔcide(poging)",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 41900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4352,7 +4352,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "1",
+    "positie": 1,
     "aantal": 112900,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4362,7 +4362,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "2",
+    "positie": 2,
     "aantal": 95800,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4372,7 +4372,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "3",
+    "positie": 3,
     "aantal": 92000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4382,7 +4382,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "4",
+    "positie": 4,
     "aantal": 84300,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4392,7 +4392,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "5",
+    "positie": 5,
     "aantal": 60600,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4402,7 +4402,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "6",
+    "positie": 6,
     "aantal": 58500,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4412,7 +4412,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "7",
+    "positie": 7,
     "aantal": 49800,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4422,7 +4422,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "8",
+    "positie": 8,
     "aantal": 44000,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4432,7 +4432,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gezichtsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "9",
+    "positie": 9,
     "aantal": 27200,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4442,7 +4442,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "10",
+    "positie": 10,
     "aantal": 26800,
     "maat": "Ziektejaarquivalenten",
     "jaar": 2015
@@ -4452,7 +4452,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 260200,
     "maat": "DALY's",
     "jaar": 2015
@@ -4462,7 +4462,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 228300,
     "maat": "DALY's",
     "jaar": 2015
@@ -4472,7 +4472,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 188900,
     "maat": "DALY's",
     "jaar": 2015
@@ -4482,7 +4482,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 182500,
     "maat": "DALY's",
     "jaar": 2015
@@ -4492,7 +4492,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 173900,
     "maat": "DALY's",
     "jaar": 2015
@@ -4502,7 +4502,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 169200,
     "maat": "DALY's",
     "jaar": 2015
@@ -4512,7 +4512,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 160400,
     "maat": "DALY's",
     "jaar": 2015
@@ -4522,7 +4522,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 145800,
     "maat": "DALY's",
     "jaar": 2015
@@ -4532,7 +4532,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 129800,
     "maat": "DALY's",
     "jaar": 2015
@@ -4542,27 +4542,27 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 129100,
     "maat": "DALY's",
     "jaar": 2015
   },
   {
     "indicator": "Ziektelast",
-    "aandoening": "Priv�-ongevallen",
+    "aandoening": "PrivÈ-ongevallen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "11",
+    "positie": 11,
     "aantal": 125300,
     "maat": "DALY's",
     "jaar": 2015
   },
   {
     "indicator": "Ziektelast",
-    "aandoening": "Su�cide(poging)",
+    "aandoening": "SuÔcide(poging)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "12",
+    "positie": 12,
     "aantal": 104200,
     "maat": "DALY's",
     "jaar": 2015
@@ -4572,7 +4572,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "13",
+    "positie": 13,
     "aantal": 88600,
     "maat": "DALY's",
     "jaar": 2015
@@ -4582,7 +4582,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "14",
+    "positie": 14,
     "aantal": 85400,
     "maat": "DALY's",
     "jaar": 2015
@@ -4592,7 +4592,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "15",
+    "positie": 15,
     "aantal": 83800,
     "maat": "DALY's",
     "jaar": 2015
@@ -4602,7 +4602,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "16",
+    "positie": 16,
     "aantal": 71600,
     "maat": "DALY's",
     "jaar": 2015
@@ -4612,7 +4612,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vervoersongevallen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "17",
+    "positie": 17,
     "aantal": 57200,
     "maat": "DALY's",
     "jaar": 2015
@@ -4622,7 +4622,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "18",
+    "positie": 18,
     "aantal": 55700,
     "maat": "DALY's",
     "jaar": 2015
@@ -4632,7 +4632,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "19",
+    "positie": 19,
     "aantal": 48700,
     "maat": "DALY's",
     "jaar": 2015
@@ -4642,7 +4642,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartritmestoornissen (boezemfibrilleren)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "20",
+    "positie": 20,
     "aantal": 46800,
     "maat": "DALY's",
     "jaar": 2015
@@ -4652,17 +4652,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Overspannenheid en burn-out",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "21",
+    "positie": 21,
     "aantal": 46500,
     "maat": "DALY's",
     "jaar": 2015
   },
   {
     "indicator": "Ziektelast",
-    "aandoening": "Reumato�de artritis (RA)",
+    "aandoening": "ReumatoÔde artritis (RA)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "22",
+    "positie": 22,
     "aantal": 40800,
     "maat": "DALY's",
     "jaar": 2015
@@ -4672,7 +4672,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "23",
+    "positie": 23,
     "aantal": 40400,
     "maat": "DALY's",
     "jaar": 2015
@@ -4682,7 +4682,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gezichtsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "24",
+    "positie": 24,
     "aantal": 40000,
     "maat": "DALY's",
     "jaar": 2015
@@ -4692,7 +4692,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "25",
+    "positie": 25,
     "aantal": 38700,
     "maat": "DALY's",
     "jaar": 2015
@@ -4702,7 +4702,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Afhankelijkheid van alcohol",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "26",
+    "positie": 26,
     "aantal": 35300,
     "maat": "DALY's",
     "jaar": 2015
@@ -4712,7 +4712,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aandoeningen van het endocard",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "27",
+    "positie": 27,
     "aantal": 27100,
     "maat": "DALY's",
     "jaar": 2015
@@ -4722,7 +4722,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Ziekte van Parkinson",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "28",
+    "positie": 28,
     "aantal": 26800,
     "maat": "DALY's",
     "jaar": 2015
@@ -4732,7 +4732,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Persoonlijkheidsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "29",
+    "positie": 29,
     "aantal": 26200,
     "maat": "DALY's",
     "jaar": 2015
@@ -4742,7 +4742,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartstilstand",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "30",
+    "positie": 30,
     "aantal": 25200,
     "maat": "DALY's",
     "jaar": 2015
@@ -4752,7 +4752,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nierfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "31",
+    "positie": 31,
     "aantal": 22700,
     "maat": "DALY's",
     "jaar": 2015
@@ -4762,7 +4762,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Schizofrenie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "32",
+    "positie": 32,
     "aantal": 22700,
     "maat": "DALY's",
     "jaar": 2015
@@ -4772,7 +4772,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Contacteczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "33",
+    "positie": 33,
     "aantal": 22200,
     "maat": "DALY's",
     "jaar": 2015
@@ -4782,7 +4782,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Sportblessures",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "34",
+    "positie": 34,
     "aantal": 21700,
     "maat": "DALY's",
     "jaar": 2015
@@ -4792,7 +4792,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Huidkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "35",
+    "positie": 35,
     "aantal": 21400,
     "maat": "DALY's",
     "jaar": 2015
@@ -4802,7 +4802,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Non-Hodgkin lymfomen (NHL)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "36",
+    "positie": 36,
     "aantal": 21200,
     "maat": "DALY's",
     "jaar": 2015
@@ -4812,7 +4812,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Autisme",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "37",
+    "positie": 37,
     "aantal": 19900,
     "maat": "DALY's",
     "jaar": 2015
@@ -4822,7 +4822,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Epilepsie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "38",
+    "positie": 38,
     "aantal": 16000,
     "maat": "DALY's",
     "jaar": 2015
@@ -4832,7 +4832,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Constitutioneel eczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "39",
+    "positie": 39,
     "aantal": 13700,
     "maat": "DALY's",
     "jaar": 2015
@@ -4842,7 +4842,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aangeboren afwijkingen van het hartvaatstelsel",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "40",
+    "positie": 40,
     "aantal": 13400,
     "maat": "DALY's",
     "jaar": 2015
@@ -4852,7 +4852,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Influenza",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "41",
+    "positie": 41,
     "aantal": 11800,
     "maat": "DALY's",
     "jaar": 2015
@@ -4862,7 +4862,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infectieziekten van het maagdarmkanaal",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "42",
+    "positie": 42,
     "aantal": 10100,
     "maat": "DALY's",
     "jaar": 2015
@@ -4872,7 +4872,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Afhankelijkheid van drugs",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "43",
+    "positie": 43,
     "aantal": 8300,
     "maat": "DALY's",
     "jaar": 2015
@@ -4882,7 +4882,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Letsel als gevolg van geweld",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "44",
+    "positie": 44,
     "aantal": 7500,
     "maat": "DALY's",
     "jaar": 2015
@@ -4892,7 +4892,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Arbeidsongevallen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "45",
+    "positie": 45,
     "aantal": 7400,
     "maat": "DALY's",
     "jaar": 2015
@@ -4902,7 +4902,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Baarmoederhalskanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "46",
+    "positie": 46,
     "aantal": 5400,
     "maat": "DALY's",
     "jaar": 2015
@@ -4912,7 +4912,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "ADHD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "47",
+    "positie": 47,
     "aantal": 5300,
     "maat": "DALY's",
     "jaar": 2015
@@ -4922,7 +4922,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Migraine",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "48",
+    "positie": 48,
     "aantal": 5200,
     "maat": "DALY's",
     "jaar": 2015
@@ -4932,7 +4932,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Downsyndroom",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "49",
+    "positie": 49,
     "aantal": 4700,
     "maat": "DALY's",
     "jaar": 2015
@@ -4942,7 +4942,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gedragsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "50",
+    "positie": 50,
     "aantal": 3800,
     "maat": "DALY's",
     "jaar": 2015
@@ -4952,7 +4952,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Laag geboortegewicht",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "51",
+    "positie": 51,
     "aantal": 3700,
     "maat": "DALY's",
     "jaar": 2015
@@ -4962,7 +4962,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Osteoporose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "52",
+    "positie": 52,
     "aantal": 3000,
     "maat": "DALY's",
     "jaar": 2015
@@ -4972,7 +4972,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aids en hiv-infectie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "53",
+    "positie": 53,
     "aantal": 2060,
     "maat": "DALY's",
     "jaar": 2015
@@ -4982,7 +4982,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 164100,
     "maat": "DALY's",
     "jaar": 2015
@@ -4992,7 +4992,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 111000,
     "maat": "DALY's",
     "jaar": 2015
@@ -5002,7 +5002,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 98300,
     "maat": "DALY's",
     "jaar": 2015
@@ -5012,7 +5012,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 89900,
     "maat": "DALY's",
     "jaar": 2015
@@ -5022,7 +5022,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 88300,
     "maat": "DALY's",
     "jaar": 2015
@@ -5032,7 +5032,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 70200,
     "maat": "DALY's",
     "jaar": 2015
@@ -5042,17 +5042,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 66000,
     "maat": "DALY's",
     "jaar": 2015
   },
   {
     "indicator": "Ziektelast",
-    "aandoening": "Letsel door priv�-ongevallena",
+    "aandoening": "Letsel door privÈ-ongevallena",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 59500,
     "maat": "DALY's",
     "jaar": 2015
@@ -5062,17 +5062,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 59000,
     "maat": "DALY's",
     "jaar": 2015
   },
   {
     "indicator": "Ziektelast",
-    "aandoening": "Zelftoegebracht letsel / su�cide(poging)",
+    "aandoening": "Zelftoegebracht letsel / suÔcide(poging)",
     "geslacht": "Mannen",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 53200,
     "maat": "DALY's",
     "jaar": 2015
@@ -5082,7 +5082,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 117200,
     "maat": "DALY's",
     "jaar": 2015
@@ -5092,7 +5092,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 103700,
     "maat": "DALY's",
     "jaar": 2015
@@ -5102,7 +5102,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 96100,
     "maat": "DALY's",
     "jaar": 2015
@@ -5112,7 +5112,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 94400,
     "maat": "DALY's",
     "jaar": 2015
@@ -5122,7 +5122,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 92600,
     "maat": "DALY's",
     "jaar": 2015
@@ -5132,7 +5132,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 90600,
     "maat": "DALY's",
     "jaar": 2015
@@ -5142,7 +5142,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 86900,
     "maat": "DALY's",
     "jaar": 2015
@@ -5152,7 +5152,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 85900,
     "maat": "DALY's",
     "jaar": 2015
@@ -5162,7 +5162,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 85300,
     "maat": "DALY's",
     "jaar": 2015
@@ -5172,17 +5172,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Vrouwen",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 85000,
     "maat": "DALY's",
     "jaar": 2015
   },
   {
     "indicator": "Ziektelast",
-    "aandoening": "Letsel door priv�-ongevallenb",
+    "aandoening": "Letsel door privÈ-ongevallenb",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 23250,
     "maat": "DALY's",
     "jaar": 2015
@@ -5192,7 +5192,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 11200,
     "maat": "DALY's",
     "jaar": 2015
@@ -5202,7 +5202,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Autisme",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 11000,
     "maat": "DALY's",
     "jaar": 2015
@@ -5212,7 +5212,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Sportblessures",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 8100,
     "maat": "DALY's",
     "jaar": 2015
@@ -5222,7 +5222,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Letsel door vervoersongevallen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 7100,
     "maat": "DALY's",
     "jaar": 2015
@@ -5232,7 +5232,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aangeboren afwijkingen van het hartvaatstelsel",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 6300,
     "maat": "DALY's",
     "jaar": 2015
@@ -5242,7 +5242,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 6270,
     "maat": "DALY's",
     "jaar": 2015
@@ -5252,7 +5252,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Constitutioneel eczeem",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 5400,
     "maat": "DALY's",
     "jaar": 2015
@@ -5262,7 +5262,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 5000,
     "maat": "DALY's",
     "jaar": 2015
@@ -5272,7 +5272,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infecties van de onderste luchtwegen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 4660,
     "maat": "DALY's",
     "jaar": 2015
@@ -5282,7 +5282,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 142200,
     "maat": "DALY's",
     "jaar": 2015
@@ -5292,17 +5292,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Stemmingsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 134800,
     "maat": "DALY's",
     "jaar": 2015
   },
   {
     "indicator": "Ziektelast",
-    "aandoening": "Zelftoegebracht letsel / su�cide(poging)",
+    "aandoening": "Zelftoegebracht letsel / suÔcide(poging)",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 95800,
     "maat": "DALY's",
     "jaar": 2015
@@ -5312,7 +5312,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 85600,
     "maat": "DALY's",
     "jaar": 2015
@@ -5322,7 +5322,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 80600,
     "maat": "DALY's",
     "jaar": 2015
@@ -5332,7 +5332,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 76100,
     "maat": "DALY's",
     "jaar": 2015
@@ -5342,7 +5342,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 75400,
     "maat": "DALY's",
     "jaar": 2015
@@ -5352,7 +5352,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 63800,
     "maat": "DALY's",
     "jaar": 2015
@@ -5362,17 +5362,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 63400,
     "maat": "DALY's",
     "jaar": 2015
   },
   {
     "indicator": "Ziektelast",
-    "aandoening": "Letsel door� priv�-ongevallenb",
+    "aandoening": "Letsel door† privÈ-ongevallenb",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 52600,
     "maat": "DALY's",
     "jaar": 2015
@@ -5382,7 +5382,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "1",
+    "positie": 1,
     "aantal": 179400,
     "maat": "DALY's",
     "jaar": 2015
@@ -5392,7 +5392,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "2",
+    "positie": 2,
     "aantal": 163400,
     "maat": "DALY's",
     "jaar": 2015
@@ -5402,7 +5402,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "3",
+    "positie": 3,
     "aantal": 125800,
     "maat": "DALY's",
     "jaar": 2015
@@ -5412,7 +5412,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "COPD",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "4",
+    "positie": 4,
     "aantal": 117300,
     "maat": "DALY's",
     "jaar": 2015
@@ -5422,7 +5422,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "5",
+    "positie": 5,
     "aantal": 112500,
     "maat": "DALY's",
     "jaar": 2015
@@ -5432,7 +5432,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "6",
+    "positie": 6,
     "aantal": 93000,
     "maat": "DALY's",
     "jaar": 2015
@@ -5442,7 +5442,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "7",
+    "positie": 7,
     "aantal": 85400,
     "maat": "DALY's",
     "jaar": 2015
@@ -5452,7 +5452,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "8",
+    "positie": 8,
     "aantal": 62900,
     "maat": "DALY's",
     "jaar": 2015
@@ -5462,7 +5462,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "9",
+    "positie": 9,
     "aantal": 59400,
     "maat": "DALY's",
     "jaar": 2015
@@ -5472,7 +5472,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "10",
+    "positie": 10,
     "aantal": 54300,
     "maat": "DALY's",
     "jaar": 2015
@@ -5482,7 +5482,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "1",
+    "positie": 1,
     "aantal": 6828,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5492,7 +5492,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "2",
+    "positie": 2,
     "aantal": 4758,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5502,7 +5502,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gebitsafwijkingen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "3",
+    "positie": 3,
     "aantal": 3600,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5512,7 +5512,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gezichtsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "4",
+    "positie": 4,
     "aantal": 2833,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5522,7 +5522,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "5",
+    "positie": 5,
     "aantal": 2259,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5532,7 +5532,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "6",
+    "positie": 6,
     "aantal": 2081,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5542,7 +5542,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Complicaties van zwangerschap, bevalling en kraambed",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "7",
+    "positie": 7,
     "aantal": 1836,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5552,7 +5552,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "8",
+    "positie": 8,
     "aantal": 1689,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5562,7 +5562,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Depressie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "9",
+    "positie": 9,
     "aantal": 1592,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5572,7 +5572,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Astma en COPD",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "10",
+    "positie": 10,
     "aantal": 1525,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5582,7 +5582,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "11",
+    "positie": 11,
     "aantal": 1305,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5592,7 +5592,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Afhankelijkheid van alcohol en drugs",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "12",
+    "positie": 12,
     "aantal": 1193,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5602,7 +5602,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "13",
+    "positie": 13,
     "aantal": 1112,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5612,7 +5612,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "14",
+    "positie": 14,
     "aantal": 940,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5622,7 +5622,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "15",
+    "positie": 15,
     "aantal": 916,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5632,7 +5632,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Schizofrenie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "16",
+    "positie": 16,
     "aantal": 835,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5642,7 +5642,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Chronische nierziekte / nierfalen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "17",
+    "positie": 17,
     "aantal": 800,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5652,7 +5652,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longontsteking en influenza",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "18",
+    "positie": 18,
     "aantal": 711,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5662,7 +5662,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Borstkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "19",
+    "positie": 19,
     "aantal": 696,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5672,17 +5672,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "20",
+    "positie": 20,
     "aantal": 626,
     "maat": "Miljoen euro",
     "jaar": 2011
   },
   {
     "indicator": "Zorgkosten",
-    "aandoening": "Reumato�de artritis (RA)",
+    "aandoening": "ReumatoÔde artritis (RA)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "21",
+    "positie": 21,
     "aantal": 568,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5692,7 +5692,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Persoonlijkheidsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "22",
+    "positie": 22,
     "aantal": 553,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5702,7 +5702,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dikkedarmkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "23",
+    "positie": 23,
     "aantal": 488,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5712,7 +5712,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Heupfractuur",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "24",
+    "positie": 24,
     "aantal": 472,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5722,7 +5722,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "25",
+    "positie": 25,
     "aantal": 401,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5732,7 +5732,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Ziekte van Parkinson",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "26",
+    "positie": 26,
     "aantal": 267,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5742,7 +5742,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Osteoporose",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "27",
+    "positie": 27,
     "aantal": 257,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5752,7 +5752,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Prostaatkanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "28",
+    "positie": 28,
     "aantal": 254,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5762,7 +5762,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Epilepsie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "29",
+    "positie": 29,
     "aantal": 249,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5772,7 +5772,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Non-Hodgkin lymfomen (NHL)",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "30",
+    "positie": 30,
     "aantal": 192,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5782,7 +5782,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Infectieziekten van het maagdarmkanaal",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "31",
+    "positie": 31,
     "aantal": 173,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5792,7 +5792,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aids en hiv-infectie",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "32",
+    "positie": 32,
     "aantal": 164,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5802,7 +5802,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Constitutioneel eczeem en contacteczeem",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "33",
+    "positie": 33,
     "aantal": 150,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5812,7 +5812,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Baarmoederhalskanker",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "34",
+    "positie": 34,
     "aantal": 96,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5822,7 +5822,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Soa",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "35",
+    "positie": 35,
     "aantal": 56,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5832,7 +5832,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Aangeboren afwijkingen van het hartvaatstelsel",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "36",
+    "positie": 36,
     "aantal": 54,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5842,17 +5842,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vroeggeboorten",
     "geslacht": "Totaal",
     "leeftijd": "Totaal",
-    "positie": "37",
+    "positie": 37,
     "aantal": 36,
     "maat": "Miljoen euro",
     "jaar": 2011
   },
   {
     "indicator": "Zorgkosten",
-    "aandoening": "Verstandelijke�beperkinga",
+    "aandoening": "Verstandelijke†beperkinga",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 782,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5862,7 +5862,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gebitsafwijkingenb",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 765,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5872,7 +5872,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Complicaties van zwangerschap, bevalling en kraambed",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 299,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5882,7 +5882,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gehoorstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 165,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5892,27 +5892,27 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Longontsteking en influenza",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 164,
     "maat": "Miljoen euro",
     "jaar": 2011
   },
   {
     "indicator": "Zorgkosten",
-    "aandoening": "Gezichtsstoornissenc",
+    "aandoening": "Gezichtsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 92,
     "maat": "Miljoen euro",
     "jaar": 2011
   },
   {
     "indicator": "Zorgkosten",
-    "aandoening": "Astma en�COPD",
+    "aandoening": "Astma en†COPD",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 65,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5922,7 +5922,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Baarmoederhalskanker",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 54,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5932,7 +5932,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Angststoornissen",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 40,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5942,7 +5942,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Vroeggeboorten",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 35,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5952,7 +5952,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperkinga",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "1",
+    "positie": 1,
     "aantal": 5405,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5962,7 +5962,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gebitsafwijkingenb",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "2",
+    "positie": 2,
     "aantal": 2308,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5972,17 +5972,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Complicaties tijdens zwangerschap, bevalling en kraambed",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "3",
+    "positie": 3,
     "aantal": 1536,
     "maat": "Miljoen euro",
     "jaar": 2011
   },
   {
     "indicator": "Zorgkosten",
-    "aandoening": "Gezichtsstoornissenc",
+    "aandoening": "Gezichtsstoornissen",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "4",
+    "positie": 4,
     "aantal": 1257,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -5992,7 +5992,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Afhankelijkheid van alcohol en drugs",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "5",
+    "positie": 5,
     "aantal": 1096,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6002,7 +6002,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Depressie",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "6",
+    "positie": 6,
     "aantal": 1094,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6012,7 +6012,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "7",
+    "positie": 7,
     "aantal": 850,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6022,7 +6022,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Nek- en rugklachten",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "8",
+    "positie": 8,
     "aantal": 821,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6032,7 +6032,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Schizofrenie",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "9",
+    "positie": 9,
     "aantal": 771,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6042,7 +6042,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
-    "positie": "10",
+    "positie": 10,
     "aantal": 690,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6052,7 +6052,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Dementie",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "1",
+    "positie": 1,
     "aantal": 4595,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6062,7 +6062,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Beroerte",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "2",
+    "positie": 2,
     "aantal": 1765,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6072,7 +6072,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gezichtsstoornissena",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "3",
+    "positie": 3,
     "aantal": 1484,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6082,7 +6082,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Coronaire hartziekten",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "4",
+    "positie": 4,
     "aantal": 1231,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6092,17 +6092,17 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Diabetes mellitus",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "5",
+    "positie": 5,
     "aantal": 975,
     "maat": "Miljoen euro",
     "jaar": 2011
   },
   {
     "indicator": "Zorgkosten",
-    "aandoening": "Astma en�COPD",
+    "aandoening": "Astma en†COPD",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "6",
+    "positie": 6,
     "aantal": 831,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6112,7 +6112,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Artrose",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "7",
+    "positie": 7,
     "aantal": 776,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6122,7 +6122,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Hartfalen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "8",
+    "positie": 8,
     "aantal": 768,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6132,7 +6132,7 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "9",
+    "positie": 9,
     "aantal": 641,
     "maat": "Miljoen euro",
     "jaar": 2011
@@ -6142,9 +6142,10 @@ vzinfo.ranglijsten.data = [
     "aandoening": "Gebitsafwijkingen",
     "geslacht": "Totaal",
     "leeftijd": "65+",
-    "positie": "10",
+    "positie": 10,
     "aantal": 52,
     "maat": "Miljoen euro",
     "jaar": 2011
   }
 ]
+
