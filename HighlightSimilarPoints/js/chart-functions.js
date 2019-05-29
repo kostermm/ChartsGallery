@@ -346,6 +346,16 @@ $.extend(true, vzinfo, {
 
   // Initialize ranglijst: styling, events, rendering
   init: function () {
+    // Get ranglijst from data attribute
+    vzinfo.ranglijst = vzinfo.ranglijsten[$('div.ranglijst.wrapper').data('ranglijst')];
+    console.log('- Ranglijst', vzinfo.ranglijst.name + ':', vzinfo.ranglijst);
+
+    // Get indicator from select
+    vzinfo.paramIndicator = $('#ranglijst_indicator').val();
+
+    // Set h1 page title
+    $('h1#page-title.title').html('Ranglijst ' + vzinfo.paramIndicator);
+
     // Full-width containers
     $('div.ranglijst.wrapper').closest('.field-name-field-paragraph-chart').width('100%');
     $('div.ranglijst.wrapper').closest('article.venz_paragraph').find('>h2').remove();
@@ -354,6 +364,12 @@ $.extend(true, vzinfo, {
     $('div.ranglijst.indicator select').change(function () {
       // Clear info table
       $('div.ranglijst div.info-table').remove();
+
+      // Get indicator from select
+      vzinfo.paramIndicator = this.value;
+
+      // Set h1 page title
+      $('h1#page-title.title').html('Ranglijst ' + vzinfo.paramIndicator);
 
       console.log('Selected indicator:', this.value);
       vzinfo.renderCharts();
@@ -365,11 +381,6 @@ $.extend(true, vzinfo, {
 
   // Render charts: get indicator & ranglijst, process all ranglijst.charts (append containers, get options, create chart)
   renderCharts: function (indicator) {
-    // Get indicator from select
-    vzinfo.paramIndicator = indicator || $('#ranglijst_indicator').val();
-    // Get ranglijst from data attribute
-    vzinfo.ranglijst = vzinfo.ranglijsten[$('div.ranglijst.wrapper').data('ranglijst')];
-    console.log('- Ranglijst', vzinfo.ranglijst.name + ':', vzinfo.ranglijst);
 
     // Process charts of ranglijst
     $.each(vzinfo.ranglijst.charts, function (key, chart) {
