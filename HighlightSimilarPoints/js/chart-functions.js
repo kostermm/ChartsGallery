@@ -44,18 +44,18 @@ vzinfo.chartConfig = {
       "reversed": true
     },
     "yAxis": {
-      visible: true,
+      visible: false,
       // "opposite": true,
       // "title": {
       //   "text": "Aantal"
       // },
       "labels": {
         enabled: "false",
-        //   "align": "center",
-        //   // "formatter": function () { 
-        //     // return Highcharts.numberFormat(Math.abs(this.value), 0); 
-        //     // return ''
-        //   // }
+          "align": "center",
+          "formatter": function () { 
+            return Highcharts.numberFormat(Math.abs(this.value), 0); 
+            return ''
+          }
       },
       // "allowDecimals": false,
       // "tickInterval": 2000
@@ -127,6 +127,9 @@ vzinfo.chartConfig = {
   "algemeen": {
     "chart": {
       marginLeft: 22
+    },
+    yAxis: {
+      visible: false
     }
   },
 
