@@ -353,7 +353,7 @@ $.extend(true, vzinfo, {
     vzinfo.paramIndicator = $('#ranglijst_indicator').val();
 
     // Set h1 page title
-    $('h1#page-title.title').html('Ranglijst ' + vzinfo.paramIndicator);
+    $('#page-title.title').html('Ranglijst ' + vzinfo.paramIndicator);
 
     // Full-width containers
     $('div.ranglijst.wrapper').closest('.field-name-field-paragraph-chart').width('100%');
@@ -368,7 +368,7 @@ $.extend(true, vzinfo, {
       vzinfo.paramIndicator = this.value;
 
       // Set h1 page title
-      $('h1#page-title.title').html('Ranglijst ' + vzinfo.paramIndicator);
+      $('#page-title.title').html('Ranglijst ' + vzinfo.paramIndicator);
 
       console.log('Selected indicator:', this.value);
       vzinfo.renderCharts();
@@ -459,14 +459,29 @@ $.extend(true, vzinfo, {
 
       // Loop indicators to show rank for selected aandoening
       $.each(indicators, function (index, indicator) {
-        itemFilter = { indicator: indicator };
+        itemFilter = { indicator: indicator.toLowerCase() };
 
         // row heading: indicator
         rows += '<tr class="' + (indicator == vzinfo.paramIndicator ? 'highlight' : '') + '"><th>' + indicator + '</th>';
 
         // Loop dimensions and get rank
         $.each(vzinfo.ranglijst.dimensions, function (index, dimension) {
-          itemFilter[ranglijst.name] = dimension;
+          // Create itemFilter dependent on selected ranglijst
+          switch (ranglijst.name) {
+            case 'algemeen':
+              itemFilter.geslacht = 'totaal';
+              itemFilter.leeftijd = 'totaal';
+            case 'geslacht':
+              itemFilter.geslacht = dimension.toLowerCase();
+              itemFilter.leeftijd = 'totaal';
+              break;
+            case 'leeftijd':
+              itemFilter.geslacht = 'totaal';
+              itemFilter.leeftijd = dimension.toLowerCase();
+              break;
+          }
+          console.log('renderTable - itemFilter: ', itemFilter);
+
           rows += '<td class="number">' + vzinfo.getItemProp('positie', rankInLists, itemFilter)
         })
         rows += '</tr>';
@@ -487,9 +502,11 @@ $.extend(true, vzinfo, {
       itemFilter = { Indicator: filterValue, ranglijst_name: filterValue}
     */
     items = arrItems.filter(function (item, index) {
-      return (item.indicator.toLowerCase() == itemFilter.indicator.toLowerCase()) &&
-        (item[vzinfo.ranglijst.name].toLowerCase() == itemFilter[vzinfo.ranglijst.name].toLowerCase());
+      return (item.indicator.toLowerCase() == itemFilter.indicator) &&
+        (item.geslacht.toLowerCase() == itemFilter.geslacht) &&
+        (item.leeftijd.toLowerCase() == itemFilter.leeftijd);
     })
+    if (items.length == 0 || items.length > 1) console.warn('getItemProp - items:', items);
     return (items[0] != undefined && items[0][prop] != undefined) ? items[0][prop] : '';
 
   },
