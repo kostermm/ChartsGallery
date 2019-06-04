@@ -64,10 +64,12 @@ vzinfo.chartConfig = {
     },
     "tooltip": {
       formatter: function () {
-        return '<strong><large>' + this.point.name + '</large></strong>'
-          + '<br>Aantal: ' + Highcharts.numberFormat(Math.abs(this.y), 0)
-          + (this.point.rank != undefined ? '<br>Positie: ' + this.point.rank : '')
-          + '<br>Ranglijst: ' + this.point.indicator;
+        return '<em>Ranglijst: ' + this.point.indicator + '</em>'
+          + '<br/><strong><large>' + this.point.name + '</large></strong>'
+          + '<br/>Jaar: ' + this.point.period
+          + '<br/>Maat: ' + this.point.measure
+          + '<br/>Aantal: ' + Highcharts.numberFormat(Math.abs(this.y), 0)
+          + (this.point.rank != undefined ? '<br/>Positie: ' + this.point.rank : '')
       }
     },
     "legend": {
@@ -143,11 +145,7 @@ vzinfo.chartConfig = {
       "labels": {
         "enabled": true
       }
-    },
-    // "yAxis": {
-    //   "min": 0,
-    //   "max": 14000,
-    // }
+    }
   },
   "vrouwen": {
     "xAxis": {
@@ -155,13 +153,6 @@ vzinfo.chartConfig = {
       "labels": {
         "enabled": false
       }
-    },
-    // "yAxis": {
-    //   "min": -14000,
-    //   "max": 0,
-    // },
-    "exporting": {
-      "enabled": false
     },
     "plotOptions": {
       "series": {
@@ -359,7 +350,7 @@ $.extend(true, vzinfo, {
 
     // Full-width containers
     $('div.ranglijst.wrapper').closest('.field-name-field-paragraph-chart').width('100%');
-    $('div.ranglijst.wrapper').closest('article.venz_paragraph').find('>h2').remove();
+    $('div.ranglijst.wrapper').closest('article.venz_paragraph').find('>h2:not(#page-title)').remove();
 
     // indicator select event
     $('div.ranglijst.indicator select').change(function () {
@@ -368,12 +359,14 @@ $.extend(true, vzinfo, {
 
       // Get indicator from select
       vzinfo.paramIndicator = this.value;
-
       // Set h1 page title
       $('#page-title.title').html('Ranglijst ' + vzinfo.paramIndicator);
 
-      console.log('Selected indicator:', this.value);
+      // console.log('Selected indicator:', this.value);
+
+      // Render charts
       vzinfo.renderCharts();
+
     })
 
     // Call render functions to render chars for all containers
@@ -416,6 +409,9 @@ $.extend(true, vzinfo, {
       }
 
     });
+
+    // Set h1 page title
+    $('#page-title.title').html('Ranglijst ' + vzinfo.paramIndicator + ' in ' + vzinfo.paramPeriod);
   },
 
   // Render Info table for selected data point
@@ -433,13 +429,17 @@ $.extend(true, vzinfo, {
   renderTable: function (aandoening, arrData) {
     /* Data structure
     [{
-     "indicator": "Doodsoorzaken",
-     "leeftijd": "0- tot 15-jarigen" | "15- tot 65-jarigen" | "65-plussers" | "totaal",   of  "geslacht": "vrouwen" | "mannen" | "totaal"
-     "aandoening": "Dementie",
-     "aantal": 10719,
-     "positie": 1
-   },, ..]
-  */
+      "indicator": "Voorkomen",
+      "aandoening": "Nek- en rugklachten",
+      "geslacht": "Vrouwen" | "Mannen" | "Totaal"
+      "leeftijd": "0- tot 15-jarigen" | "15- tot 65-jarigen" | "65-plussers" | "Totaal",
+      "positie": 1,
+      "aantal": 1982300,
+      "maat": "Jaarprevalentie",
+      "jaar": 2015
+      },
+      ..]
+    */
     var vzinfo = this, ranglijst = vzinfo.ranglijst, indicators = vzinfo.indicators, itemFilter = {};
     var thead = '', rows = '', strCaption = vzinfo.infoTableCaptionPrefix + '<strong>' + aandoening + '</strong>' + vzinfo.infoTableCaptionPostfix
 
@@ -464,7 +464,8 @@ $.extend(true, vzinfo, {
         itemFilter = { indicator: indicator.toLowerCase() };
 
         // row heading: indicator
-        rows += '<tr class="' + (indicator == vzinfo.paramIndicator ? 'highlight' : '') + '"><th>' + indicator + '</th>';
+        rows += '<tr class="' + (indicator == vzinfo.paramIndicator ? 'highlight' : '') + '"><th>' + indicator
+          + ' - ' + vzinfo.getItemProp('jaar', rankInLists, itemFilter) + '</th>';
 
         // Loop dimensions and get rank
         $.each(vzinfo.ranglijst.dimensions, function (index, dimension) {
@@ -504,9 +505,14 @@ $.extend(true, vzinfo, {
       itemFilter = { Indicator: filterValue, ranglijst_name: filterValue}
     */
     items = arrItems.filter(function (item, index) {
-      return (item.indicator.toLowerCase() == itemFilter.indicator) &&
-        (item.geslacht.toLowerCase() == itemFilter.geslacht) &&
-        (item.leeftijd.toLowerCase() == itemFilter.leeftijd);
+      var boolTrue = true;
+
+      $.each(itemFilter, function (key, value) {
+        boolTrue = boolTrue && item[key].toLowerCase() == value;
+        // console.log('bolTrue:', boolTrue, 'key/value: ', key, value);
+      })
+
+      return boolTrue;
     })
     if (items.length == 0 || items.length > 1) console.warn('getItemProp - items:', items);
     return (items[0] != undefined && items[0][prop] != undefined) ? items[0][prop] : '';
@@ -540,21 +546,42 @@ $.extend(true, vzinfo, {
     console.log('Chart.init - renderTo:', this.chartOptions.chart.renderTo, ' using dataset:', this.dataSet);
 
     // Get data from dataSet config to load data array
+
     this.getData = function () {
       var chart = this, data = chart.dataSet,
         chartOptions = chart.chartOptions, data;
 
       var series = { name: chart.name, data: [] };
+      /* Data structure
+      [{
+        "indicator": "Voorkomen",
+        "aandoening": "Nek- en rugklachten",
+        "geslacht": "Vrouwen" | "Mannen" | "Totaal"
+        "leeftijd": "0- tot 15-jarigen" | "15- tot 65-jarigen" | "65-plussers" | "Totaal",
+        "positie": 1,
+        "aantal": 1982300,
+        "maat": "Jaarprevalentie",
+        "jaar": 2015
+        },
+        ..]
+      */
       var columns = {
         category: 'aandoening',
         value: 'aantal',
         rank: 'positie',
         indicator: 'indicator',
+        measure: 'maat',
+        period: 'jaar',
         filter: vzinfo.ranglijsten[chart.ranglijst].charts[chart.name].chartFilter
       }
       // Filter column
       if (columns.filter != undefined) {
         data = data.filter(columns.filter);
+      }
+
+      // Get period from data
+      if (data.length > 0) {
+        vzinfo.paramPeriod = data[0][columns.period];
       }
 
       // Fill data array with x/category and for each row
@@ -564,7 +591,9 @@ $.extend(true, vzinfo, {
           name: item[columns.category],
           y: chart.name == 'vrouwen' ? - item[columns.value] : item[columns.value],
           rank: item[columns.rank],
-          indicator: item[columns.indicator]
+          indicator: item[columns.indicator],
+          measure: item[columns.measure],
+          period: item[columns.period]
         });
       });
 
