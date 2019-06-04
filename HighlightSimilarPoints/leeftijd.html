@@ -6,12 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Leeftijd - VZinfo ranglijst</title>
 
-  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/vzinfo.css" />
+  <link rel="stylesheet" href="css/ranglijst.css" />
 
-  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
-  <script src="js/jquery/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery/jquery-1.4.4.min.js"></script>
   <script src="js/highcharts/highcharts.src.js"></script>
   <script src="js/highcharts/modules/exporting.js"></script>
   <script src="js/highcharts/modules/export-csv.js"></script>
@@ -22,34 +20,39 @@
 </head>
 
 <body>
-  <ul>
-    <li><a href="index.html">Algemeen</a></li>
-    <li><a href="geslacht.html">Geslacht</a></li>
-    <li><a href="leeftijd.html">Leeftijd</a></li>
-  </ul>
 
-  <!-- VZinfo Supercharts.html to include - start -->
+  <article class="venz_paragraph">
 
-  <h2 class="title" id="page-title">Ranglijst</h2>
+    <ul>
+      <li><a href="index.html">Algemeen</a></li>
+      <li><a href="geslacht.html">Geslacht</a></li>
+      <li><a href="leeftijd.html">Leeftijd</a></li>
+    </ul>
 
-  <div class="ranglijst indicator">
-    <label for="ranglijst_indicator">Kies een ranglijst</label>
-    <select id="ranglijst_indicator">
-      <option>Doodsoorzaak</option>
-      <option>Verloren levensjaren</option>
-      <option>Verlies gezonde levensjaren</option>
-      <option>Voorkomen</option>
-      <option>Ziektelast</option>
-      <option>Zorgkosten</option>
-    </select>
-  </div>
+    <!-- VZinfo Supercharts.html to include - start -->
 
-  <br />
+    <h2 class="title" id="page-title">Ranglijst</h2>
 
-  <div class="ranglijst wrapper" data-ranglijst="leeftijd"></div>
+    <div class="ranglijst indicator">
+      <label for="ranglijst_indicator">Kies een ranglijst</label>
+      <select id="ranglijst_indicator">
+        <option>Doodsoorzaak</option>
+        <option>Verloren levensjaren</option>
+        <option>Verlies gezonde levensjaren</option>
+        <option>Voorkomen</option>
+        <option>Ziektelast</option>
+        <option>Zorgkosten</option>
+      </select>
+    </div>
 
-  <!-- VZinfo Supercharts.html to include - end -->
+    <br />
 
+    <div class="ranglijst wrapper" data-ranglijst="leeftijd"></div>
+
+    <!-- VZinfo Supercharts.html to include - end -->
+
+  </article>
+  
   <script type="text/javascript">
     vzinfo.init();
   </script>

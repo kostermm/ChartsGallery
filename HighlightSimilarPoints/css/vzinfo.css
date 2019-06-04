@@ -1,51 +1,16 @@
-div.ranglijst .wrapper {
-  float: left;
-  margin-bottom: 4em;
+/* Styles from VZinfo */
+
+body {
+  font-family: "RO Sans", Calibri, Verdana, sans-serif;
 }
 
-div.ranglijst .chart-container {
-  display: inline-block;
-  width: 32%;
-  min-width: 296px;
+
+table th {
+  background-color: #007bc7;
+  color: #fff;
+  border: none;
 }
 
-div.ranglijst .info-table {
-  display: inline-block;
-  width: 30%;
-  min-width: 280px;
-}
-
-div.ranglijst .info-table table {
-  border-collapse: collapse;
-  width: 100%;
-  font-size: 90%;
-}
-
-div.ranglijst .info-table table caption {
-  padding-bottom: .5em;
-}
-
-div.ranglijst .info-table table tr.highlight {
-  background-color: #e5f0f9;
-  font-weight: bold;
-}
-
-div.ranglijst .info-table table tr>* {
-  padding: 2px 5px;
-  border: 1px solid silver;
-  line-height: 1;
-}
-
-div.ranglijst .info-table table tbody th {
-  text-align: left;
-  word-break: break-word;
-}
-
-div.ranglijst .info-table table td.number {
-  text-align: center;
-  width: 3em;
-}
-
-div.ranglijst .info-table table td.slider {
-  padding-left: .5em;
+table tr:nth-child(odd) {
+  background: #d9ebf7;
 }
