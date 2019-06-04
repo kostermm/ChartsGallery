@@ -404,13 +404,13 @@ $.extend(true, vzinfo, {
       chart.Chart.getData();
       chart.Chart.createChart();
     });
-    
+
     // Add container for info table
     $('div.ranglijst.wrapper').append('<div class="info-table"></div>');
 
     // Show popup table
-    $.each(Highcharts.charts, function(index, chart){
-      if(chart != undefined) {
+    $.each(Highcharts.charts, function (index, chart) {
+      if (chart != undefined && chart.series[0] != undefined && chart.series[0].points[0] != undefined) {
         vzinfo.showInfoTable(chart.series[0].points[0]);
         return false;
       }
@@ -5876,7 +5876,7 @@ vzinfo.ranglijsten.data = [
   },
   {
     "indicator": "Zorgkosten",
-    "aandoening": "Verstandelijke†beperkinga",
+    "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "0-15 jaar",
     "positie": 1,
@@ -5976,7 +5976,7 @@ vzinfo.ranglijsten.data = [
   },
   {
     "indicator": "Zorgkosten",
-    "aandoening": "Verstandelijke beperkinga",
+    "aandoening": "Verstandelijke beperking",
     "geslacht": "Totaal",
     "leeftijd": "15-65 jaar",
     "positie": 1,
