@@ -15,7 +15,7 @@ div.ranglijst .info-table {
   min-width: 280px;
 }
 
-div.ranglijst .info-table table {
+div.ranglijst .info-table table, div.ranglijst .highcharts-tooltip table {
   border-collapse: collapse;
   width: 100%;
   font-size: 90%;
@@ -31,11 +31,11 @@ div.ranglijst .info-table table tr.highlight {
   font-weight: bold;
 }
 
-div.ranglijst .info-table table tr {
+div.ranglijst .info-table table tr, div.ranglijst .highcharts-tooltip table tr {
   background: none;
 }
 
-div.ranglijst .info-table table tr>* {
+div.ranglijst .info-table table tr>*, div.ranglijst .highcharts-tooltip table tr>* {
   padding: 2px 5px;
   border: 1px solid silver;
   line-height: 1;
@@ -51,6 +51,10 @@ div.ranglijst .info-table table td.number {
   width: 3em;
 }
 
-div.ranglijst .info-table table td.slider {
-  padding-left: .5em;
+div.ranglijst .highcharts-tooltip table thead th {
+  text-align: center;
+}
+
+div.ranglijst .highcharts-tooltip table td.number {
+  text-align: right;
 }

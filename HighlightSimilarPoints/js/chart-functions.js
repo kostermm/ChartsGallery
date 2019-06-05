@@ -5,9 +5,18 @@ var vzinfo = {
   aandoeningRanglijsten: [],
   aandoeningFilter: {},
   infoTableCaptionPrefix: 'Positie van ',
-  infoTableCaptionPostfix: ' in alle ranglijsten:',
+  infoTableCaptionPostfix: ' in alle ranglijsten',
   infoTableNoData: 'Geen data gevonden voor geselecteerd punt',
-
+  tooltipRowItems: [
+    {
+      name: 'rank',
+      label: 'Positie'
+    },
+    {
+      name: 'y',
+      label: 'Aantal'
+    }
+  ],
   rhs_kleuren: {
     base: '#01689b',
     lighter: '#cce0f1',
@@ -61,13 +70,52 @@ vzinfo.chartConfig = {
       // "tickInterval": 2000
     },
     "tooltip": {
+      useHTML: true,
       formatter: function () {
-        return '<em>Ranglijst: ' + this.point.indicator + '</em>'
+
+        var pointName = this.point.name,
+          points = [], rows = '';
+
+        var tooltipHead = '<em>Ranglijst: ' + this.point.indicator + ' in '
+          + this.point.period + '</em>'
           + '<br/><strong><large>' + this.point.name + '</large></strong>'
-          + '<br/>Jaar: ' + this.point.period
           + '<br/>Maat: ' + this.point.measure
-          + '<br/>Aantal: ' + Highcharts.numberFormat(Math.abs(this.y), 0)
-          + (this.point.rank != undefined ? '<br/>Positie: ' + this.point.rank : '')
+          + '<br/>'
+
+        // Get points in all charts with same 'name'
+        $.each(Highcharts.charts, function (index, chart) {
+          if (chart != undefined) {
+            $.each(chart.series, function () {
+              $.each(this.data, function () {
+                if (this.name == pointName) {
+                  points.push(this);
+                }
+              })
+            })
+          }
+        })
+
+        // header row with empty first cell
+        rows += '<table><thead><tr><td></td>';
+        // Loop series of available points 
+        $.each(points, function (index, point) {
+          rows += '<th>' + point.series.name + '</th>';
+        })
+        rows += '</tr></thead><tbody>';
+
+        // Add row items to tooltip table
+        $.each(vzinfo.tooltipRowItems, function (index, rowItem) {
+          rows += '<tr><th>' + rowItem.label + '</th>';
+
+          $.each(points, function (index, point) {
+            rows += '<td class="number">' + Highcharts.numberFormat(Math.abs(point[rowItem.name]), 0) + '</td>';
+          })
+          rows += '</tr>'
+        });
+        // Finalize table row
+        rows += '</tbody></table>';
+
+        return tooltipHead + rows;
       }
     },
     "legend": {
@@ -452,7 +500,7 @@ $.extend(true, vzinfo, {
       thead = '<thead><tr><th>Ranglijst</th>';
       // Render column headings for dimensions 
       $.each(vzinfo.ranglijst.dimensions, function (index, item) {
-        thead += '<th class="number">' + item + '</th>';
+        thead += '<th>' + item + '</th>';
       });
       thead += '</tr></thead><tbody>';
 
@@ -481,7 +529,7 @@ $.extend(true, vzinfo, {
               itemFilter.leeftijd = dimension.toLowerCase();
               break;
           }
-          console.log('renderTable - itemFilter: ', itemFilter);
+          // console.log('renderTable - itemFilter: ', itemFilter);
 
           rows += '<td class="number">' + vzinfo.getItemProp('positie', rankInLists, itemFilter)
         })
@@ -512,7 +560,7 @@ $.extend(true, vzinfo, {
 
       return boolTrue;
     })
-    if (items.length == 0 || items.length > 1) console.warn('getItemProp - items:', items);
+    // if (items.length == 0 || items.length > 1) console.warn('getItemProp - items:', items);
     return (items[0] != undefined && items[0][prop] != undefined) ? items[0][prop] : '';
 
   },
@@ -541,7 +589,7 @@ $.extend(true, vzinfo, {
     this.chartOptions.chart.renderTo = chart.options.chart.renderTo || this.name; // Use chart name if renderTo not set
     this.dataSet = dataSet;
 
-    console.log('Chart.init - renderTo:', this.chartOptions.chart.renderTo, ' using dataset:', this.dataSet);
+    // console.log('Chart.init - renderTo:', this.chartOptions.chart.renderTo, ' using dataset:', this.dataSet);
 
     // Get data from dataSet config to load data array
 
@@ -597,7 +645,7 @@ $.extend(true, vzinfo, {
 
       // Add series to chartOptions
       chartOptions.series = [series];
-      console.log('Chart.getData', chartOptions, chartOptions.series);
+      console.log('--- Chart.getData', chartOptions, chartOptions.series);
     }
 
     // create chart
