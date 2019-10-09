@@ -34,7 +34,7 @@ vzinfo.chartConfig = {
     },
     "title": { text: '' },
     "colors": [
-      "white"
+      "#e5f0f9"
       // "rgba(0,80,149,0.4)"
     ],
     "xAxis": {
