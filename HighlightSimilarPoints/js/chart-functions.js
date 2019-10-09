@@ -73,51 +73,10 @@ vzinfo.chartConfig = {
     "tooltip": {
       useHTML: true,
       formatter: function () {
-
-        var pointName = this.point.name,
-          points = [], rows = '';
-
-        var tooltipHead = '<em>Ranglijst: ' + this.point.indicator + ' in '
-          + this.point.period + '</em>'
-          + '<br/><strong><large>' + this.point.name + '</large></strong>'
-          + '<br/>Maat: ' + this.point.measure
-          + '<br/>'
-
-        // Get points in all charts with same 'name'
-        $.each(Highcharts.charts, function (index, chart) {
-          if (chart != undefined) {
-            $.each(chart.series, function () {
-              $.each(this.data, function () {
-                if (this.name == pointName) {
-                  points.push(this);
+        return vzinfo.tooltipFormatterSimple(this.point);
                 }
-              })
-            })
-          }
-        })
 
-        // header row with empty first cell
-        rows += '<table><thead><tr><td></td>';
-        // Loop series of available points 
-        $.each(points, function (index, point) {
-          rows += '<th>' + point.series.name + '</th>';
-        })
-        rows += '</tr></thead><tbody>';
-
-        // Add row items to tooltip table
-        $.each(vzinfo.tooltipRowItems, function (index, rowItem) {
-          rows += '<tr><th>' + rowItem.label + '</th>';
-
-          $.each(points, function (index, point) {
-            rows += '<td class="number">' + Highcharts.numberFormat(Math.abs(point[rowItem.name]), 0) + '</td>';
-          })
-          rows += '</tr>'
-        });
-        // Finalize table row
-        rows += '</tbody></table>';
-
-        return tooltipHead + rows;
-      }
+      // 
     },
     "legend": {
       "enabled": false
@@ -443,7 +402,7 @@ $.extend(true, vzinfo, {
       chart.Chart = new vzinfo.Chart(chart, vzinfo.ranglijsten.data);
       chart.Chart.getData();
       // Set yAxis.title
-      chart.options.yAxis.title = { text: vzinfo.params.Measure};
+      chart.options.yAxis.title = { text: vzinfo.params.Measure };
 
       chart.Chart.createChart();
     });
@@ -663,6 +622,60 @@ $.extend(true, vzinfo, {
       this.chart = new Highcharts.Chart(this.chartOptions);
 
     }
+  },
+
+  tooltipFormatterSimple: function (thisPoint) {
+
+    return '<strong>' + thisPoint.name + '</strong> (' + thisPoint.measure + '): ' 
+      + Highcharts.numberFormat(Math.abs(thisPoint.y), 0);
+  },
+
+  tooltipFormatter: function (thisPoint) {
+
+    if (thisPoint != undefined) {
+      var pointName = thisPoint.name,
+        points = [], rows = '';
+
+      var tooltipHead = '<em>Ranglijst: ' + thisPoint.indicator + ' in '
+        + thisPoint.period + '</em>'
+        + '<br/><strong><large>' + thisPoint.name + '</large></strong>'
+        + '<br/>Maat: ' + thisPoint.measure
+        + '<br/>'
+
+      // Get points in all charts with same 'name'
+      $.each(Highcharts.charts, function (index, chart) {
+        if (chart != undefined) {
+          $.each(chart.series, function () {
+            $.each(this.data, function () {
+              if (this.name == pointName) {
+                points.push(this);
+  }
+            })
+          })
+        }
+      })
+
+      // header row with empty first cell
+      rows += '<table><thead><tr><td></td>';
+      // Loop series of available points 
+      $.each(points, function (index, point) {
+        rows += '<th>' + point.series.name + '</th>';
+      })
+      rows += '</tr></thead><tbody>';
+
+      // Add row items to tooltip table
+      $.each(vzinfo.tooltipRowItems, function (index, rowItem) {
+        rows += '<tr><th>' + rowItem.label + '</th>';
+
+        $.each(points, function (index, point) {
+          rows += '<td class="number">' + Highcharts.numberFormat(Math.abs(point[rowItem.name]), 0) + '</td>';
+        })
+        rows += '</tr>'
+});
+      // Finalize table row
+      rows += '</tbody></table>';
+
+      return tooltipHead + rows;
+    }
   }
 });
-
