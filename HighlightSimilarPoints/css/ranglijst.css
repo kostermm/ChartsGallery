@@ -4,14 +4,16 @@ div.ranglijst.wrapper {
 }
 
 div.ranglijst .chart-container {
-  display: inline-block;
-  width: 32%;
+  display: block;
+  float: left;
+  width: 33%;
   min-width: 296px;
 }
 
 div.ranglijst .info-table {
-  display: inline-block;
-  width: 30%;
+  display: block;
+  float: left;
+  width: 34%;
   min-width: 280px;
 }
 
