@@ -41,6 +41,7 @@ vzinfo.chartConfig = {
     "xAxis": {
       // "visible": true,
       // "categories": [],
+      "type": "category",
       "lineWidth": 0,
       "tickLength": 0,
       "tickInterval": 1,
@@ -110,8 +111,7 @@ vzinfo.chartConfig = {
             "fontSize": "13px",
           },
           "formatter": function () {
-            return this.point.name;
-          }
+            return this.point.aandoening;
         },
         "animation": {
           "duration": 500
@@ -135,17 +135,17 @@ vzinfo.chartConfig = {
   // ***** algemeen *****
   "algemeen": {
     "chart": {
-      marginLeft: 22
+      "marginLeft": 22
     },
-    yAxis: {
-      visible: false
+    "yAxis": {
+      "visible": false
     }
   },
 
   // ***** geslacht *****
   "mannen": {
     "chart": {
-      marginLeft: 22
+      "marginLeft": 22
     },
     "xAxis": {
       "labels": {
@@ -172,21 +172,17 @@ vzinfo.chartConfig = {
   // ***** leeftijd *****
   "0-15": {
     "chart": {
-      marginLeft: 22
+      "marginLeft": 22
     }
   },
   "15-65": {
-    "xAxis": {
-      "labels": {
-        "enabled": false
-      }
+    "chart": {
+      "marginLeft": 22
     }
   },
   "65plus": {
-    "xAxis": {
-      "labels": {
-        "enabled": false
-      }
+    "chart": {
+      "marginLeft": 22
     }
   }
 };
@@ -425,7 +421,7 @@ $.extend(true, vzinfo, {
 
   // Render Info table for selected data point
   showInfoTable: function (point) {
-    var aandoening = point.name, data = vzinfo.ranglijsten.data;
+    var aandoening = point.aandoening, data = vzinfo.ranglijsten.data;
 
     console.log('showInfoTable - ', point);
     // Filter data for this ranglijst
@@ -600,8 +596,8 @@ $.extend(true, vzinfo, {
       // Fill data array with x/category and for each row
       $.each(data, function (index, item) {
         series.data.push({
-          x: item[columns.rank],
-          name: item[columns.category],
+          name: item[columns.rank],
+          aandoening: item[columns.category],
           y: chart.name == 'vrouwen' ? - item[columns.value] : item[columns.value],
           rank: item[columns.rank],
           indicator: item[columns.indicator],
@@ -626,7 +622,7 @@ $.extend(true, vzinfo, {
 
   tooltipFormatterSimple: function (thisPoint) {
 
-    return '<strong>' + thisPoint.name + '</strong> (' + thisPoint.measure + '): ' 
+    return '<strong>' + thisPoint.name + '. ' + thisPoint.aandoening + '</strong> (' + thisPoint.measure + '): '
       + Highcharts.numberFormat(Math.abs(thisPoint.y), 0);
   },
 
