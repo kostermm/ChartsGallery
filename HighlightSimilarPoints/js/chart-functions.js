@@ -18,12 +18,18 @@ var vzinfo = {
       label: 'Aantal'
     }
   ],
+  colors: {
   rhs_kleuren: {
     base: '#01689b',
     lighter: '#cce0f1',
     lightest: '#e5f0f9'
+    },
+    highlightColor: 'rgba(255,165,0,0.6)',
+    selectColor: '#f6d4b2' //'orange';
   }
 }
+
+
 vzinfo.chartConfig = {
   "basis":
   {
@@ -96,7 +102,7 @@ vzinfo.chartConfig = {
     },
     "plotOptions": {
       "bar": {
-        "borderColor": vzinfo.rhs_kleuren.base,
+        "borderColor": vzinfo.colors.rhs_kleuren.base,
         "pointWidth": 20,
         "pointPadding": 0.05,
         "groupPadding": 0,
@@ -116,6 +122,26 @@ vzinfo.chartConfig = {
         "animation": {
           "duration": 500
         },
+        states: {
+          hover: {
+            animation: {
+              duration: 0
+            },
+            color: vzinfo.colors.highlightColor,
+            brightness: 0
+          },
+          select: {
+            animation: {
+              duration: 0
+            },
+            color: vzinfo.colors.selectColor,
+            borderColor: null,
+            brightness: 0
+          },
+          normal: {
+            animation: false
+          }
+        },
         "point": {
           "events": {
             "mouseOver": function (event) {
@@ -125,6 +151,7 @@ vzinfo.chartConfig = {
               vzinfo.syncHighlight(event);
             },
             "click": function (event) {
+              vzinfo.syncHighlight(event);
               vzinfo.showInfoTable(this);
             }
           }
@@ -297,15 +324,12 @@ vzinfo.ranglijsten = {
 $.extend(true, vzinfo, {
   // Function for synchronized highlighting of data points with equal property
   syncHighlight: function (event) {
-    eventType = event.type;
+    var eventType = event.type;
 
     // event objects
-    point = event.target;
-    series = point.series;
-    chart = series.chart;
+    var point = event.target, series = point.series, chart = series.chart,
+      highlightColor = (eventType == 'mouseOut') ? series.options.color : vzinfo.colors.highlightColor;
 
-    highlightColor = 'rgba(255,165,0,0.6)';//'orange';
-    if (eventType == 'mouseOut') highlightColor = series.options.color;
     // if(point.color != series.color) 
     //   highlightColor = series.options.color;
     // }
@@ -319,7 +343,7 @@ $.extend(true, vzinfo, {
     seriesCount = event.target.series.chart.series.length;
     // console.log(eventType + ' chart: ' + chartIndex + ' series: ' + seriesIndex + ' point: ' + pointIndex);
 
-    // Highlight points in all series with same 'name'
+    // Highlight points in all series with same 'aandoening'
     $.each(Highcharts.charts, function (index, chart) {
       if (chart != undefined) {
         $.each(chart.series, function () {
@@ -328,6 +352,7 @@ $.extend(true, vzinfo, {
               if (eventType == 'mouseOut') highlightColor = undefined;   //this.series.color;
               highlightStyle = { color: highlightColor };
               this.update(highlightStyle, true, false);
+              if (eventType == 'click') this.select(true);
             } else {
               // this.update({color: 'lightgray'}, true, false);
             }
@@ -406,7 +431,7 @@ $.extend(true, vzinfo, {
     // Add container for info table
     $('div.ranglijst.wrapper').append('<div class="info-table"></div>');
 
-    // Show popup table
+    // Show popup table after chart render
     $.each(Highcharts.charts, function (index, chart) {
       if (chart != undefined && chart.series[0] != undefined && chart.series[0].points[0] != undefined) {
         vzinfo.showInfoTable(chart.series[0].points[0]);
@@ -422,6 +447,19 @@ $.extend(true, vzinfo, {
   // Render Info table for selected data point
   showInfoTable: function (point) {
     var aandoening = point.aandoening, data = vzinfo.ranglijsten.data;
+
+    // Select point
+    point.select();
+    // select points in all series with same 'aandoening'
+    $.each(Highcharts.charts, function (index, chart) {
+      if (chart != undefined) {
+        $.each(chart.series, function () {
+          $.each(this.data, function () {
+            if (this.aandoening == point.aandoening) this.select(true);
+          })
+        })
+      }
+    })
 
     console.log('showInfoTable - ', point);
     // Filter data for this ranglijst
