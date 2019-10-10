@@ -324,7 +324,7 @@ $.extend(true, vzinfo, {
       if (chart != undefined) {
         $.each(chart.series, function () {
           $.each(this.data, function () {
-            if (this.name == point.name || eventType == 'mouseOut') {
+            if (this.aandoening == point.aandoening || eventType == 'mouseOut') {
               if (eventType == 'mouseOut') highlightColor = undefined;   //this.series.color;
               highlightStyle = { color: highlightColor };
               this.update(highlightStyle, true, false);
