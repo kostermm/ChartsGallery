@@ -19,16 +19,15 @@ var vzinfo = {
     }
   ],
   colors: {
-  rhs_kleuren: {
-    base: '#01689b',
-    lighter: '#cce0f1',
-    lightest: '#e5f0f9'
+    rhs_kleuren: {
+      base: '#01689b',
+      lighter: '#cce0f1',
+      lightest: '#e5f0f9'
     },
     highlightColor: 'rgba(255,165,0,0.6)',
     selectColor: '#f6d4b2' //'orange';
   }
 }
-
 
 vzinfo.chartConfig = {
   "basis":
@@ -79,9 +78,10 @@ vzinfo.chartConfig = {
     },
     "tooltip": {
       useHTML: true,
+      backgroundColor: 'white',
       formatter: function () {
         return vzinfo.tooltipFormatterSimple(this.point);
-                }
+      }
 
       // 
     },
@@ -112,12 +112,16 @@ vzinfo.chartConfig = {
       "series": {
         "dataLabels": {
           "enabled": true,
+          "useHTML": true,
           "align": "left",
           "style": {
             "fontSize": "13px",
           },
           "formatter": function () {
             return this.point.aandoening;
+          },
+          "overflow": "allow", // "allow" | "justify" How to handle data labels that flow outside the plot area. The default is "justify", which aligns them inside the plot area. For columns and bars, this means it will be moved inside the bar. To display data labels outside the plot area, set crop to false and overflow to "allow".
+          "crop": false
         },
         "animation": {
           "duration": 500
@@ -643,7 +647,7 @@ $.extend(true, vzinfo, {
           period: item[columns.period]
         });
       });
-      
+
 
       // Add series to chartOptions
       chartOptions.series = [series];
@@ -683,7 +687,7 @@ $.extend(true, vzinfo, {
             $.each(this.data, function () {
               if (this.name == pointName) {
                 points.push(this);
-  }
+              }
             })
           })
         }
@@ -705,7 +709,7 @@ $.extend(true, vzinfo, {
           rows += '<td class="number">' + Highcharts.numberFormat(Math.abs(point[rowItem.name]), 0) + '</td>';
         })
         rows += '</tr>'
-});
+      });
       // Finalize table row
       rows += '</tbody></table>';
 

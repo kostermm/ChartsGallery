@@ -61,6 +61,15 @@ div.ranglijst .highcharts-tooltip table td.number {
   text-align: right;
 }
 
+div.ranglijst .highcharts-tooltip span {
+  z-index: 100 !important;
+  color: red;
+  background: white;
+}
+.highcharts-data-labels div span {
+  z-index: 0 !important;
+}
+
 p.ranglijst.help-text {
   font-style: italic;
   font-size: smaller;
