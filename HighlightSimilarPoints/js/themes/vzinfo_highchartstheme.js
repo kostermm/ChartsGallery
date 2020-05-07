@@ -23,3 +23,54 @@ Highcharts.vzinfoTheme = { "colors": ["#7cb5ec", "#434348", "#90ed7d", "#f7a35c"
 
 
 Highcharts.setOptions(Highcharts.vzinfoTheme);
+
+
+
+// Wrapping function for drawing dataLabels of a series
+Highcharts.wrap(Highcharts.Series.prototype, 'drawDataLabels', function (proceed) {
+  var series = this, yAxis = series.chart.yAxis[0],
+    inverted = yAxis.min < 0;
+
+  // Apply the original function
+  proceed.apply(series);
+
+  console.log('---- drawDataLabels for', series.name, yAxis.len, series.options.dataLabels);
+  console.log('Inverted chart:', inverted);
+
+  $.each(series.points, function (index, point) {
+    var label = point.dataLabel, labelWidth = label.getBBox().width;
+
+    if (inverted) {
+      // Test how label should be translated
+      if (Math.abs(point.y) < 0.5 * Math.max(Math.abs(yAxis.min), yAxis.max)) {
+        // Bar smaller than half plotWidth -> position outside
+        xBase = (1 - Math.abs(point.y / yAxis.min)) * yAxis.len - 4
+          - Math.min(vzinfo.chartLayout.dataLabelWidth, labelWidth);
+
+        console.log('Move outside:', xBase, point.aandoening);
+        point.dataLabel.translate(xBase);
+      } else {
+        console.log('Stay inside:', point.aandoening);
+      }
+    } else {
+      // Test how label should be translated
+      if (Math.abs(point.y) < 0.5 * Math.max(Math.abs(yAxis.min), yAxis.max)) {
+        // Bar smaller than half plotWidth -> position outside
+        xBase = (point.y / yAxis.max) * yAxis.len;
+        // xBase = (yAxis.min == 0) ? yAxis.len - Math.min(vzinfo.chartLayout.dataLabelWidth, labelWidth) : 0;
+
+        console.log('Move outside:', xBase, point.aandoening);
+        point.dataLabel.translate(xBase);
+      } else {
+        // Bar wider than half plotWidth -> position inside
+        xBase = (point.y / yAxis.max) * yAxis.len - 4
+          - Math.min(vzinfo.chartLayout.dataLabelWidth, labelWidth);
+
+        console.log('Move inside:', xBase, point.aandoening);
+        point.dataLabel.translate(xBase);
+      }
+    }
+
+  });
+
+});

@@ -5,16 +5,17 @@ div.ranglijst.wrapper {
 
 div.ranglijst .chart-container {
   display: block;
-  float: left;
-  width: 33%;
-  min-width: 296px;
+  float: left !important;
+  /* width: 33%; */
+  min-width: 280px;
 }
 
 div.ranglijst .info-table {
   display: block;
-  float: left;
+  float: left !important;
   width: 34%;
   min-width: 280px;
+  color: #42145f;
 }
 
 div.ranglijst .info-table table, div.ranglijst .highcharts-tooltip table {
@@ -29,7 +30,7 @@ div.ranglijst .info-table table caption {
 }
 
 div.ranglijst .info-table table tr.highlight {
-  background-color: #e5f0f9;
+  background-color: #e3dce7;
   font-weight: bold;
 }
 
@@ -39,26 +40,29 @@ div.ranglijst .info-table table tr, div.ranglijst .highcharts-tooltip table tr {
 
 div.ranglijst .info-table table tr>*, div.ranglijst .highcharts-tooltip table tr>* {
   padding: 2px 5px;
-  border: 1px solid silver;
+  border-bottom: 1px solid #e3dce7;
   line-height: 1;
+}
+
+div.ranglijst .info-table table thead th {
+  background-color: #42145f;
+  color: #fff;
+  border: none;
+}
+
+div.ranglijst .info-table table tbody {
+  border: 1px solid #e3dce7;
 }
 
 div.ranglijst .info-table table tbody th {
   text-align: left;
-  word-break: break-word;
+  /* word-break: break-word; */
+  background-color: #c6b8cf;
+  color: #42145f;
 }
 
-div.ranglijst .info-table table td.number {
+div.ranglijst .info-table table tbody td {
   text-align: center;
-  width: 3em;
-}
-
-div.ranglijst .highcharts-tooltip table thead th {
-  text-align: center;
-}
-
-div.ranglijst .highcharts-tooltip table td.number {
-  text-align: right;
 }
 
 div.ranglijst .highcharts-tooltip span {
@@ -66,8 +70,14 @@ div.ranglijst .highcharts-tooltip span {
   color: red;
   background: white;
 }
+
 .highcharts-data-labels div span {
   z-index: 0 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* height: 1.1em; */
+  white-space: nowrap !important;
+  /* border: 1px solid red; */
 }
 
 p.ranglijst.help-text {

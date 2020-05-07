@@ -20,12 +20,26 @@ var vzinfo = {
   ],
   colors: {
     rhs_kleuren: {
-      base: '#01689b',
-      lighter: '#cce0f1',
-      lightest: '#e5f0f9'
+      /* 
+        $purple:                    #42145f !default;
+        $purple-light:              #c6b8cf !default;
+        $purple-lightest:           #e3dce7 !default;
+      */
+      base: '#42145f',
+      lighter: '#c6b8cf',
+      lightest: '#e3dce7'
     },
-    highlightColor: 'rgba(255,165,0,0.6)',
-    selectColor: '#f6d4b2' //'orange';
+    /*
+      $dark-yellow:               #ffb612 !default;
+      $dark-yellow-light:         #ffe9b7 !default;
+      $dark-yellow-lightest:      #fff4dc !default;
+    */
+    highlightColor: '#ffe9b7', // '#f6d4b2', // 'rgba(255,165,0,0.6)',
+    selectColor: '#ffb612', // '#fbead9' //'orange';
+  },
+  chartLayout: {
+    rankMargin: 25,
+    dataLabelWidth: 130
   }
 }
 
@@ -35,14 +49,14 @@ vzinfo.chartConfig = {
     "chart": {
       "type": "bar",
       "height": null,
-      marginTop: 30
-
+      "marginTop": 30,
+      // "borderWidth": 1
     },
-    "title": { text: '' },
-    "colors": [
-      "#e5f0f9"
-      // "rgba(0,80,149,0.4)"
-    ],
+    "title": {
+      "text": '',
+      "align": 'center'
+    },
+    "colors": [vzinfo.colors.rhs_kleuren.lightest],
     "xAxis": {
       // "visible": true,
       // "categories": [],
@@ -51,6 +65,7 @@ vzinfo.chartConfig = {
       "tickLength": 0,
       "tickInterval": 1,
       "labels": {
+        // "enabled": true,
         "align": "center",
         "x": -15,
         "style": {
@@ -60,30 +75,29 @@ vzinfo.chartConfig = {
       "reversed": true
     },
     "yAxis": {
-      visible: false,
-      // "opposite": true,
+      "visible": true,
+      // Title set from data
       // "title": {
       //   "text": "Aantal"
       // },
       "labels": {
-        enabled: "false",
+        "enabled": false,
         "align": "center",
         "formatter": function () {
           return Highcharts.numberFormat(Math.abs(this.value), 0);
-          return ''
         }
       },
       // "allowDecimals": false,
       // "tickInterval": 2000
+      gridLineWidth: 0
     },
     "tooltip": {
       useHTML: true,
       backgroundColor: 'white',
+      y: 100,
       formatter: function () {
         return vzinfo.tooltipFormatterSimple(this.point);
       }
-
-      // 
     },
     "legend": {
       "enabled": false
@@ -110,18 +124,43 @@ vzinfo.chartConfig = {
         "grouping": false
       },
       "series": {
+        /*
+          Desired CSS style
+          .highcharts-data-labels div span {
+              z-index: 0 !important;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              height: 1.1em;
+              white-space: nowrap;
+          }
+        */
+
         "dataLabels": {
           "enabled": true,
           "useHTML": true,
-          "align": "left",
+          // "align": "right",
           "style": {
             "fontSize": "13px",
+            "width": vzinfo.chartLayout.dataLabelWidth + "px",
+            "height": "15px",
+            "textOverflow": "ellipsis",
+            // "whiteSpace": "nowrap",
+            "overflow": "hidden"
+            /* CSSObject: https://api.highcharts.com/class-reference/Highcharts.CSSObject
+            textOverflow :string|undefined  Line break style of the element text. Highcharts SVG elements support ellipsis when a width is set.
+
+            whiteSpace :string|undefined  Line break style of the element text.
+
+          */
           },
-          "formatter": function () {
+          "formatter": function () { // Only show Aandoening
             return this.point.aandoening;
           },
-          "overflow": "allow", // "allow" | "justify" How to handle data labels that flow outside the plot area. The default is "justify", which aligns them inside the plot area. For columns and bars, this means it will be moved inside the bar. To display data labels outside the plot area, set crop to false and overflow to "allow".
-          "crop": false
+          // "overflow": "justify", // "allow" | "justify" How to handle data labels that flow outside the plot area. The default is "justify", which aligns them inside the plot area. For columns and bars, this means it will be moved inside the bar. To display data labels outside the plot area, set crop to false and overflow to "allow".
+          // "crop": false,
+          "inside": true // For points with an extent, like columns or map areas, whether to align the data label inside the box or to the actual value point. Defaults to false in most cases, true in stacked columns.
+
+
         },
         "animation": {
           "duration": 500
@@ -166,29 +205,30 @@ vzinfo.chartConfig = {
   // ***** algemeen *****
   "algemeen": {
     "chart": {
-      "marginLeft": 22
+      "marginLeft": vzinfo.chartLayout.rankMargin,
+      "width": 305
     },
     "yAxis": {
-      "visible": false
+      "title": {
+        "align": "low"
+      }
     }
   },
 
   // ***** geslacht *****
   "mannen": {
     "chart": {
-      "marginLeft": 22
+      "marginLeft": vzinfo.chartLayout.rankMargin,
+      "width": 305
     },
     "xAxis": {
       "labels": {
         "enabled": true
       }
-    }
-  },
-  "vrouwen": {
-    "xAxis": {
-      "visible": false,
-      "labels": {
-        "enabled": false
+    },
+    "yAxis": {
+      "title": {
+        "align": "low"
       }
     },
     "plotOptions": {
@@ -199,21 +239,59 @@ vzinfo.chartConfig = {
       }
     }
   },
+  "vrouwen": {
+    "chart": {
+      "width": 280
+    },
+    "xAxis": {
+      "visible": false,
+      "labels": {
+        "enabled": false
+      }
+    },
+    "yAxis": {
+      "title": {
+        "align": "high"
+      }
+    },
+    "plotOptions": {
+      "series": {
+        "dataLabels": {
+          "align": "left"
+        }
+      }
+    }
+  },
 
   // ***** leeftijd *****
   "0-15": {
     "chart": {
-      "marginLeft": 22
+      "marginLeft": vzinfo.chartLayout.rankMargin,
+    },
+    "yAxis": {
+      "title": {
+        "align": "low"
+      }
     }
   },
   "15-65": {
     "chart": {
-      "marginLeft": 22
+      "marginLeft": vzinfo.chartLayout.rankMargin,
+    },
+    "yAxis": {
+      "title": {
+        "align": "low"
+      }
     }
   },
   "65plus": {
     "chart": {
-      "marginLeft": 22
+      "marginLeft": vzinfo.chartLayout.rankMargin,
+    },
+    "yAxis": {
+      "title": {
+        "align": "low"
+      }
     }
   }
 };
@@ -320,8 +398,7 @@ vzinfo.ranglijsten = {
         options: vzinfo.chartConfig['65plus']
       }
     }
-  },
-
+  }
 };
 
 // Methods
@@ -426,8 +503,9 @@ $.extend(true, vzinfo, {
       // Create Chart object, getData & create chart
       chart.Chart = new vzinfo.Chart(chart, vzinfo.ranglijsten.data);
       chart.Chart.getData();
-      // Set yAxis.title
-      chart.options.yAxis.title = { text: vzinfo.params.Measure };
+      // Set yAxis.title & disable labels
+      chart.options.yAxis.title.text = vzinfo.params.Measure;
+      // chart.options.yAxis.labels = { enabled: false };
 
       chart.Chart.createChart();
     });
@@ -648,10 +726,9 @@ $.extend(true, vzinfo, {
         });
       });
 
-
       // Add series to chartOptions
       chartOptions.series = [series];
-      console.log('--- Chart.getData', chartOptions, chartOptions.series, vzinfo.maat);
+      console.log('--- Chart.getData ---', chartOptions.title.text, '\nchartOptions:', chartOptions, 'Series:', chartOptions.series);
     }
 
     // create chart
@@ -664,7 +741,7 @@ $.extend(true, vzinfo, {
 
   tooltipFormatterSimple: function (thisPoint) {
 
-    return '<strong>' + thisPoint.name + '. ' + thisPoint.aandoening + '</strong> (' + thisPoint.measure + '): '
+    return '<strong>' + thisPoint.name + '. ' + thisPoint.aandoening + '</strong> <br/>' + thisPoint.measure + ': '
       + Highcharts.numberFormat(Math.abs(thisPoint.y), 0);
   },
 
