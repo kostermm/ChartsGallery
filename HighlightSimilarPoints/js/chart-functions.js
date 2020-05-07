@@ -39,7 +39,8 @@ var vzinfo = {
   },
   chartLayout: {
     rankMargin: 25,
-    dataLabelWidth: 130
+    dataLabelWidth: 130,
+    tooltipOffsetY: 35
   }
 }
 
@@ -92,11 +93,27 @@ vzinfo.chartConfig = {
       gridLineWidth: 0
     },
     "tooltip": {
-      useHTML: true,
-      backgroundColor: 'white',
-      y: 100,
-      formatter: function () {
+      "useHTML": true,
+      "backgroundColor": 'white',
+      "formatter": function () {
         return vzinfo.tooltipFormatterSimple(this.point);
+      },
+      /* positioner:
+          A callback function to place the tooltip in a default position. The callback receives three parameters: labelWidth, labelHeight and point, where point contains values for plotX and plotY telling where the reference point is in the plot area. Add chart.plotLeft and chart.plotTop to get the full coordinates.
+          The return should be an object containing x and y values, for example { x: 100, y: 100 }.
+      */
+      positioner: function (labelWidth, labelHeight, point) {
+        // console.log('TooltipPositioner',  arguments, point);
+        return { x: 0, y: point.plotY + vzinfo.chartLayout.tooltipOffsetY };
+      },
+      // Reset svg settings to only use html styling
+      borderRadius: 0,
+      borderWidth: 0,
+      shadow: false,
+      enabled: true,
+      backgroundColor: 'none',
+      style: {
+        whiteSpace: 'normal'
       }
     },
     "legend": {

@@ -3,6 +3,12 @@ div.ranglijst.wrapper {
   margin-bottom: 4em;
 }
 
+p.ranglijst.help-text {
+  font-style: italic;
+  font-size: smaller;
+  color: #696969;
+}
+
 div.ranglijst .chart-container {
   display: block;
   float: left !important;
@@ -10,6 +16,13 @@ div.ranglijst .chart-container {
   min-width: 280px;
 }
 
+/* overflow: visible for SVG */
+div.ranglijst .chart-container .highcharts-container, div.ranglijst .chart-container .highcharts-container svg {
+  overflow: visible !important;
+  z-index: 100 !important;
+}
+
+/* Table */
 div.ranglijst .info-table {
   display: block;
   float: left !important;
@@ -65,12 +78,22 @@ div.ranglijst .info-table table tbody td {
   text-align: center;
 }
 
+/* Tooltip */
+div.ranglijst .highcharts-tooltip {
+  width: 300px;
+}
+
 div.ranglijst .highcharts-tooltip span {
   z-index: 100 !important;
   color: red;
   background: white;
+  border: 2px solid #42145f;
+  padding: 0.2em;
+  border-radius: 5px;
 }
 
+
+/* datalabels */
 .highcharts-data-labels div span {
   z-index: 0 !important;
   overflow: hidden;
@@ -78,14 +101,4 @@ div.ranglijst .highcharts-tooltip span {
   /* height: 1.1em; */
   white-space: nowrap !important;
   /* border: 1px solid red; */
-}
-
-p.ranglijst.help-text {
-  font-style: italic;
-  font-size: smaller;
-  color: #696969;
-}
-
-div.highcharts-container {
-  overflow: visible !important;
 }
