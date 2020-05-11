@@ -62,6 +62,7 @@ vzinfo.chartConfig = {
       // "visible": true,
       // "categories": [],
       "type": "category",
+      "max": 10,
       "lineWidth": 0,
       "tickLength": 0,
       "tickInterval": 1,
@@ -451,7 +452,8 @@ $.extend(true, vzinfo, {
               highlightStyle = { color: highlightColor };
               this.update(highlightStyle, true, false);
               if (eventType == 'click') this.select(true);
-            } else {
+            } else if (this.aandoening != point.aandoening && eventType == 'click') {
+              this.select(false);
               // this.update({color: 'lightgray'}, true, false);
             }
           })
