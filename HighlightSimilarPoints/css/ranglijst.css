@@ -3,6 +3,10 @@ div.ranglijst.wrapper {
   margin-bottom: 4em;
 }
 
+.ranglijst.indicator label {
+  display: inline-block;
+}
+
 p.ranglijst.help-text {
   font-style: italic;
   font-size: smaller;

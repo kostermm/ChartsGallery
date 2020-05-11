@@ -124,7 +124,7 @@ vzinfo.chartConfig = {
       "enabled": false
     },
     "exporting": {
-      "enabled": true,
+      "enabled": false,
       buttons:
       {
         contextButton: {
