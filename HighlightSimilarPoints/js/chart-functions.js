@@ -62,7 +62,7 @@ vzinfo.chartConfig = {
       // "visible": true,
       // "categories": [],
       "type": "category",
-      "max": 10,
+      "max": 9,
       "lineWidth": 0,
       "tickLength": 0,
       "tickInterval": 1,
