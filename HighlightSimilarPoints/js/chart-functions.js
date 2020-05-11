@@ -83,10 +83,12 @@ vzinfo.chartConfig = {
       //   "text": "Aantal"
       // },
       "labels": {
-        "enabled": false,
+        "enabled": true,
         "align": "center",
         "formatter": function () {
-          return Highcharts.numberFormat(Math.abs(this.value), 0);
+          if (this.isLast || this.isFirst) {
+            return Highcharts.numberFormat(Math.abs(this.value), 0);
+          }
         }
       },
       // "allowDecimals": false,

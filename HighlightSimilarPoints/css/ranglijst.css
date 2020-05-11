@@ -73,6 +73,7 @@ div.ranglijst .info-table table tbody {
 
 div.ranglijst .info-table table tbody th {
   text-align: left;
+  font-weight: normal;
   /* word-break: break-word; */
   background-color: #c6b8cf;
   color: #42145f;
