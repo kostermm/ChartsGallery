@@ -140,7 +140,7 @@ vzinfo.chartConfig = {
         "pointWidth": 20,
         "pointPadding": 0.05,
         "groupPadding": 0,
-        "borderWidth": 2,
+        "borderWidth": 1,
         "grouping": false
       },
       "series": {
@@ -586,8 +586,8 @@ $.extend(true, vzinfo, {
       },
       ..]
     */
-    var vzinfo = this, ranglijst = vzinfo.ranglijst, indicators = vzinfo.indicators, itemFilter = {};
-    var thead = '', rows = '', strCaption = vzinfo.infoTableCaptionPrefix + '<strong>' + aandoening + '</strong>' + vzinfo.infoTableCaptionPostfix
+    var vzinfo = this, ranglijst = vzinfo.ranglijst, indicators = vzinfo.indicators, itemFilter = {}, itemProp = '', allEmptyRanks = true;
+    var thead = '', rows = '', rankCells = '', strCaption = vzinfo.infoTableCaptionPrefix + '<strong>' + aandoening + '</strong>' + vzinfo.infoTableCaptionPostfix
 
     // Filter row of 'aandoening'
     var rankInLists = arrData.filter(function (item, index, filter) {
@@ -604,15 +604,17 @@ $.extend(true, vzinfo, {
       });
       thead += '</tr></thead><tbody>';
 
-
       // Loop indicators to show rank for selected aandoening
       $.each(indicators, function (index, indicator) {
         itemFilter = { indicator: indicator.toLowerCase() };
+        itemProp = vzinfo.getItemProp('jaar', rankInLists, itemFilter);
+        itemProp = (itemProp != '' ? ' - ' + itemProp : '')
 
         // row heading: indicator
-        rows += '<tr class="' + (indicator == vzinfo.params.Indicator ? 'highlight' : '') + '"><th>' + indicator
-          + ' - ' + vzinfo.getItemProp('jaar', rankInLists, itemFilter) + '</th>';
+        rows += '<tr class="' + (indicator == vzinfo.params.Indicator ? 'highlight' : '') + '"><th>'
+          + indicator + itemProp + '</th>';
 
+        rankCells = '', allEmptyRanks = true;
         // Loop dimensions and get rank
         $.each(vzinfo.ranglijst.dimensions, function (index, dimension) {
           // Create itemFilter dependent on selected ranglijst
@@ -631,9 +633,11 @@ $.extend(true, vzinfo, {
           }
           // console.log('renderTable - itemFilter: ', itemFilter);
 
-          rows += '<td class="number">' + vzinfo.getItemProp('positie', rankInLists, itemFilter)
+          itemProp = vzinfo.getItemProp('positie', rankInLists, itemFilter);
+          if (!isNaN(itemProp)) allEmptyRanks = false;
+          rankCells += '<td class="number">' + itemProp + '</td>';
         })
-        rows += '</tr>';
+        rows += (allEmptyRanks ? rankCells.replace(/-/g,'') : rankCells.replace(/-/g,'>10') ) + '</tr>';
       });
       rows += '</tbody>';
     } else { // Show no data is found
@@ -661,7 +665,7 @@ $.extend(true, vzinfo, {
       return boolTrue;
     })
     // if (items.length == 0 || items.length > 1) console.warn('getItemProp - items:', items);
-    return (items[0] != undefined && items[0][prop] != undefined) ? items[0][prop] : '';
+    return (items[0] != undefined && items[0][prop] != undefined) ? items[0][prop] : (prop == 'jaar' ? '' : '-');
 
   },
 
